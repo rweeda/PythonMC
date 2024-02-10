@@ -1,0 +1,61 @@
+OPDRACHT:
+Maak van alle html bestanden met Python lesmateriaal een Jupyter Notebook.
+
+Zie H1_6.ipynb en H2_10.ipynb als voorbeelden.
+
+----------------
+PROGRAMMEROMGEVING:
+De leerlingen gaan Visual Studio Code gebruiken om het lesmateriaal te doorlopen, het handigst is dat je dat dus ook gebruikt om het lesmateriaal in te maken, want dan zie je meteen de opmaak.
+
+LET OP: Kan je bij de installatie even meteen kijken welke plugins, libraries of andere dingen nodig zijn? Kan je een handleiding maken voor de installatie op een windows PC met screenshots zodat alle leerlingen de installatie makkelijk voor elkaar kunnen krijgen? Voor sommige leerlingen zal dit mogelijk de eerste keer zijn dat ze software moeten installeren.
+
+----------------------------
+ACHTERGROND INFORMATIE & SHORTCUTS:
+MARKDOWN SHORTCUTS: 
+https://noteable.io/blog/jupyter-notebook-shortcuts-boost-productivity/
+
+MARKDOWN GUIDE:
+https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
+https://about.gitlab.com/handbook/markdown-guide/
+https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html
+
+
+https://www.ibm.com/docs/en/watson-studio-local/1.2.3?topic=notebooks-markdown-jupyter-cheatsheet
+
+
+-----------------------
+STAPPENPLAN:
+
+1) Converteer html pagina naar een .ipnynb met online gratis tool,bijvoorbeeld https://www.vertopal.com/en/convert/html-to-ipynb
+
+2) Maak de hoofdstuktitle een H1, dus: dus
+6: Tekenen met Turtle
+wordt 
+# 6: Tekenen met Turtle
+
+3) Maak alle opdrahcten een H2, dus
+Opgave 1.6 Vierkantje tekenen
+wordt
+## Opgave 1.6 Vierkantje tekenen
+
+4) Zet alle opdrachten of stukken tekst dat bij elkaar hoort in een eigen blokje, in VSC kan dat door de bijbehorende opdrachttekst te selecteren en dan CTRL+SHIFT+-
+
+OPDRACHTEN:
+1) Zet de uitleg van de opdracht boven het cel om code in te tikken.
+2) Maak een lege cel waar de leerlingen hun antwoord in kunnen typen. Als er in replit voorgegeven code staat, moet dan dat in de cel zitten.
+3) Zorg dat je de type van de cel aanpast naar Python
+4) De tekst met "Bekijk hier de voorbeelduitwerking." komt daaronder in een lege cel.
+
+
+
+5) Links naar videos met je met de hand erin zetten, bekijk dus hiervoor het originele html document!
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/IWvkVL3UtVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+6) Voorgegeven code moet je met de hand knip-plakken in een NIEUWE PYTHON cel. Gebruik hier de code uit de replit (niet wat in commentaar staat.. dat kan wel eens verouderd zijn). De link naar replit kan je makkelijk uit het originele HTML document halen.
+
+7) Er zijn geen regelenummers meer, dus als er in de opdracht staat, "bij/na regel x" dan moet de regelnummer vervangen worden door de code, bv:
+Breid de code uit na regel `turtle.forward(50)` zodat er een vierkant getekend wordt;
+
+8) Loop alles nog even door en kijk of het er goed uitziet. Check vooral op: filmpjes, images, uitvoerbare code en voorgegeven code bij opdrachten.
