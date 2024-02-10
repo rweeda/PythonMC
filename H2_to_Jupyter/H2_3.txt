@@ -1,0 +1,96 @@
+
+3: Getallen afdrukken
+
+<!--
+<table style="table-layout: auto;">
+    <tbody>
+        <tr>
+            <td>
+-->
+
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!-- IA H2_3 Getallen afdrukken </p>
+<h4>Getallen printen</h4>-->
+
+<p>Een <code>int</code> (geheel getal) of <code>float</code> (kommagetal) druk je op het scherm af met <code>print()</code>. Merk op dat een <code>float</code> geen komma, maar een punt heeft.</p>
+
+<!--
+<pre class="python">
+print( 5 )                     # druk getal 5 af
+print( 0.2 )                   # druk het kommagetal 0.2 af
+print( 5, 0.2 )                # druk eerst 5 af en dan 0.2
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H2H22v1?lite=true#main.html" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals" class="cursor-hover"></iframe></p>
+
+
+<!-- VOORBEELD: <iframe frameborder="0" width="100%" height="500px" src="REPL_URL?embed=true"></iframe>-->
+<!-- PROBEERSEL
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H2H22v1?embed=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+<!--<h3 id="opgave221">Opgave 2.2.1 Floats (kommagetallen) afdrukken</h3>-->
+
+<p class="opdracht">Opdracht 2.1: Floats (kommagetallen) afdrukken</p>
+
+<p class="cursor-hover">In de code hieronder willen we een <code>float</code> afdrukken, namelijk <code>3.14</code>. Maar, in plaats van een kommagetal drukt het programma eerst het getal 3 af, dan een spatie en dan 14. Run het programma. Kun jij de fout vinden en herstellen?</p>
+
+
+
+<!-- GIVEN
+<pre class="python">
+print( 3,14 )
+</pre>
+-->
+<p><iframe width="100%" height="400px" src="https://replit.com/team/InformaticaActief/221-Floats-afdrukken" data-dashlane-frameid="204" class="cursor-hover"></iframe></p>
+
+
+<!--ANTWOORD
+
+<pre class="python">
+print( 3.14 )
+</pre>
+-->
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/h4_oplossingen.html#opgave221)-->
+<!--
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave221" target="_blank">hier</a> de voorbeeld uitwerking.</p>
+-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave221" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<p class="opdracht">&nbsp;</p>
+
+
+<p>De komma werkt dus zo dat wat tussen haakjes staat als twee verschillende <i>parameters</i> (informatie voor de functie <code>print</code>) wordt gezien: eerste het ene printen, dan pas het tweede.</p>
+
+<!--ook goed om te melden dat het bij invoer ook zo is. Evt. ook de reden: de komma staat tussen twee parameters in een functie (print(3,14))!!-->
+
+<!-- HIER EINDIGT PAGINA INHOUD -->
+<!--
+            </td>
+            <td class="menu_zijkant">
+               
+                <p>1: Datatypes</p>
+
+
+                <p>2: Op het scherm afdrukken</p>
+                <p>3: Getallen afdrukken</p>
+                <p>4: Tekst afdrukken</p>
+                <p>5: Een rijtje gegevens afdrukken</p>
+                <p>6: Strings herhalend afdrukken</p>
+                <p>7: Strings achter elkaar afdrukken</p>
+                <p>8: Strings aan getallen plakken plakken</p>
+
+                <p>9: Gebruiker om invoer vragen</p>
+                <p>10: Gebruiker om een getal vragen</p>
+
+                <p class="cursor-hover">11: Rekenen met getallen</p>
+
+                <p class="cursor-hover">H2: Afsluitende opdrachten</p>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+-->

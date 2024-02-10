@@ -1,0 +1,26 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+4: Constanten
+<h2>Constanten</h2> -->
+<p><i>Constanten</i> zijn waarden die gedurende een
+    programma niet veranderen, zoals de minimumleeftijd om een
+    bepaalde achtbaan in te mogen. Om duidelijk aan te geven dat je de waarde
+    niet zomaar mag veranderen, geven we dit soort variabelen aan in
+    HOOFDLETTERS.</p>
+
+<p>Andere voorbeelden zijn: <code>PI</code>, <code>MINIMUMLOON</code>, <code>PENSIOENLEEFTIJD</code>.</p>
+
+<p>Constanten geef je bovenaan in je code een waarde. In je code gebruik je ze
+    net als andere variabelen.</p>
+
+<!--
+<pre class="python">
+PI = 3.14
+
+diameter = 2
+omtrek_cirkel =  diameter * PI
+
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H31v6?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+</p>

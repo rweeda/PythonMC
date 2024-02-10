@@ -1,0 +1,133 @@
+8: Strings aan getallen plakken
+
+<!-- 
+<table style="table-layout: auto;">
+    <tbody>
+        <tr>
+            <td class="cursor-hover">
+-->
+
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!-- IA H2_8   <p>8: Strings aan getallen plakken plakken</p>
+<h4>Strings aan getallen plakken zonder spatie (<i>plakken</i>)</h4>-->
+
+<p class="cursor-hover"><span style="font-size: 0.9375rem;">Met </span><code>+</code><span style="font-size: 0.9375rem;"> kun je:</span><br></p>
+<ul>
+    <li class="cursor-hover"> <code>4 + 3</code>: twee ints (getallen) bij elkaar optellen;</li>
+    <li class="cursor-hover"> <code>"Goede" + "morgen"</code>: twee strings (teksten) aan elkaar plakken.</li>
+</ul>
+<p class="cursor-hover">Maar een getal aan een tekst plakken gaat niet zomaar. Om dat te doen zet je het getal eerst om in een <code>string</code> met <code>str()</code>. Daarna kun je de twee strings aan elkaar plakken met een <code>+</code>:</p>
+
+<!-- GIVEN
+<pre class="python">
+print( str(4) + "euro")  # zet een getal om in een string, en plak het dan aan een andere string
+</pre>
+-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H22v6?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+
+<!--<h3 id="opgave225">Opgave 2.2.5 Getallen en Strings aan elkaar plakken</h3>-->
+<p class="opdracht">Opdracht 2.5: Getallen en Strings aan elkaar plakken</p>
+<p class="cursor-hover">De code hieronder geeft een foutmelding. Herstel de fout, maar <b>alleen door code toe te voegen</b>. Je mag dus geen aanhalingstekens weghalen.</p>
+
+<!-- GIVEN:
+<pre class="python">
+print( "Ik heb " + 2 + " fietsen.")
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/226-Strings-en-getallen-plakken" class="cursor-hover" data-dashlane-frameid="339"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave225" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/h4_oplossingen.html#opgave226)-->
+<!--
+<pre class="python">
+print( "Ik heb " + str(2) + " fietsen.")
+</pre>
+-->
+
+<!--<h3 id="opgave226">Opgave 2.2.6 (Komma)getallen en Strings aan elkaar plakken</h3>-->
+<p class="opdracht cursor-hover">Opdracht 2.6: (Komma)getallen en Strings aan elkaar plakken</p>
+<p>Pas de volgende code aan zodat <code class="cursor-hover">3.0gram</code> (aan elkaar!) wordt afgedrukt.</p>
+
+<!-- GIVEN:
+<pre class="python">
+print( 3.0,"gram")
+</pre>
+-->
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/226-Kommagetallen-en-getallen-plakken" class="cursor-hover" data-dashlane-frameid="340"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave226" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+<pre class="python">
+print( str(3.0)+"gram")
+</pre>
+-->
+
+<!--<h3 id="opgave227">Opgave 2.2.7 Een getal in tekst omzetten</h3>-->
+<p class="opdracht">Opdracht 2.7: Een getal in tekst omzetten</p>
+<p>Schrijf een programma dat, gegeven een bepaalde hoeveelheid zakgeld, de volgende tekst netjes afdrukt:</p>
+
+<p><i>Ik krijg 20.00 euro zakgeld.</i></p>
+
+<p>Tips:
+</p>
+<ul>
+    <li> Hiervoor moet je het getal 20 eerst naar een string omzetten. Daarvoor gebruik je <code>str(...)</code>;</li>
+    <li> Gebruik <code>+</code> om in een print de ".00" er achteraan te "plakken".</li>
+</ul>
+
+
+<!-- GIVEN
+<pre class="python">
+zakgeld = 20
+#print hier: Ik krijg 20.00 euro zakgeld.
+</pre>
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/227-zakgeld" class="cursor-hover" data-dashlane-frameid="341"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave227" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/h4_oplossingen.html#opgave227)-->
+<!--
+<pre class="python">
+zakgeld = 20
+print( "Ik krijg " + str(zakgeld) + ".00 euro zakgeld.")
+</pre>
+
+-->
+
+
+<!-- HIER EINDIGT PAGINA INHOUD -->
+
+<!--
+
+<p>1: Datatypes</p>
+
+
+<p>2: Op het scherm afdrukken</p>
+<p>3: Getallen afdrukken</p>
+<p>4: Tekst afdrukken</p>
+<p>5: Een rijtje gegevens afdrukken</p>
+<p>6: Strings herhalend afdrukken</p>
+<p>7: Strings achter elkaar afdrukken</p>
+<p>8: Strings aan getallen plakken plakken</p>
+
+
+<p>9: Gebruiker om invoer vragen</p>
+<p>10: Gebruiker om een getal vragen</p>
+
+
+<p>11: Rekenen met getallen</p>
+
+
+<p>H2: Afsluitende opdrachten</p>
+-->

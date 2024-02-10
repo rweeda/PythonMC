@@ -1,0 +1,26 @@
+<h4>Hoofdstuk 2 - Interactie</h4>
+<p>Je kunt interactie met de gebruiker
+    krijgen door op het scherm te printen en vragen aan de gebruiker te stellen.
+    Hoe je dat precies doet, is afhankelijk van wat je precies wilt
+    vragen of printen.</p>
+<p><span style="font-size: 1rem;">In dit
+        onderwerp:</span></p>
+<ul>
+    <li> leer je dat het datatype van een tekst een <code>string</code> heet, een geheel getal een <code>int</code> en een kommagetal een <code>float</code>;</li>
+    <li>leer je om tekst en/of getallen op het scherm te tonen met <code>print()</code>;
+    </li>
+    <li> leer je een <code>,</code> (komma) te gebruiken om meerdere dingen met spaties af te drukken;
+    </li>
+    <li> leer je <code>+</code> gebruiken om teksten zonder spatie aan elkaar te "plakken";
+    </li>
+    <li> leer je <code>input()</code> gebruiken om invoer van een gebruiker te krijgen en op te slaan;
+    </li>
+    <li> leer je de invoer van een gebruiker omzetten van <code>string</code> (tekst) naar<code> int</code> (geheel getal), of van <code>string</code> naar <code>float</code> (kommagetal);
+    </li>
+    <li> leer je een getal aan tekst plakken door met <code>str()</code> eerst het getal om te zetten naar een string (tekst) en het daarna met <code>+</code> aan de tekst te plakken;
+    </li>
+    <li> leer je rekenen met getallen ( <code>+, -, * /, **, % </code>) en waar nodig gebruik maken van haakjes.
+    </li>
+</ul>
+
+<div class="fa fa-clock-o fa-3x"></div><br> <b>2 uur</b>

@@ -1,0 +1,190 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.5
+
+5: Als-dan: if.. else constructie -->
+
+<!--
+<h2>Als-dan: <code>if.. else</code> constructie</h2>
+-->
+
+<!--[VIDEOUITLEG: if-else](https://web.microsoftstream.com/video/673a3775-f3a7-4b2a-a6e6-53d73eb13c15)-->
+<!--
+<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/673a3775-f3a7-4b2a-a6e6-53d73eb13c15?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/OYB2iEyDlH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+
+<p>De <code>if</code> kan uitgebreid worden met een <code>else</code>, een actie die uitgevoerd moet worden als de conditie in de <code>if</code> niet waar is.</p>
+<!--
+<p>Bekijk de code hieronder en kijk wat er gebeurt als je leeftijd op regel 1 aanpast.</p>-->
+<!--
+<pre class="python">
+print( "Hoe oud ben jij?" )
+invoer = input ()
+leeftijd = int(invoer)
+
+if leeftijd >= 17:
+	print( "Ja. Je mag je rijbewijs halen." )
+else:
+	print( "Nee. Je moet nog even wachten." )
+	
+print( "Klaar." )
+</pre>-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H42v4?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<p>Merk op:
+</p>
+<ul>
+    <li>Er staat een dubbele punt achter de <i>conditie</i> van de <code>if</code> en ook achter de <code>else</code>;
+    </li>
+    <li>De <i>acties</i> staan ingesprongen (met een <i>Tab</i> naar rechts);
+    </li>
+    <li>Als de conditie bij de <code>if</code> <code>True</code> is, worden de ingesprongen acties uitgevoerd (de <code>print</code> op regel 6);
+    </li>
+    <li>Als de conditie <code>False</code> is, dan worden de ingesprongen acties achter de <code>else</code> uitgevoerd (de <code>print</code> op regel 8);
+    </li>
+    <li>Het programma gaat daarna verder waar er niet meer is ingesprongen (regel 10). De regel met <code>print("Klaar")</code> wordt <b>altijd</b> uitgevoerd. Deze is niet ingesprongen en hoort daarom niet bij de <code>if</code> of bij de <code>else</code>.
+    </li>
+</ul>
+
+<!--
+<h3>Stroomdiagram met een <code>if.. else</code> constructie</p>-->
+
+<p>Het onderstaand stroomdiagram geeft het algoritme uit het voorbeeld hierboven weer:</p>
+<p><img src="https://moodle.informatica-actief.nl/draftfile.php/147455/user/draft/339668434/Python4_Stroomdiagram_leeftijdRijbewijs.jpg" alt="Figuur 6.2: Stroomdiagram van een twee-weg beslissing" width="450" height="466" class="img-fluid atto_image_button_text-bottom"></p>
+<!--<div align="center">
+Figuur 6.3: Stroomdiagram met een twee-weg keuze: bepalen leeftijd voor rijbewijs.
+</div>-->
+
+
+
+
+<p class="opdracht" id="opgave426">Opdracht 4.8 Van stroomdiagram naar code</p>
+<p>Schrijf de code die bij het onderstaand stroomdiagram hoort.</p>
+<!-- ANTWOORD
+<pre class="python">
+x = 4
+if x > 2 :
+    print( "x > 2" )
+else:
+    print( "x <= 2" )
+</pre>
+-->
+
+<p><img src="https://moodle.informatica-actief.nl/draftfile.php/147455/user/draft/339668434/Python4_opg426_StroomdiagramKeuze.jpg" alt="Figuur 6.1: Stroomdiagram van een twee-weg beslissing" width="350" height="316" class="img-fluid atto_image_button_text-bottom"></p>
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/426-Van-stroomdiagram-naar-code"></iframe></p>
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave426)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave426" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave427">Opgave 4.9 Batterij is bijna leeg!</p>
+<p>Een app op een smartphone geeft een waarschuwing als de batterij bijna leeg is: minder dan 10%.</p>
+
+<!--De code hieronder drukt een waarschuwing af als <code>batterij_energie < 10</code>, dus als de waarde van <code>batterij_energie</code> onder de 10% komt.-->
+
+<p>Geef de variabele <code>batterij_energie</code> een waarde zodat de waarschuwing geprint wordt dat de batterij bijna leeg is.</p>
+
+
+<!-- GEGEVEN CODE:
+<pre class="python">
+
+batterij_energie = 30
+
+if batterij_energie < 10:
+    print ("True. Let op: batterij is bijna leeg. ")
+else:
+    print ("False. Dus batterij is NIET bijna leeg.")
+</pre>
+-->
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave411)-->
+<!-- ANTWOORD
+
+batterij_energie = 2
+
+if batterij_energie < 10:
+    print ("True. Let op: batterij is bijna leeg. ")
+else:
+    print ("False. Dus batterij is NIET bijna leeg.")
+
+-->
+
+<p><iframe width="100%" height="300px" src="https://repl.it/team/InformaticaActief/427-Batterij-is-bijna-leeg"></iframe></p>
+
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave427)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave427" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+
+
+<!-- <p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/844472/b37966a28bd0001eb4e8f2330c8ad5ab"></iframe></p>
+<!--Klik <a href="Condities_oplossingen.html#opgave-6.1.1-batterij-energie">hier</a> om je eigen oplossing te vergelijken met een model oplossing.-->
+
+
+<p class="opdracht" id="opgave428">Opdracht 4.10 Wachtwoordcontrole</p>
+<p>De gebruiker moet een wachtwoord invoeren om toegang te krijgen. Het geheime wachtwoord is: <i>Geheim</i>.</p>
+
+<p>Vul de juiste conditie aan bij de <code>if</code> om te controleren of het ingevoerde wachtwoord juist is.</p>
+
+<!-- GEGEVEN CODE
+<pre class="python">
+print("Wat is het wachtwoord?")
+ingevoerde_wachtwoord = input()
+
+if #controleer hier of het ingevoerde wachtwoord gelijk is aan "Geheim"
+    print("Toegang geautoriseerd!")
+else:
+    print("Toegang geweigerd!")
+</pre>
+-->
+
+<p><iframe width="100%" height="300px" src="https://repl.it/team/InformaticaActief/428-Wachtwoordcontrole"></iframe></p>
+<!-- antwoorden
+<pre class="python>
+print("Wat is het wachtwoord?")
+ingevoerde_wachtwoord = input()
+
+if ingevoerde_wachtwoord == "Geheim":
+    print("Toegang geautoriseerd!")
+else:
+    print("Toegang geweigerd!")
+</pre>
+	
+	-->
+
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave428)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave428" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="opgave429">Opdracht 4.11 Voldoende of onvoldoende</p>
+<p>Vul het programma hieronder aan zodat het de gebruiker vraagt om een toetscijfer en dan print of het voldoende is of niet. Een 5,5 is een voldoende.</p>
+<!-- GEGEVEN CODE:
+<pre class="python">
+print("Wat is je cijfer?")
+invoer = input()
+ingevoerde_cijfer = float( invoer )
+</pre>
+-->
+<p><iframe width="100%" height="300px" src="https://repl.it/team/InformaticaActief/429-Voldoende-of-onvoldoende"></iframe></p>
+<!-- antwoorden
+<pre class="python>
+print("Wat is je cijfer?")
+invoer = input()
+ingevoerde_cijfer = float( invoer )
+
+if ingevoerde_cijfer >= 5.5:
+    print("Voldoende.")
+else:
+    print("Jammer, onvoldoende")
+</pre>
+	
+-->
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave429)-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave429" target="_blank">hier</a> de voorbeelduitwerking.</p>

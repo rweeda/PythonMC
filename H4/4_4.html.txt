@@ -1,0 +1,219 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.4
+<p>4: Meerdere if constructies achter elkaar</p> -->
+
+
+<!--
+<h4 id="H42">H4.2 - Keuzes met de <code>if</code> constructie </h4>
+
+<h2>Meerdere <code>if</code> constructies achter elkaar </h2>
+-->
+<!--
+[VIDEOUITLEG: meerdere if's](https://web.microsoftstream.com/video/fd58830e-a87d-4699-ae82-448bc46eabce)
+-->
+<!--<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/fd58830e-a87d-4699-ae82-448bc46eabce?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p></p></p>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/2TOR-Sa_dac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+<p>Je kunt ook meerdere <code>if</code>'s achter elkaar hebben. Na de code die bij de eerste <code>if</code> hoort, begin je, waar er niet meer is ingesprongen, als het ware opnieuw.</p>
+
+<!--
+<pre class="python">
+kleur = "groen"
+vervoer = "fiets"
+
+if kleur == "groen":
+	print("Groen is mooi")
+
+if vervoer == "fiets":
+	print("fietsen is fijn")
+</pre>
+-->
+
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/H42v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Het onderstaand stroomdiagram geeft het algoritme weer van het voorbeeldprogramma hierboven:</p>
+
+<p><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python4_Stroomdiagram_dubbeleIf.jpg" alt="Stroomdiagram voor meerdere if's" width="500"></p>
+<p>Nog een voorbeeld met meerdere <code>if</code>'s achter elkaar:</p>
+<!--
+<pre class="python">
+x = 5
+if x == 5:
+    print( "x is 5" )
+if x > 4:
+    print( "x is groter dan 4" )
+if x != 5 :
+    print( "x is ongelijk aan 5" )
+if x < 6:
+    print( "x is kleiner dan 6" )
+</pre>
+-->
+
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/H42v3?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+Het onderstaand stroomdiagram geeft het algotime weer van het voorbeeldprogramma hierboven:</p>
+<p><img src="../img/Python6_Stroomdiagram_waardeVanX.jpg" alt="Stroomdiagram voor meerdere if's" width="500"></p>-->
+<!--<div align="center">
+Figuur 4.1: Stroomdiagram voor een algoritme met <code>if</code>'s achter elkaar.
+</div>-->
+<!--Python6_Stroomdiagram_waardeVanX.jpg-->
+
+
+<p class="opdracht" id="opgave422">Opdracht 4.4 Beide <code>if</code>'s uitvoeren </p>
+<p>Pas de waarde van <code>getal</code> aan zodat zowel <i>A</i> als <i>B</i> wordt afgedrukt.</p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave422)-->
+<!--
+<pre class="python">
+getal = 6
+
+if getal <= 3:
+        print( "A" )
+
+if getal < 6:
+        print( "B" )
+</pre>
+-->
+<!-- ANTWOORD
+Alle waarden kleiner of gelijk aan 3
+<pre class="python">
+getal = 5
+
+if getal <= 3:
+        print( "A" )
+
+if getal < 6:
+        print( "B" )
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/422-Beide-ifs-uitvoeren"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave422" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave423">Opdracht 4.5 Meerdere <code>if</code>'s</p>
+<p>Wijzig de waarde van <code>x</code> zodat ABCEF wordt afgedrukt (D wordt dus niet afgedrukt).</p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave423)-->
+
+<!-- ANTWOORD
+<code>x=6</code>
+-->
+
+<!--
+<pre class="python">
+x = 10
+if x > 5:
+    print( "A" )
+if x >= 6:
+    print( "B" )
+if  x < 8 :
+    print( "C" )
+if x <= 5:
+    print( "D" )
+if x != 7:
+    print( "E" )
+if x <= 6 :
+    print( "F" )
+</pre>
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/423-Meerdere-ifs"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave423" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="opgave424">Opdracht 4.6 Meerdere getallen dobbelen </p>
+<p>Hieronder staat code die hoort bij het gooien van een dobbelsteen. Als je een 6 gooit, is dat goed, maar als je een 1 gooit, ben je af.</p>
+<p>
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Test of er <i>"Yes! Je hebt een 6 gegooid"</i> wordt geprint als je een 6 gooit.
+    </li>
+    <li>Breid de code uit zodat, als je <i>niet</i> een 1 gooit, er <i>"Gelukkig, je hebt geen 1 gegooid"</i> geprint wordt.
+    </li>
+    <li>Test je code met verschillende waarden van <code>dobbelworp</code>.
+    </li>
+    <li>Pas de waarde van <code>dobbelworp</code> aan zodat er twee zinnen afgedrukt worden.
+    </li>
+</ol>
+<p></p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave424)-->
+<!--
+<pre class="python">
+dobbelworp = 4
+
+if dobbelworp == 6 :
+	print("Yes! Je hebt een 6 gegooid")
+
+#SCHRIJF HIER JE CODE
+-->
+
+<!-- ANTWOORD
+<pre class="python">
+dobbelworp = 6 #met 6 worden beide zinnen afgedrukt
+
+if dobbelworp == 6 :
+	print("Yes! Je hebt een 6 gegooid")
+
+if dobbelworp != 1:
+	print("Gelukkig, je hebt geen 1 gegooid")
+
+</pre>
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/424-Meerdere-getallen-dobbelen"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave424" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="opgave425">Opdracht 4.7 Welke letters zitten in een woord</p>
+<p>Schrijf code die voor het woord 'informatica' test of:</p>
+<p>
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>de letter 'a' erin voorkomt;
+    </li>
+    <li>de letter 'b' erin voorkomt;
+    </li>
+    <li>de reeks letters 'inf' erin voorkomt;
+    </li>
+    <li>de letter 'q' er <b>niet</b> in voorkomt.
+    </li>
+</ol>
+<p></p>
+
+<p>Voor ieder van de bovenstaande situaties print je een melding, bijvoorbeeld: "De letter i zit in het woord informatica".</p>
+<p>Zie hoofdstuk "2: In-operator" voor uitleg over de <code>in</code> operator.</p>
+<!-- antwoord:
+
+<pre class="python">
+woord = "informatica"
+
+if "a" in "informatica":
+    print("De letter i zit in het woord " + woord)
+
+if "b" in "informatica":
+    print("De letter I zit in het woord " + woord)
+
+if "inf" in "informatica":
+    print("De letters inf zitten in het woord " + woord)
+
+if "q" not in "informatica":
+    print("De letter q zit niet in het woord " + woord)
+</pre>
+-->
+
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave425)-->
+<!-- GIVEN:
+<pre class="python">
+woord = "informatica"
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/425-Welke-letters-zitten-in-woord"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave425" target="_blank">hier</a> de voorbeelduitwerking.</p>

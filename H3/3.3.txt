@@ -1,0 +1,47 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--	3: Opslaan van een variabele
+<p><b>Waarde van een variabele veranderen</b></p>
+
+<h2>Opslaan van een variabele</h2>-->
+<p>Een veel gemaakte fout is om een variabele aan te passen, maar de nieuwe waarde niet op te slaan.
+    Bekijk de code hieronder. Wat verwacht je dat de waarde van <code>mijnGeluksgetal</code> na afloop is?</p>
+
+<!--
+<pre class="python">
+mijnGeluksgetal = 13
+print( mijnGeluksgetal + 1 )
+print( mijnGeluksgetal )
+</pre>
+-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H31v5?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Zoals je ziet, wordt in de eerste print 14 afgedrukt, maar <code>mijnGeluksgetal</code> zelf is niet veranderd. Er ontbreekt een <code>mijnGeluksgetal = ...</code></p>
+
+
+
+<p class="opdracht">Opdracht 3.4 Waarde van een variabele aanpassen en opslaan
+
+</p>
+<p>Pas de code aan zodat de waarde van <code>mijnGeluksgetal</code> na afloop 14 is.</p>
+<!-- GEGEVEN CODE:
+<pre python="code">
+mijnGeluksgetal = 2
+mijnGeluksgetal = mijnGeluksgetal + 1
+print(mijnGeluksgetal)
+</pre>-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/314-Waarde-van-een-variabele-aanpassen-en-opslaan"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave314)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave314" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- antwoord:
+
+<pre class="python">
+
+mijnGeluksgetal = 13
+mijnGeluksgetal = mijnGeluksgetal + 1
+print(mijnGeluksgetal)
+</pre>
+
+-->
