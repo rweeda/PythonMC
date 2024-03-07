@@ -1,0 +1,143 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+<p>11: Leesbaarheid</p>
+<h1 id="H55">H5.5 - Leesbaarheid</h1>
+-->
+<p><b>Overzichtelijke code</b></p>
+<p>Code wordt leesbaarder door:
+</p>
+<ul>
+    <li>goede keuze van variabelenamen en functienamen: zinvol en volgens conventies (zoals <code>var_naam</code> of <code>functienaam</code>);
+    </li>
+    <li>gebruik te maken van witregels tussen functies of blokken code die bij elkaar horen;
+    </li>
+    <li>code bij elkaar te zetten die bij elkaar hoort, zoals het scheiden van functiedefinities van het hoofdprogramma;
+    </li>
+    <li>globale variabelen (constanten en variabelen die door het hele programma gebruikt worden) bij elkaar bovenaan de code te zetten.
+    </li>
+</ul>
+<p></p>
+
+
+
+<p><b>Functies om leesbaarheid te verbeteren</b></p>
+<p>Je code wordt ook overzichtelijker als je code die bij elkaar hoort en dus een doel heeft, bij elkaar zet in een functie. Het doel vat je samen in de functienaam. Een functie hoort geen zijeffecten te hebben. Ze doet wat de samenvatting zegt en verder niks. Dat wil zeggen, een functie <code>isEven()</code> bepaalt of een getal even of oneven is, maar doet verder helemaal niks! Anders wordt het namelijk moeilijker om over je code te redeneren.</p>
+
+<p><b>Commentaar om leesbaarheid te verbeteren</b></p>
+
+<p><i>Commentaar</i> is bedoeld om code toe te lichten. Commentaar geef je aan met een <code>#</code>. Python negeert deze tijdens de uitvoering. Commentaar is niet alleen nuttig voor anderen die je code lezen, maar ook voor jezelf, aangezien je soms je eigen code later nog moet wijzigen. Gebruik het dus om blokken code samen te vatten, ingewikkelde code uit te leggen of als je een bestaande functie voor het eerst gebruikt, uit te leggen wat deze doet.</p>
+
+
+<pre code="python">#Deze functie heeft als doel om ....
+def doeIets():
+	print( "Iets..." ) # Dit is commentaar
+</pre>
+
+
+<p><b>Functiecommentaar</b></p>
+<p>Het idee achter een functie is dat de gebruiker van de functie de code van de functie niet hoeft te kennen. Functiecommentaar schrijf je boven iedere functiedefinitie. Met functiecommentaar geef je aanwijzingen over het gebruik van je functie:
+</p>
+<ul>
+    <li>Samenvattend: hoe de functie werkt;</li>
+    <li>Onder welke omstandigheden de functie (niet) goed werkt;</li>
+    <li>Welke parameters meegegeven moeten worden;</li>
+    <li>Wat de functie retourneert, ook bij ongeldige invoer.</li>
+</ul>
+<p></p>
+
+<p>
+    Bijvoorbeeld:
+</p>
+<!--
+<p><iframe height="800px" width="100%" src="https://repl.it/@smer/Th89b?lite=true#main.py" scrolling="no"
+frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+<!--
+<pre class="python">
+### FUNCTIEDEFINITIE
+#Doel: rekent aantal kilometers (groter of gelijk aan 0) om naar meters
+#Invoer: kilomters, als int of float
+#Uitvoer: meters, als int of float (zelfde type als de invoer)
+def rekenKmNaarMeters(afstand_in_km):
+	afstand_in_m = afstand_in_km * 1000
+	return( afstand_in_m )
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+aantal_meters = rekenKmNaarMeters( 4 )
+print( aantal_meters )
+</pre>
+-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H55v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p><b>Strategie: Commentaar gebruiken tijdens debuggen</b></p>
+
+<p>Je kunt commentaar ook goed gebruiken om de oorzaak van fouten in je code op te sporen. Met <code>#</code> kan je een regel in commentaar zetten. Die doet dan niet meer mee aan het programma. Zo kun je uitsluiten dat de regel een fout veroorzaakt. Ook kun je meerdere regels in commentaar zetten en regel voor regel het commentaar weghalen om zo te ontdekken wat de fout veroorzaakt.</p>
+
+<p><b>Tip: meerdere regels in &eacute;&eacute;n keer in commentaar:</b>
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Selecteer de code die je in commentaar wilt zetten.
+    </li>
+    <li>Druk gelijktijdig op <b>Ctrl + /</b> om de geselecteerde regels allemaal in één keer in commentaar te zetten.
+    </li>
+    <li>Run de code. Is de fout opgelost? Dan zit de fout in de code die je net in commentaar hebt gezet.
+    </li>
+    <li>Haal één regel uit commentaar en run de code opnieuw.
+    </li>
+    <li>Herhaal regel voor regel totdat je de oorzaak van de fout hebt ontdekt.
+    </li>
+</ol>
+<p></p>
+
+
+<p class="opdracht" id="opgave551">Opdracht 5.7 Commentaar</p>
+<p>Het onderstaande programma staat helemaal in commentaar.
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Selecteer alle code en haal, met behulp van <b>Ctrl + /</b>, het hele programma uit commentaar.
+    </li>
+    <li>Voeg commentaar toe om de functiedefinities van het hoofdprogramma te scheiden. Gebruik hiervoor <code>### FUNCTIEDEFINITIE</code> en <code>### HOOFDPROGRAMMA</code>.
+    </li>
+    <li>Zoals na elke wijziging: test het programma.
+    </li>
+</ol>
+<p></p>
+
+<!-- GEGEVEN CODE
+<pre class="python">
+# def rekenKmNaarMeters(afstand_in_km):
+# 	afstand_in_m = afstand_in_km * 1000
+# 	return( afstand_in_m )
+	
+# aantal_meters = rekenKmNaarMeters( 4 )
+# print( aantal_meters )
+</pre>
+-->
+
+<!-- <p><iframe height=600px width=100% src=https://repl.it/@ProgrammereninP/H5551-Commentaar></iframe></p>-->
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/551-Commentaar"></iframe></p>
+
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H5_oplossingen.html#opgave551" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+
+<br>
+<br>
+<!-- ANTWOORDEN
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H5_oplossingen.html#opgave551)
+-->
+<!-- ANTWOORD
+### FUNCTIEDEFINITIE
+def rekenKmNaarMeters(afstand_in_km):
+	afstand_in_m = afstand_in_km * 1000
+	return( afstand_in_m )
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+aantal_meters = rekenKmNaarMeters( 4 )
+print( aantal_meters )
+-->

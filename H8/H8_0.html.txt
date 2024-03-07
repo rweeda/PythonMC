@@ -1,0 +1,26 @@
+<!-- Hoofdstuk 8 - Herhalingen met een for-loop -->
+
+<h4><img src="https://moodle.informatica-actief.nl/draftfile.php/147455/user/draft/956941491/image.png" alt="" width="300" height="259" role="presentation" class="img-responsive atto_image_button_right">Hoofdstuk 8 - Herhalingen met een for-loop</h4>
+
+
+<p>Om dingen te herhalen kun je behalve een <code>while</code>-loop ook soms een <code>for</code>-loop gebruiken.</p>
+
+
+<p>Een <code>while</code>-loop kan voor elke herhaling gebruikt worden. Een <code>for</code>-loop kun je alleen gebruiken als vooraf duidelijk is hoe vaak de code in de loop herhaald moet worden.</p>
+
+
+<p><span style="font-size: 1rem;">In dit onderwerp:</span></p>
+<ul>
+    <li>leer je een <code>for</code>-loop te gebruiken om een actie herhaaldelijk uit te voeren;
+    </li>
+    <li>leer je <code>range()</code> met 1 parameter te gebruiken om te bepalen hoe vaak een actie herhaald moet worden. Bijvoorbeeld: <code>for teller in range(5):</code>
+    </li>
+    <li>leer je <code>range()</code> met 2 parameters te gebruiken om startwaarde en eindgrens van een herhaling aan te geven. Bijvoorbeeld: <code>for teller in range(2,7):</code>
+    </li>
+    <li>leer je <code>range()</code> met 3 parameters te gebruiken om startwaarde, eindgrens en stapgrootte van een herhaling aan te geven. Bijvoorbeeld: <code>for teller in range(2,13,3):</code>
+    </li>
+</ul>
+<p></p>
+
+
+<div class="fa fa-clock-o fa-3x"></div><br> <b>1 uur</b>
