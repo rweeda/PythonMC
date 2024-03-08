@@ -1,0 +1,243 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+7: Verkorte operatoren
+<h1 id="H3AfOpgaven">H3 - Variabelen: Afsluitende Opgaven</h1>
+-->
+<p>Met de volgende afsluitende opdrachten kun je kijken hoe goed je de stof beheerst. Controleer steeds je eigen oplossing met de voorbeeldoplossing.</p>
+
+<hr>
+
+
+<p class="opdracht">Afsluitende opdracht 3.1 Gemiddelde berekenen
+</p>
+<p>Schrijf een programma dat de gebruiker om drie getallen vraagt, het gemiddelde van die drie getallen berekent, en daarna afdrukt: "Het gemiddelde is...". Er is al een begin voor je gemaakt.</p>
+
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave31)-->
+
+<!-- GIVEN
+
+print( "Geef een getal:" )
+invoer = input()
+getal1 = int(invoer)
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af31-Gemiddelde-berekene"></iframe></p>
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave31" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- ANTWOORD
+<pre class="python">
+print( "Geef een getal:" )
+invoer = input()
+getal1 = int(invoer)
+
+print( "Geef een getal:" )
+invoer = input()
+getal2 = int(invoer)
+
+print( "Geef een getal:" )
+invoer = input()
+getal13 = int(invoer)
+
+gemiddelde = ( ( getal1 + getal2 + getal3 ) /3 )
+print( "Het gemiddelde is", gemiddelde )
+</pre>
+-->
+
+
+
+
+<p class="opdracht">Afsluitende opdracht 3.2 Temperatuur
+</p>
+<p>Je hebt een penvriend in Amerika. Hij schrijft dat het bij hem 90 graden is! Stomverbaasd hoe het zo warm kan zijn, vraag je hulp aan het internet. Je komt erachter dat hij praat over temperatuur in Fahrenheit, terwijl jij dacht aan graden Celsius. Om goed met elkaar te kunnen praten over het weer, besluit jij een programma te maken dat Fahrenheit in Celsius kan omzetten. Hier zijn de formules voor het omrekenen:<br></p>
+
+<p><code>Celsius = (Fahrenheit - 32) * 5/9</code></p>
+
+<p>Schrijf een programma dat een temperatuur in Fahrenheit omrekent naar Celsius. Rond af op 1 decimaal.</p>
+<p>Druk dit netjes af met een volzin, zoals:</p>
+<p><i>90 graden Fahrenheit is 32.2 graden Celsius.</i></p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af32-Temperatuur"></iframe></p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave32)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave32" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- ANTWOORD
+<pre class="python">
+print("Geef een temp in Fahrenheit: ")
+invoer = input()
+temp_fahrenheit= float(invoer)
+temp_celsius = ((temp_fahrenheit) - 32) * 5/9
+temp_celsius = round( temp_celsius, 1 )
+print("Temperatuur in Celsius is:", temp_celsius)
+</pre>
+
+-->
+
+
+<p class="opdracht">Afsluitende opdracht 3.3 Verwisseltruc
+
+</p>
+<p>Kun je een manier bedenken om de inhoud van twee variabelen om te wisselen? Je mag een derde hulpvariabele gebruiken.</p>
+<!-- GEGVEN:
+beker1 = "cola"
+beker2 = "sinas"
+
+
+print("nu heeft beker1:", beker1, "en beker2:", beker2)-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af33-Verwisseltruc"></iframe></p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave33)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave33" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--
+<pre class="python">
+beker1 = "cola"
+beker2 = "sinas"
+beker_tijdelijk = beker1
+beker1 = beker2
+beker2 = beker_tijdelijk
+print( “nu heeft beker1:“, beker1, "en beker2:", beker2 )
+</pre>
+
+-->
+
+
+
+
+
+
+<p class="opdracht">Afsluitende opdracht 3.4 Zielenknijper
+
+</p>
+<p>Schrijf een programma waarin je een gesprekje met een gebruiker kunt voeren. Het programma moet interactief zijn en minstens vijf vragen bevatten.
+    Een voorbeeld van hoe zo'n gesprekje eruit kan zien:</p>
+<p>
+        <i>
+        "Hallo, ik ben dr. Zielenknijper. Welkom. Mag ik je naam weten?"<br>
+        "Dag, ... "<br>
+
+        "Hoe oud ben jij?"<br>
+
+        "Je bent al ... jaar oud."<br>
+
+        "Waar wil je met mij over praten?"<br>
+
+        "Zo, wil je me vertellen wat je boeit aan ..."<br>
+
+        "Hmm, vertel verder"</i><br>
+    ... enzovoorts
+</p>
+
+
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af34-Zielenkijper"></iframe></p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave34)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave34" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+<pre class="python">
+print("Hallo, ik ben dr. Zielknijper. Welkom.")
+print("Hoe heet jij?")
+naam = input()
+print("Dag, " + naam)
+print("Hoe oud ben jij?")
+ingevoerde_leeftijd = input()
+leeftijd = int(ingevoerde_leeftijd)
+print("Je bent al" + str(ingevoerde_leeftijd) + "jaar oud.")
+</pre>
+-->
+
+
+
+<p class="opdracht">Afsluitende opdracht 3.5 Kortingsrad
+
+</p>
+<p>Bij een online winkel mag je draaien aan een rad om te bepalen hoeveel korting je krijgt.</p>
+
+<p>Schrijf een programma dat de gebruiker om zijn aankoopbedrag vraagt, dan een willekeurige korting tussen de 0% en 25% bepaalt en het nieuwe bedrag print.</p>
+<p>Tips:
+</p>
+<ul>
+    <li>Gebruik <code>randomint</code> uit de module <code>random</code> om een willekeurig getal tussen de 0 en 25 te maken.
+    </li>
+    <li>Het bedrag met korting bereken je zo: <br><code>nieuw_bedrag = bedrag * (1 - kortingspercentage/100)</code>.
+    </li>
+    <li>Rond het nieuwe bedrag af op twee decimalen met <code>round()</code>.<p></p>
+    </li>
+</ul>
+<p></p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af35-Kortingsrad"></iframe></p>
+<!-- https://replit.com/team/InformaticaActief/Af35-Kortingsrad-->
+
+<!-- ANTWOORD
+<pre class="python">
+import random
+
+print("Geef je aankoopbedrag op:")
+invoer = input()
+bedrag = float (invoer)
+
+kortings_percentage = random.randint(0,25)
+print("Je krijgt " + str(kortings_percentage) + "% korting op" + str(bedrag) + "euro.")
+
+nieuw_bedrag = bedrag * (1+ kortings_percentage/100)
+nieuw_bedrag = round (nieuw_bedrag, 2)
+print("Het nieuwe bedrag is " + str(nieuw_bedrag) + "euro")
+</pre>
+-->
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H3_oplossingen.html#AfOpgave35)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave35" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht">Afsluitende opdracht 3.6 Bitcoins
+
+</p>
+<p>Op 24 december 2020 was een bitcoin 19396,23 euro waard.</p>
+
+<p>Schrijf een programma dat berekent hoeveel bitcoins je met een bepaald bedrag kan kopen:
+</p>
+<ol>
+    <li> Gebruik een constante om de waarde van de bitcoin op te slaan. Denk aan hoofdletters.
+
+    </li>
+    <li> Vraag de gebruiker hoeveel euro die te besteden heeft en sla dit op in een variabele.
+
+    </li>
+    <li> Reken dit bedrag om naar bitcoins. Gebruik hiervoor de variabelen/constanten. Hint: gebruik <code>round()</code> om het resultaat af te ronden op twee cijfers achter de komma.
+
+    </li>
+    <li> Druk dit netjes af met een volzin, zoals: <i>Met 40000 euro kun je 2.06 bitcoins kopen.</i>
+
+    </li>
+    <li> Voeg ook commentaar toe.
+    </li>
+</ol>
+<p></p>
+
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af36-Bitcoins"></iframe></p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H3_oplossingen.html#AfOpgave36)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#AfOpgave36" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+<pre class="python">
+#rekent euro's om naar bitcoins
+BITCOIN_WAARDE = 19396.823
+
+print("Hoeveel euro heb je te besteden?")
+invoer = input()
+euros = int(invoer)
+
+bitcoins = round( euros / BITCOIN_WAARDE, 2) #afronden op 2 cijfers achter de komma
+
+print( "Met", euros, "euro kun je", bitcoins, "bitcoins kopen.")
+</pre>
+
+-->
+
+
+<!-- HIER EINDIGT PAGINA INHOUD -->
