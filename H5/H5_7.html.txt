@@ -1,0 +1,47 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+
+<p>Functies met en zonder parameters en retourwaarden</p>
+
+<h1 id="H54">H5.4 - Functies met en zonder parameters en retourwaarden</h1>
+-->
+<p><i>Functies</i> bij het programmeren zijn net als functies die iemand heeft in een bedrijf: ze moeten <i>iets doen</i>. Soms moet die persoon informatie van je hebben om zijn werk goed te doen (invoer). Soms levert het een concreet product op (iemand maakt iets voor je) en soms een dienst (iemand doet iets voor je). Neem de bakker bijvoorbeeld:
+</p>
+<ul>
+    <li>Wat doet de bakker? Hij bakt brood.</li>
+    <li>Welk informatie heeft de bakker van je nodig? Hij moet weten welk brood je wilt en bijvoorbeeld of je een heel of een half brood wilt. Deze informatie geef je aan de bakker (als parameter).</li>
+    <li>Wat geeft de bakker jou? De bakker levert een brood op dat hij aan jou geeft (als retourwaarde).</li>
+</ul>
+<p></p>
+
+<p><b>Algemene uitleg over verschillende soorten functies</b></p>
+
+<!--
+Iemand die werkt moet iets doen, een buschauffeur rijdt de bus en stopt bij bushaltes, iemand die aan een kassa werkt bepaalt wat je moet betalen, een lerares helpt je iets te leren ... we zeggen dat iemand die werkt een functie heeft, ze doet iets, of ze levert iets op.
+-->
+<p>Je hebt verschillende soorten functies:
+</p>
+<ol type="I">
+    <li><i>Zonder parameters, zonder retourwaarde</i> (zie dit hoofdstuk, paragraaf '8: Functies zonder parameters of retourwaarde'): <p>Deze geef je geen informatie (dus <b>zonder parameters</b>) en ze geven niets terug (dus
+            leveren <b>geen retourwaarde</b> op) Soms kan iemand iets doen zonder dat hij of zij daar specifiek
+            informatie voor nodig heeft en zonder dat er echt een tastbare retourwaarde (of resultaat) opgeleverd wordt.
+            Bijvoorbeeld: de buschauffeuse. Zij rijdt rondjes en stopt op vaste locaties, je stapt in de bus, je hoeft haar
+            niet te vertellen waar ze heen (geen parameters) moet rijden en ze geeft jou ook niets (levert geen concreet
+            resultaat op).</p>
+    </li>
+
+    <li><i>Met parameters, zonder retourwaarde</i> (zie dit hoofdstuk, paragraaf '9: Functies met parameters'): <p>Deze geef je
+            wel informatie (dus <b>met parameters</b>), maar ze geven niets terug (dus leveren <b>geen retourwaarde</b> op). Soms heeft iemand specifieke informatie nodig om iets te doen, maar het hoeft niet per se een
+            tastbare retourwaarde (of resultaat) op te leveren. Bijvoorbeeld: de bibliothecaresse die boeken inneemt. Je
+            geeft haar jouw boeken, zij registreert dat je ze in hebt geleverd en zet ze op de juiste plek terug in de
+            bibliotheek.</p>
+    </li>
+
+    <li><i>Met parameters, met retourwaarde</i> (zie hoofdstuk 6, paragraaf '2: Functies met een retourwaarde'): <p>Aan deze geef je wel informatie (dus <b>met parameters</b>), en ze geven je iets terug (dus leveren <b>met
+                <code>return</code></b> een concrete retourwaarde op). Soms heeft iemand specifieke informatie om iets te doen en geeft hij je ook iets terug (een resultaat) waar je daarna iets mee kan doen. Bijvoorbeeld: de loketmedewerker bij een geldwisselkantoor. Je geeft haar euro’s omdat je dollars nodig hebt voor je vakantie in Amerika, ze berekent hoeveel dollars die euro’s waard zijn en geeft je dollars terug.</p>
+    </li>
+
+    <li><i>Zonder parameters, met retourwaarde</i> (zie hoofdstuk 6, paragraaf '3: Functies met retourwaarden en parameters'):
+        <p>Aan deze geef je geen informatie (dus <b>zonder parameters</b>), maar ze geven je wel iets terug (dus leveren <b>met <code>return</code></b> een concrete retourwaarde). Soms heeft iemand geen specifieke informatie nodig om iets te doen, maar geeft je wel iets terug (een resultaat) waar je daarna iets mee kan doen. Bijvoorbeeld: een verkeersregelaar. Die geeft aanwijzingen voor wat je moet doen.</p>
+    </li>
+</ol>

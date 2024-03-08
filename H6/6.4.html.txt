@@ -1,0 +1,58 @@
+<!-- HIER BEGINT PAGINA INHOUD
+<p>4: Globale variabelen</p>
+<h1 id="64">H6.4 - Globale variabelen</h1>
+-->
+
+<p><i>Globale variabelen</i> zijn variabelen die je voor meerdere functies van je programma nodig hebt. Globale variabelen definieer je bovenaan je programma. Het verschil met lokale variabelen is dat lokale variabelen alleen bestaan binnen de functie of het blok code waarin ze gedeclareerd worden.</p>
+
+
+<p>Het is een goede gewoonte om zo min mogelijk globale variabelen te gebruiken. Als je een variabele in een aantal functies gebruikt en de waarde aanpast, wordt het onoverzichtelijk wat er allemaal met die waarde gebeurt. Zo wordt het lastig om te redeneren over wat je code doet en wordt het opsporen van fouten nog lastiger. Als je een bepaalde waarde binnen meerdere functies wilt gebruiken, kun je dat het beste doen door ze door te geven als parameters en retourwaarden. In het voorbeeld hieronder zie je hoe de prijs (zonder BTW) als parameter aan de functie wordt gegeven, en de prijs inclusief BTW wordt geretourneerd. </p>
+
+<p><b>Constanten</b></p>
+<p><i>Constanten</i> zijn variabelen die gedurende het programma niet veranderen, maar die je in je programma wel op meerdere plekken gebruikt. Deze kan je dan wel als globale variabelen gebruiken. De naam van een constante geef je met hoofdletters aan en zet je bovenaan je programma. In het voorbeeld hieronder zie je dat er voor <code>PERC_BTW</code> een constante wordt gebruikt.</p>
+<!--Th8.14
+
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/KortingDef?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+<!--
+<pre class="python">
+#GLOBALE VARIABELEN
+PERC_BTW = 21
+
+### FUNCTIEDEFINITIE
+#Doel: bereken prijs van een artikel met BTW, zoals in advertentie mag staan
+def berekenPrijsMetBTW( prijs_zonder_BTW ):
+	prijs_met_BTW = prijs_zonder_BTW * ( (1+PERC_BTW)/100 )
+	return prijs_met_BTW
+	
+### HOOFDPROGRAMMA
+advertentieprijs = berekenPrijsMetBTW 20.00 )
+print("Prijs (incl BTW):", advertentieprijs, " euro" )
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H64v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Terwijl het programma draait zul je het percentage van de BTW niet veranderen. In tegenstelling, hiermee zal een score gedurende een spelletje wel veranderen. Maar als de overheid ervoor kiest om de BTW aan te passen, dan kan dat heel makkelijk bovenaan de code teruggevonden worden en hoeft ze maar op een plek aangepast worden.</p>
+
+
+
+<p class="opdracht" id="Opgave641">Opdracht 6.8 Constanten</p>
+<p>Speel met een vriend of vriendin een paar keer steen-papier-schaar. Ken je het spel niet? Kijk dan <a href="https://weethetsnel.nl/instructie/2223-Hoe-werkt-het-steen-papier-schaar-spel">hier</a> voor uitleg. Houd op een blaadje bij hoe vaak ieder gewonnen heeft en hoe vaak er gelijk is gespeeld. Bekijk je scoreblad en bepaal wat de constanten en wat de variabelen zijn.</p>
+
+<!--
+Klik <a href="EigenFuncties_oplossingen.html#opgave-8.3.2-constanten">hier</a> voor een uitleg.-->
+<!--
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/641-Constanten"></iframe></p>-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave641" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave641) -->
+<!-- ANTWOORD:
+<ul>
+<li>Constanten zijn bijvoorbeeld jullie namen en het kopje "keren gewonnen", die veranderen niet gedurende het spel.
+
+</li><li>Variabelen zijn bijvoorbeeld de huidige score, die veranderd gedurende het spel.
+</li></ul>
+-->

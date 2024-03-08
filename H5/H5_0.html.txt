@@ -1,0 +1,39 @@
+<h4><img src="https://moodle.informatica-actief.nl/draftfile.php/147455/user/draft/920552013/image.png" alt="" width="250" height="127" role="presentation" class="img-responsive atto_image_button_right">Hoofdstuk 5 - Functies (deel 1)</h4>
+
+<!-- TODO: IN plaatje hierboven functieNaam vervangen door functienaam -->
+
+<p><i>Functies</i> zijn een van de belangrijkste concepten bij programmeren. Ze zijn krachtig, je kan er heel veel mee en daarnaast verhogen ze de kwaliteit van je code: overzichtelijker, minder fout-gevoelig en herbruikbaar. In hoofdstukken 5 en 6 leer je zelf functies schrijven.</p>
+
+<p><span style="font-size: 1rem;">In dit onderwerp:</span></p>
+
+<ul>
+
+    <li>leer je dat functies helpen om code overzichtelijk en herbruikbaar te maken;
+
+    </li>
+    <li> leer je dat een <i>parameter</i> informatie is die een functie <i>meekrijgt</i> om haar werk te kunnen uitvoeren;
+
+    </li>
+    <li>leer je dat een <i>retourwaarde</i> informatie is die een functie <i>teruggeeft</i> aan het hoofdprogramma;
+
+    </li>
+    <li> leer je een programma met functies traceren, door in te zien dat <code>def</code>'s worden overgeslagen en de code in het hoofdprogramma als eerste wordt uitgevoerd;
+
+    </li>
+    <li> leer je hoe je een eigen functie maakt en aanroept;</li>
+    <li> leer je parameters te gebruiken om functies generiek te maken;</li>
+    <li> leer je hoe je functies kan aanroepen vanuit andere functies;</li>
+    <li> leer je code overzichtelijk te maken door functiedefinities boven aan de code bij elkaar te zetten, apart van de code van het hoofdprogramma; </li>
+    <li> leer je zinvol (functie)commentaar toe te voegen om de leesbaarheid van je code te verbeteren;
+
+    </li>
+    <li> met <b>Ctrl</b> + <b>/</b> meerdere regels code in één keer in (of uit) commentaar te zetten.</li>
+</ul>
+
+
+
+
+
+
+
+<div class="fa fa-clock-o fa-3x"></div><br> <b>2 uur</b>

@@ -1,0 +1,64 @@
+<!-- HIER BEGINT PAGINA INHOUD
+<p>5: Andere rijtjes afdrukken met een for-loop</p>
+-->
+
+<p>Je kunt ook in de <code>for</code>-loop met de teller rekenen. Op zo'n manier krijg je andere rijtjes getallen.</p>
+
+<p>Bijvoorbeeld, om de eerste vijf <i>even</i> getallen af te drukken kun je teller steeds met twee vermenigvuldigen:</p>
+<!--<pre class="python">
+for teller in range(5):
+        print(teller*2)
+</pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/H84v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p>En om de eerste bijf <i>oneven</i> getallen af te drukken, doe je hetzelfde, maar tel je steeds eentje bij het even getal op. Omdat je nog steeds vijf getallen wilt afdrukken loopt je teller van 0 tot 5:</p>
+<!--<pre class="python">
+for teller in range(0,5):
+        print(teller*2 + 1)
+</pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/H84v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p class="opdracht" id="opgave841">Opdracht 8.8 honderd-vouden</p>
+<p>Schrijf een programma dat de honderdvouden van 100 tot en met 1000 afdrukt.</p>
+
+<p>Dus de getallen 100, 200, 300, ..., 1000 worden afgedrukt.</p>
+
+
+<!-- ANTWOORD:
+
+<pre class="python">
+for teller in range(100,1001,100):
+        print(teller)
+</pre>
+
+-->
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/841-100-vouden"></iframe></p>
+
+<p><a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H8_oplossingen.html#opgave841">Klik hier</a> voor een voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave842">Opdracht 8.9 Een bepaald aantal honderdvouden</p>
+
+<p>De code hieronder drukt de eerste tien honderdvouden af. De teller wordt gebruikt om het aantal bij te houden, dus het vermenigvuldigen doen we in de print.</p>
+
+<p>Wijzig de code hieronder zodat de eerste vijf honderdvouden afgedrukt worden.</p>
+
+<p>Dus: 0, 100, 200, 300 en 400 worden afgedrukt.</p>
+
+<!--GEGEVEN CODE
+<pre class="python">
+for aantal in range(10):
+        print(aantal*100)
+</pre>-->
+
+<!--ANTWOORD
+for aantal in range(5):
+        print(aantal*100)
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/842-Een-bepaald-aantal-100-vouden"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H8_oplossingen.html#opgave842">hier</a> voor een voorbeelduitwerking.</p>

@@ -1,0 +1,42 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+
+<p>2: Onderdelen van een functie</p>
+<h1 id="H52">H5.2 - Onderdelen van een functie</h1>-->
+
+<!--[VIDEOUITLEG: over onderdelen van functies](https://web.microsoftstream.com/video/ad6f2778-c589-4dae-aa29-9ed15f123489)-->
+<!--
+<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/ad6f2778-c589-4dae-aa29-9ed15f123489?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/QPsZMU9o_28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Een functie is een blok herbruikbare code dat een bepaalde actie uitvoert. Om een functie aan te roepen (te gebruiken) moet je drie dingen weten:
+</p>
+<ul>
+    <li><i>Functienaam</i>: hoe de functie heet;</li>
+    <li><i>Parameters</i>: informatie die de functie nodig heeft;</li>
+    <li><i>Retourwaarde</i>: wat de functie teruggeeft (als die iets teruggeeft).</li>
+</ul>
+<p></p>
+<p>Een functie kan gezien worden als een taak die je aan iemand uitbesteedt. Je roept een commando, geeft bepaalde informatie dat nodig is om de taak uit te voeren en die persoon levert iets op (soms een getal of een tekst, soms een dienst).</p>
+
+
+<p><b>Voorbeeld van een functie: <code>max()</code></b></p>
+<p>We geven een voorbeeld van een functie en bespreken de functienaam, parameters en retourwaarde.</p>
+<p>Wil je het grootste getal van een rijtje getallen weten, dan roep je de functie <code>max()</code> aan. Als je iemand vraagt om het grootste van een rijtje getallen voor je te bepalen, dan heeft die persoon als extra informatie het rijtje getallen nodig waarvan je het grootste wilt weten. Die getallen zijn de <i>parameters</i>. Als resultaat wordt er een getal als antwoord geroepen. Dat resultaat moeten we zelf meteen opslaan, anders vergeten we dat.</p>
+
+<!--
+<pre code="python">
+grootste = max( -4, 2, 6 )
+</pre>
+-->
+<p><iframe height="200px" width="100%" src="https://repl.it/@smer/H52v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Voor de code hierboven is:
+</p>
+<ul>
+    <li><i>functienaam</i>: <code>max</code>;</li>
+    <li><i>parameters</i>: <code>-4, 2, 6</code>. Dit is het rijtje getallen waarvan de grootste bepaald moet worden;</li>
+    <li><i>fetourwaarde</i>: het antwoord van de functie <code>max()</code> dat we opslaan als <code>grootste</code>.</li>
+</ul>
+<p></p>
