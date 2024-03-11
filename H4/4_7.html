@@ -1,0 +1,167 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.7
+7: Haakjes bij het combineren van logische operatoren
+-->
+
+<p>Het combineren van logische operatoren is lastig. Bijvoorbeeld:</p>
+<ul>
+    <li> <code>(a and b) or c</code> is <b>niet</b> hetzelfde als <code>a and (b or c)</code>;
+    </li>
+    <li> <code>not(a or b)</code> is <b>niet</b> hetzelfde als <code>not(a) or not(b)</code>;
+    </li>
+    <li> <code>not(a <b>or</b> b)</code> is <b>wel</b> hetzelfde als <code>not(a) <b>and</b> not(b)</code>.
+    </li>
+</ul>
+<p>Gebruik haakjes om aan te geven wat je bedoelt en probeer je condities zo eenvoudig mogelijk te houden.</p>
+
+
+
+<p>We bekijken een voorbeeld. Een inbraakalarm heeft een algemene aan-uitknop en twee bewegingssensoren. Het alarm gaat af als de knop aanstaat en een van de twee sensoren een beweging detecteert.</p>
+<p>De conditie die daarbij hoort, is: <code>algemene_knop and (sensorA or sensorB)</code></p>
+
+
+<p>Merk op dat, als je de haakjes anders zet: <code>(algemene_knop and sensorA) or sensorB</code> het alarm af kan gaan terwijl het uitstaat, doordat sensorB een beweging detecteert.</p>
+
+<p class="opdracht" id="opgave432">Opdracht 4.13 Combinaties van logische operatoren</p>
+<!-- H4/432a Combinaties van logische operatoren-->
+<p>Vul de condities aan met de juiste code zodat de geprinte omschrijving overeenkomt. Het vriest als het 0 graden of lager is. Gebruik de NOT-operator.</p>
+
+<ol style="list-style-type: lower-alpha">
+    <li>
+        <p>Print <code>True</code> als het op beide dagen vriest; print anders <code>False</code>.</p>
+        <!--
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = -1
+
+if #SCHRIJF HIER JE CODE
+    print("True. Op beide dagen vriest het.")
+else:
+    print("False")
+</pre>
+-->
+        <p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/432a-Combinaties-van-logische-operatoren?lite=true#main.py"></iframe></p>
+        <p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave432" target="_blank">hier</a> de voorbeelduitwerking.</p>
+    </li>
+
+    <li>
+        <p>Print <code>True</code> als het op <i>geen van beide</i> dagen vriest; print anders <code>False</code>. Gebruik de NOT-operator.</p>
+        <!--
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = 1
+
+if #SCHRIJF HIER JE CODE
+    print("True. Op GEEN van beide dagen vriest het.")
+else:
+    print("False")
+</pre>-->
+        <p><iframe width="100%" height="500px" src="https://repl.it/team/InformaticaActief/432b-Combinaties-van-logische-operatoren?lite=true#main.py"></iframe></p>
+        <p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave432" target="_blank">hier</a> de voorbeelduitwerking.</p>
+    </li>
+
+    <li>
+        <p>Print <code>True</code> als het op <i>minstens een</i> dag vriest; print anders <code>False</code>.</p>
+
+        <!--
+<pre class="python">
+temperatuur_gisteren = -1
+temperatuur_vandaag = -1
+
+if #SCHRIJF HIER JE CODE
+    print("True.  Het vriest op minstens 1 dag.")
+else:
+    print("False")
+</pre>
+-->
+        <p><iframe width="100%" height="500px" src="https://repl.it/team/InformaticaActief/432c-Combinaties-van-logische-operatoren"></iframe></p>
+        <p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave432" target="_blank">hier</a> de voorbeelduitwerking.</p>
+    </li>
+
+    <li>
+        <p>Print <code>True</code> als het <i>niet op allebei</i> dagen vriest; print anders <code>False</code>.</p>
+        <!--
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = -1
+
+if #SCHRIJF HIER JE CODE
+    print("True. Het vriest niet op allebei dagen")
+else:
+    print("False")
+</pre>
+-->
+        <p><iframe width="100%" height="500px" src="https://repl.it/team/InformaticaActief/432d-Combinaties-van-logische-operatoren?lite=true#main.py"></iframe></p>
+
+        <!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave432)-->
+
+        <p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave432" target="_blank">hier</a> de voorbeelduitwerking.</p>
+    </li>
+</ol>
+
+
+<!--
+a) Print <code>True</code> als het op beide dagen vriest, anders print <code>False</code>.
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = -1
+
+if temperatuur_vandaag <= 0 and temperatuur_gisteren <= 0:
+    print("True. Op beide dagen vriest het.")
+else:
+    print("False")
+</pre>
+b) Print <code>True</code> als het op <i>geen van beide</i> dagen vriest, anders print <code>False</code>.
+
+Geen van beide dagen vriezen
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = 1
+
+if( not (temperatuur_gisteren <= 0 or temperatuur_vandaag <=0) ):
+    print("True. Op GEEN van beide dagen vriest het.")
+else:
+    print("False")
+</pre>
+OF
+<pre class="python">
+if( not(temperatuur_gisteren <= 0) and not(temperatuur_vandaag <=0) ):
+    print("True. Op GEEN van beide dagen vriest het.")
+else:
+    print("False")
+</pre>
+
+c) Print <code>True</code> als het op <i>minstens een</i> dag vriest, anders print <code>False</code>.
+
+<pre class="python">
+temperatuur_gisteren = -1
+temperatuur_vandaag = -1
+
+if( (temperatuur_gisteren <= 0) or (temperatuur_vandaag <=0) ):
+    print("True.  Het vriest op minstens 1 dag.")
+else:
+    print("False")
+</pre>
+
+d)  Print <code>True</code> als het <i>niet op allebei</i> dagen vriest, anders print <code>False</code>.
+
+<pre class="python">
+temperatuur_gisteren = 1
+temperatuur_vandaag = -1
+
+if( not(temperatuur_gisteren <= 0) or not (temperatuur_vandaag <=0) ):
+    print("True. Het vriest niet op allebei dagen")
+else:
+    print("False")
+</pre>
+
+OF
+
+<pre class="python">
+if( not(temperatuur_gisteren <= 0 and temperatuur_vandaag <=0) ):
+    print("True. Het vriest niet op allebei dagen")
+else:
+    print("False")
+</pre>
+-->

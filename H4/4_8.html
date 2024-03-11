@@ -1,0 +1,72 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--
+<h4 id="H44">H4.4 - Blokken code inspringen</h4>
+8: Blokken code inspringen</p>
+-->
+
+<p>In Python is correct inspringen belangrijk! Door in te springen geef je aan welke code bij een <code>if</code>-gedeelte hoort.</p>
+
+<p>Bekijk het voorbeeld hieronder. Voer de code uit. </p>
+<!--
+<pre class="python">
+x = 11
+if x < 10:
+    print( "Deze regel wordt alleen uitgevoerd als x < 10." )
+    print( "En dat geldt ook voor deze regel." )
+print( "Deze regel wordt echter altijd uitgevoerd." )
+</pre>-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H44v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>We veranderen de waarde van <code>x</code> in <code>7</code>. Voer de code nogmaals uit.</p>
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H44v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Regels 3 en 4 (met de eerste twee printjes) zijn ingesprongen en worden daarom alleen uitgevoerd als de conditie van de <code>if</code> waar is. De laatste regel staat niet ingesprongen, het hoort daarom niet bij het <code>if</code>-blok en wordt altijd uitgevoerd.</p>
+
+<ul>
+    <li><i>Inspringen</i>: inspringen doe je met de <i>Tab</i>-toets. Om meerdere regels te laten inspringen, selecteer je de regels en druk dan op <i>Tab</i>.
+    </li>
+    <li><i>Inspringen ongedaan maken</i>: druk gelijktijdig <i>Shift en Tab</i> om inspringen te verwijderen. Dit kan ook voor een heel blok code in een keer door de regels eerst te selecteren en dan op <i>Shift en Tab</i> te drukken.
+    </li>
+</ul>
+
+<p class="opdracht" id="opgave441">Opdracht 4.14 Verbeter de inspringfouten</p>
+<p>Run de volgende code. Deze bevat inspringfouten. Verbeter de code.</p>
+
+<!-- GEGEVEN CODE:
+<pre class="python">
+#Verbeter de inspring fouten:
+x = 3
+y = 4
+if x == 3 and y == 4:
+    print( "x is 3" )
+   print( "y is 4" )
+if x > 2 and y < 5:
+print( "x > 2" )
+print( "y < 5" )
+if x < 4 and y > 3:
+    print( "x < 4" )
+        print( "y > 3" )
+</pre>-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/441-Verbeter-de-inspringfouten"></iframe></p>
+
+<!-- antwoord
+
+<pre class="python">
+x = 3
+y = 4
+if x == 3 and y == 4:
+    print( "x is 3" )
+    print( "y is 4" )
+if x > 2 and y < 5:
+    print( "x > 2" )
+    print( "y < 5" )
+if x < 4 and y > 3:
+    print( "x < 4" )
+    print( "y > 3" )
+</pre>
+
+-->
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave441)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave441" target="_blank">hier</a> de voorbeelduitwerking.</p>

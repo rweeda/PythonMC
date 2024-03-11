@@ -1,0 +1,148 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.1
+
+<h4 id="H41">H4.1 - Vergelijkingen en <code>True</code> / <code>False</code></h4>-->
+
+<!--
+[VIDEOUITLEG: vergelijken](https://web.microsoftstream.com/video/eace5a6c-5bfb-4d63-905f-8d544c6175c8)
+-->
+<!--<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/eace5a6c-5bfb-4d63-905f-8d544c6175c8?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p></p>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/8cJS9KeFX2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Je kunt twee dingen met elkaar vergelijken. Een vergelijking bestaat uit twee waarden met een vergelijkingsoperator ertussen. Vergelijkingsoperatoren zijn:</p>
+<p>
+</p>
+<table border="1" padding="1">
+    <tbody>
+        <tr>
+            <td><code>==</code></td>
+            <td>is gelijk aan</td>
+        </tr>
+        <tr>
+            <td><code>!=</code></td>
+            <td>is niet gelijk aan</td>
+        </tr>
+        <tr>
+            <td><code>&lt;</code></td>
+            <td>is kleiner dan</td>
+        </tr>
+        <tr>
+            <td><code>&gt;</code></td>
+            <td>is groter dan</td>
+        </tr>
+        <tr>
+            <td><code>&lt;=</code></td>
+            <td>is kleiner dan of gelijk aan</td>
+        </tr>
+        <tr>
+            <td><code>&gt;=</code></td>
+            <td>is groter dan of gelijk aan</td>
+        </tr>
+    </tbody>
+</table>
+<p></p>
+
+<p>Uit een vergelijking kan <code>True</code> of <code>False</code> komen. Het datatype van
+    <code>True</code> en <code>False</code> heet <code>bool</code> (verkort voor Boolean).
+</p>
+
+
+<p>Run de onderstaande code met voorbeelden van vergelijkingen:</p>
+<!--
+<pre class="python">
+print( "2 < 5 is", 2 < 5 )
+print( "2 <= 5 is", 2 <= 5 )
+print( "3 > 3 is", 3 > 3 )
+print( "3 >= 3 is", 3 >= 3 )
+print( "3 == 3.0 is", 3 == 3.0 )
+print( "3 == '3' is", 3 == "3" )
+print( "'hallo' == 'hallo' is ", "hallo" == "hallo" )
+print( "'hallo' == 'hoi' is", "hallo" == "hoi" )
+print( "'Python' != 'rotzooi' is ", "Python" != "rotzooi" )
+</pre>
+-->
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/H41v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+https://repl.it/@MCProgrammerenP/H41-Vergelijkingen#main.py
+-->
+
+
+
+<!--<p><iframe frameborder="0" width="100%" height="1000px" src="https://repl.it/student_embed/assignment/844473/808bc3709ec8353d4d7bddca4b1dc75c"></iframe></p>
+Klik <a href="Condities_oplossingen.html#opgave-6.1.2.1-voorbeelden-van-vergelijkingen">hier</a> om je eigen oplossing te vergelijken met een model oplossing.
+-->
+
+<p class="opdracht" id="opgave411">Opdracht 4.1 Vergelijkingsoperatoren</p>
+<p>Zet in de code hieronder de juiste vergelijkingsoperatoren op de plek van de puntjes:</p>
+
+<!-- GEGEVEN CODE
+<pre class="python">
+#Code die test of 1/2 gelijk is aan, groter is dan, ... `0.5`
+print("1/2 is gelijk aan 0.5 is: ", 1/2 ... 0.5 )
+print("1/2 is groter dan 0.5 is: ", 1/2 ... 0.5 )
+print("1/2 is groter of gelijk aan 0.5 is: ", 1/2 ... 0.5 )
+print("1/2 is ongelijk aan 0.5 is: ", 1/2 ... 0.5 )
+print("1/2 is kleiner dan 0.5 is: ", 1/2 ... 0.5 )
+</pre>
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/411-Vergelijkingsoperatoren"></iframe></p>
+
+<!-- UITWERKINGEN
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave411)
+-->
+
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave411" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+<pre class="python>
+print("1/2 is gelijk aan 0.5 is: ", 1/2 == 0.5 )
+print("1/2 is groter dan 0.5 is: ", 1/2 > 0.5 )
+print("1/2 is groter of gelijk aan 0.5 is: ", 1/2 >= 0.5 )
+print("1/2 is ongelijk aan 0.5 is: ", 1/2 != 0.5 )
+print("1/2 is kleiner dan 0.5 is: ", 1/2 < 0.5 )
+</pre>
+-->
+
+
+<!--
+<p class="opdracht" id="opgave-6.1.2.2-enkele-vergelijkingen-testen">Opgave 6.1.2.2 Enkele vergelijkingen testen</p>
+<p><iframe frameborder="0" width="100%" height="1000px" src="https://repl.it/student_embed/assignment/844475/dea399912cb77783d44ee60695646923"></iframe></p>
+Klik <a href="Condities_oplossingen.html#opgave-6.1.2.2-enkele-vergelijkingen-testen">hier</a> om je eigen oplossing te vergelijken met een model oplossing.
+-->
+
+<p class="opdracht" id="opgave412">Opdracht 4.2 Foutmelding bij een vergelijking</p>
+<p>De code hieronder geeft een fout. Lees de foutmelding en corrigeer de fout.</p>
+
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/412-Foutmelding-bij-een-vergelijking"></iframe></p>
+
+<!-- UITWERKING
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave412)
+-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave412" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- GIVEn: print( 3 < '4' ) -->
+
+<!-- antwoord:
+ <code>print( 3 < 4 )</code>
+ -->
+<!--
+<p class="opdracht" id="opgave-6.1.2.3-foutmelding-bij-vergelijkingen">Opgave 6.1.2.3 Foutmelding bij vergelijkingen</p>
+<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/844708/abc4f4407aa7ecd561e80f375b97c701?lite=true#main.py"></iframe></p>
+-->
+
+<p class="opdracht"></p>
+<p><b>Verschil tussen <code>=</code> en <code>==</code></b></p>
+
+<p>Een veelgemaakte fout is om twee waarden te vergelijken met één enkel <code>=</code>-teken.
+</p>
+<ul>
+    <li>Het enkele <code>=</code>-teken gebruik je om een waarde aan een variabele toe te kennen.</li>
+    <li>Het dubbele <code>==</code>-teken gebruik je om te controleren of twee waarden gelijk zijn aan elkaar.</li>
+</ul>
+<p></p>
