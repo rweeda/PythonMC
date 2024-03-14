@@ -1,0 +1,44 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>3: Index van een element in een lijst</p>
+
+<h1 id="H93">H9.3 - Index</h1>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/6BX-aR57ak0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>De elementen van een lijst staan op volgorde. Ieder element van een lijst kun je pakken via een <i>index</i> (of positie). Het eerste element in een lijst heeft index 0:
+</p>
+<ul>
+    <li>index 0: eerste element</li>
+    <li>index 1: tweede element</li>
+    <li>index 2: derde element</li>
+    <li>...</li>
+    <li>index (lengte-1): laatste element</li>
+</ul>
+<p></p>
+
+
+<p>Stel we maken een lijst: <code>boodschappenlijst = [ "appels", "brood", "melk" , "kaas"]</code>.</p>
+<p></p>
+<table cellspacing="" cellpadding="" border="" width="" align="">
+    <tbody>
+        <tr>
+            <td><code>boodschappenlijst</code></td>
+            <td><code>"appels"</code></td>
+            <td><code>"brood"</code></td>
+            <td><code>"melk"</code></td>
+            <td><code>"kaas"</code></td>
+        </tr>
+        <tr>
+            <td>index</td>
+            <td>0</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+</table>
+<p></p>
+
+<p>In deze lijst staat "appels" op index 0, "brood" op index 1, ... en "kaas" op index 3 (oftewel, lengte van de lijst -1).</p>

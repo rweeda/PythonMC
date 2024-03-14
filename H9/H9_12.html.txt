@@ -1,0 +1,101 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>12: Willekeurig uit een lijst pakken met choice()</p>
+
+<h1 id="H95">9.5 - Willekeurig uit een lijst pakken met <code>choice()</code></h1>
+
+-->
+<p>Met <code>choice()</code> kun een willekeurig element uit een lijst pakken. Hiervoor heb je wel <code>import random</code> nodig.</p>
+
+<!--
+<pre class="python">
+import random
+
+kleurenlijst = ["rood", "blauw", "groen", "geel"]
+willekeurig_kleur = random.choice( kleurenlijst )
+
+print( "Gekozen kleur is:", willekeurig_kleur )
+</pre>-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H97v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p class="opdracht" id="opgave951">Opdracht 9.12 Kleurrijke spirograaf</p>
+
+<p>Je gaat een spirograaf tekenen met voor elke zijde een verschillende kleur. Je maakt hiervoor een lijst met kleuren en kiest er steeds een willekeurige uit.</p>
+
+<p>Dat doe je zo:
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>teken eerst je spirograaf in het zwart. Ik geef je de code cadeau. Controleer eerst of dit goed werkt;
+    </li>
+    <li>pas de code nu aan zodat je spirograaf in het blauw getekend wordt, met <code>pencolor()</code>;
+    </li>
+    <li>maak bovenin je code een lijst met een aantal kleuren. Klik <a href="https://trinket.io/docs/colors">hier</a> voor een overzicht van alle Python Turtle kleuren;
+
+    </li>
+    <li>elke keer voordat een zijde getekend wordt, wil je willekeurig een nieuwe kleur kiezen en je pen deze kleur geven:
+        <ul>
+            <li>bovenaan je programma importeer je de module <code>random</code> met <code>import random</code>;
+            </li>
+            <li>gebruik <code>random.choice()</code> om een willekeurige kleur uit je lijst te kiezen;
+            </li>
+            <li>geef de pen de gekozen kleur.
+            </li>
+        </ul>
+    </li>
+</ol>
+<p></p>
+
+<p>Uitbreiding: Je kunt ook een ander mooi figuur maken. Probeer ook eens het volgende steeds te herhalen:</p>
+
+
+<pre class="python">turtle.forward(200)
+turtle.left(170)
+</pre>
+
+
+<!-- GIVEN:
+<pre class="python">
+import turtle
+
+turtle.pendown()
+
+for i in range(50): #teken een spirograaf met 50 zijden
+	turtle.forward(100)
+	turtle.right(65)
+
+turtle.done()
+</pre>
+-->
+
+<!-- ANTWOORD:
+<pre class="python">
+import turtle
+import random
+
+kleurenlijst = ["red", "green", "blue", "purple"] #lijst met kleuren
+
+turtle.pendown()
+
+for i in range(50): #teken een spirograaf met 50 zijden
+	kleur = random.choice( kleurenlijst ) #kies een willekeurige kleur uit lijst
+	turtle.pencolor( kleur )
+	
+	turtle.forward(100)
+	turtle.right(65)
+
+turtle.done()
+</pre>
+
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/951-Kleurrijke-Spirograaf"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H9_oplossingen.html#opgave951">hier</a> voor een voorbeelduitwerking.</p>
+
+
+
+<!--
+<p><iframe frameborder="0" width="100%" height="1000px" src="https://repl.it/student_embed/assignment/4245877/cc2e645436e93b8fc0e888188c4e7cb2"></iframe></p>
+
+
+Klik <a href="ListsFor_oplossingen.html#opgave-12.4.10-kleuren-spirograaf">hier</a> voor een voorbeeld uitwerking.
+-->

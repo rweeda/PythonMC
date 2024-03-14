@@ -1,0 +1,58 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>5: Laatste element in een lijst benaderen</p>
+
+
+<h2>Laatste element in een lijst benaderen</h2>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/o3kOwybgNDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Het laatste element van elke lijst benader je met de index <b>lengte-1</b>:</p>
+<!--<pre class="python">
+boodschappenlijst = [ "appels", "brood", "melk" , "kaas"]	#maak een boodschappenlijst
+
+lengte = len( boodschappenlijst )                         #bepaal de lengte van de boodschappenlijst
+print( "De lengte is", lengte )	                        	#druk de lengte van de lijst af
+
+print( "Achteraan staat:", boodschappenlijst[ lengte-1 ] ) #druk laatste element af
+</pre>-->
+
+<p><iframe height="500px" width="100%" src="https://repl.it/@smer/H94v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave932">Opdracht 9.5 Laatste element afdrukken</p>
+
+<p>In de temperatuurlijst staat de temperatuur van vandaag altijd achteraan. Hoe meer metingen we doen, hoe langer de lijst wordt.</p>
+<p>Schrijf code om het laatste element uit een lijst te printen. De code moet voor elke lijst werken, ongeacht hoe lang de lijst is.</p>
+
+<p>Tips:
+</p>
+<ul>
+    <li>Gebruik <code>len</code> om de lengte van de lijst te bepalen.
+    </li>
+    <li>Bepaal dan de index waarop het laatste element staat en print dat element.
+    </li>
+</ul>
+<p></p>
+
+<!-- GEGEVEN CODE
+<pre class="python">
+temperatuurlijst = [22.3, 23.0, 25.1, 23.2, 21.9]
+</pre>-->
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/932-Laatste-element-afdrukken"></iframe></p>
+
+<!-- ANTWOORD
+
+
+temperatuurlijst = [22.3, 23.0, 25.1, 23.2, 21.9]
+lengte = len( temperatuurlijst )                         #bepaal de lengte van de boodschappenlijst
+print( "De lengte is", lengte )	                        	#druk de lengte van de lijst af
+
+print( "Achteraan staat:", temperatuurlijst[ lengte-1 ] ) #druk laatste element af
+-->
+
+<!--
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/Th121?lite=true#main.py" scrolling="no" frameborder="no"
+allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups
+allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H9_oplossingen.html#opgave932">hier</a> voor een voorbeelduitwerking.</p>
