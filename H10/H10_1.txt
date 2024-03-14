@@ -1,0 +1,82 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.7
+	
+<p>1: Lijsten met for-loop doorlopen (herhaling)</p>
+<h1 id="H101">10.1 - Lijsten met for-loop doorlopen (herhaling)</h1>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/j2epbJ5DAeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Met een <code>for</code>-loop kun je makkelijk door de elementen van een lijst heen lopen. Eén voor één wordt elk element uit de lijst in een variabele opgeslagen. In de code van de <code>for</code>-loop kan je dan iets met die variabele doen.</p>
+
+<p>Hieronder zie je een voorbeeld waarbij we alle elementen van de lijst <code>fruitlijst</code> doorlopen. Eén voor één wordt elk element opgeslagen in een variabele <code>fruit</code> die we vervolgens afdrukken:</p>
+
+<!--
+<pre class="python">
+fruitlijst  = ["banaan", "appel", "wortel", "druif", "peer"]
+
+for fruit in fruitlijst:
+	print( fruit )
+</pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/h101v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+
+
+
+<p class="opdracht" id="opgave1011">Opdracht 10.1 Weekend!</p>
+<p>Het onderstaande programma doorloopt een lijst met dagen en print <i>Vandaag is het ... dus het is weekend!</i> als het een zaterdag of zondag tegenkomt. Helaas staan de regels code in de verkeerde volgorde. Kan jij de regels op de juiste volgorde zetten?</p>
+<!--
+<pre class="python">
+	if( dag == "za" or dag == "zo"):
+dagenlijst = ["ma", "di", "wo", "do", "vr", "za", "zo"]
+		print("Vandaag is het", dag, "dus het is weekend!")
+for dag in dagenlijst:
+</pre>
+-->
+
+
+<!-- ANTWOORD
+<pre class="python">
+dagenlijst = ["ma", "di", "wo", "do", "vr", "za", "zo"]
+
+for dag in dagenlijst:
+	if( dag == "za" or dag == "zo"):
+		print("Vandaag is het", dag, "dus het is weekend!")
+</pre>
+-->
+
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/1011-Weekend"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H10_oplossingen.html#opgave1011" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave1012">Opdracht 10.2 Let op voor de onvoldoendes</p>
+<p>Schrijf een programma dat een cijferlijst doorloopt en voor elke onvoldoende de tekst <i>Let op: een ... is onvoldoende!</i> print. Een 5 of lager is onvoldoende. Op de plek van ... komt het cijfer te staan.</p>
+
+<p>Bijvoorbeeld, bij de cijferlijst <code>[8.2, 6.2, 5.0, 4.9, 7.1]</code> wordt geprint:</p>
+<p><i>Let op: een 5.0 is onvoldoende!</i></p>
+<p><i>Let op: een 4.9 is onvoldoende!</i></p>
+
+<!--
+<pre class="python">
+cijferlijst = [8.2, 6.2, 5.0, 4.9, 7.1]
+</pre>
+-->
+<!-- ANTWOORD:
+<pre class="python">
+cijferlijst = [8.2, 6.2, 5.0, 4.9, 7.1]
+
+for cijfer in cijferlijst:
+	if cijfer <= 5.0:
+		print("Let op: een", cijfer, "is onvoldoende!")
+		
+</pre>	
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/1012-Let-op-voor-de-onvoldoendes"></iframe></p>
+
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H10_oplossingen.html#opgave1012" target="_blank">hier</a> de voorbeelduitwerking.</p>

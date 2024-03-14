@@ -1,0 +1,115 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.7
+	
+<p>2: Waarderen uit een lijst filteren</p>
+
+<h1 id="H102">10.2 - Waarderen eruit filteren</h1>
+
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/5UemeYRqX7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Soms wil je alleen bepaalde waarden uit een lijst hebben, bijvoorbeeld alle getallen, behalve 0. Dat noemen we <i>filteren</i>. Je maakt een nieuwe lege lijst aan en vul je aan met de waarden die je wilt behouden.</p>
+<p>In het voorbeeld hieronder maken we een nieuwe lijst aan:&nbsp;<code>weekdagenlijst</code>. We doorlopen de lijst <code>dagenlijst</code>. Als we een dag tegenkomen die niet in het weekend valt, dan voegen we die aan <code>weekdagenlijst</code> toe. Na afloop zijn er dus twee lijsten: de originele <code>dagenlijst</code> met alle dagen en een nieuwe <code>weekdagenlijst</code> met alleen de weekdagen.</p>
+<p><img src="https://course.cs.ru.nl/pythonVO/img/10.2FilterWeekendenEruit_Stroomdiagram.png" alt="Figuur: Stroomdiagram waarden eruit filteren" width="600"></p>
+
+<!--
+<pre class="python">
+dagenlijst = ["ma", "di", "wo", "do", "vr", "za", "zo"]	#alle dagen van de week
+
+weekdagenlijst = []	#lege lijst
+
+for dag in dagenlijst:
+	if( dag != "za" and dag != "zo"): #als het geen van beide weekenddagen is
+		weekdagenlijst.append( dag )	#voeg dag toe aan weekdagenlijst
+
+print("Lijst met weekdagen: ", weekdagenlijst)
+</pre>
+-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H102v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave1021">Opdracht 10.3 Weg met de onvoldoendes</p>
+<p>De functie hieronder heeft als doel om alle onvoldoendes uit een lijst te filteren. Zij krijgt een lijst als parameter binnen en levert een nieuwe lijst op, zonder onvoldoendes erin. Maar de coderegels staan in de verkeerde volgorde. Kun je het programma fixen?</p>
+
+
+<!-- GIVEN
+<pre class="python">
+### FUNCTIEDEFINITIE
+	return lijst_zonder_onvoldoendes
+		if cijfer > 5.0:
+	for cijfer in lijst_met_onvoldoendes:
+	lijst_zonder_onvoldoendes = []	
+			lijst_zonder_onvoldoendes.append( cijfer )
+def geefLijstZonderOnvoldoende( lijst_met_onvoldoendes ):	
+	
+### HOOFDPROGRAMMA
+cijferlijst = [8.2, 6.2, 5.0, 4.9, 7.1]
+nieuwelijst = geefLijstZonderOnvoldoende( cijferlijst )
+print( nieuwelijst )
+</pre>
+-->
+
+<!-- ANTWOORD:
+<pre class="python">
+### FUNCTIEDEFINITIE
+def geefLijstZonderOnvoldoende( lijst_met_onvoldoendes ):
+	lijst_zonder_onvoldoendes = []
+
+	for cijfer in lijst_met_onvoldoendes:
+		if cijfer > 5.0:
+			lijst_zonder_onvoldoendes.append( cijfer )
+	
+	return lijst_zonder_onvoldoendes
+
+### HOOFDPROGRAMMA
+cijferlijst = [8.2, 6.2, 5.0, 4.9, 7.1]
+nieuwelijst = geefLijstZonderOnvoldoende( cijferlijst )
+print( nieuwelijst )
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/1021-Weg-met-de-onvoldoendes"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H10_oplossingen.html#opgave1021" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave1022">Opdracht 10.4 Alleen vorstdagen</p>
+<p>De KNMI houdt dagelijks de temperaturen bij in een lijst, maar is alleen geïnteresseerd in de vorstdagen, dus met temperatuur onder 0. Schrijf een functie die een temperaturenlijst binnenkrijgt als parameter en een lijst met alleen negatieve temperaturen oplevert. Roep de functie in je hoofdprogramma aan en print ter controle de opgeleverde lijst.</p>
+<!-- GIVEN
+<pre class="python">
+### FUNCTIEDEFINITIE
+
+
+
+
+
+
+### HOOFDPROGRAMMA
+temperatuurlijst = [ -2.2, 3.1, 0.0, -0.4, 0.2]
+
+</pre>
+-->
+<!-- ANTWOORD:
+<pre class="python">
+### FUNCTIEDEFINITIE
+def geefLijstVorstdagen( temperatuurlijst ):
+	vorstdagenlijst = []
+
+	for temperatuur in temperatuurlijst:
+		if temperatuur < 0:
+			vorstdagenlijst.append( temperatuur )
+	
+	return vorstdagenlijst
+
+### HOOFDPROGRAMMA
+temperatuurlijst = [ -2.2, 3.1, 0.0, -0.4, 0.2]
+vorstdagenlijst = geefLijstVorstdagen( temperatuurlijst )
+print( vorstdagenlijst )
+</pre>
+-->
+
+
+<!--<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/1022b-Alleen-voorstdagen"></iframe></p>-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/1022b-Alleen-voorstdagen"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H10_oplossingen.html#opgave1022" target="_blank">hier</a> de voorbeelduitwerking.</p>
