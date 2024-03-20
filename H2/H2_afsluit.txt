@@ -1,0 +1,309 @@
+H2: Afsluitende opdrachten
+
+<!-- HIER BEGINT PAGINA INHOUD
+<p>H2: Afsluitende opdrachten</p>
+<h1 id="H2AfOpgaven">H2 - Afsluitende Opgaven</h1>-->
+Met de volgende afsluitende opdrachten kun je kijken hoe goed je de stof beheerst. Controleer steeds je eigen oplossing met de voorbeeldoplossing.
+
+
+<hr>
+
+<p class="opdracht">Afsluitende Opdracht 2.1 Geld
+    maakt gelukkig</p>
+
+<p>In deze opdracht gaan we aan de slag met geld. We hebben twee
+    variabelen, namelijk hele <code>euro</code>'s en losse <code>cent</code>en. Print het bedrag op een
+    nette manier:<br> <i>Dat kost 10.25 euro.</i></p>
+<p>Gebruik hiervoor de
+    variabelen <code>euro</code>&nbsp;en <code>cent</code>.</p>
+<p>Tip: gebruik <code>+</code> om een '.' te plakken aan de getallen.</p>
+
+
+<!-- GIVEN
+<pre class="python">
+euro = 3
+cent = 25
+</pre>-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af21"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave21)-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave21" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+<pre class="python">
+euros = 10
+centen = 25
+print("Dat kost " + str(euros) + "." + str(centen) + " euro.")
+</pre>
+-->
+
+<p class="opdracht">Afsluitende Opdracht 2.2 Gebruiker kiest kleur</p>
+<p>Het onderstaande programma tekent een rood vierkant.</p>
+<p>Pas het programma aan zodat die de gebruiker om een kleur vraagt (bijvoorbeeld: black, tan, gold, blue, red) en dan een vierkant tekent in die kleur, in plaats van in rood.
+    Print op het scherm ook welke kleur de gebruiker gekozen heeft.</p>
+<!--
+<pre class="python">
+import turtle       # importeer turtle module
+
+turtle.color("red")
+
+turtle.pendown()    # zet pen neer
+turtle.forward(150) # 150 stappen vooruit
+turtle.right(90)    # draai 90 graden naar rechts
+turtle.forward(150)
+turtle.right(90)
+turtle.forward(150)
+turtle.right(90)
+turtle.forward(150)
+turtle.right(90)
+
+turtle.done()       # klaar
+</pre>
+-->
+<!-- <iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/H2Af22"></iframe> PYTHON TURTLE-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Af22-py3"></iframe></p>
+
+<!--<iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Af22-py3-1"></iframe>
+-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave22" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H3_oplossingen.html#AfOpgave22)-->
+<!--
+import turtle       # importeer turtle module
+
+print("Kies een kleur (bijvoorbeeld: black, tan, gold, blue, red):")
+kleur = input()
+print("Je krijgt een", kleur, "vierkant.")
+
+turtle.color(kleur) # geef pen de gekozen kleur
+
+turtle.pendown()    # zet pen neer
+turtle.forward(150) # 150 stappen vooruit
+turtle.right(90)    # draai 90 graden naar rechts
+turtle.forward(150)
+turtle.right(90)
+turtle.forward(150)
+turtle.right(90)
+turtle.forward(150)
+turtle.right(90)
+
+turtle.done()       # klaar
+-->
+
+<p class="opdracht">Afsluitende Opdracht 2.3 Bonus op de toets</p>
+<p>De docent heeft besloten dat iedereen een bonus krijgt van een half punt op zijn toetscijfer. Vraag de gebruiker een cijfer in te voeren, print het oude cijfer, verhoog dat met een half punt en druk daarna het nieuwe cijfer als volgt af: "Gefeliciteerd, met de bonus heb je nu een ... !"</p>
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af23"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave23" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave23)-->
+<!-- ANTWOORD
+<pre class="python">
+print( "Wat was jouw cijfer?" )
+invoer = input()
+cijfer = float(invoer)
+print("Jouw cijfer was" + str(cijfer) )
+
+print( "Gefeliciteerd, met de bonus heb je nu een" + str(cijfer + 0.5) + "!" )
+</pre>
+OF
+<pre class="python">
+print( "Wat was jouw cijfer?" )
+invoer = input()
+cijfer_zonder_bonus = float(invoer)
+print("Jouw cijfer was" + str(cijfer_zonder_bonus) )
+
+cijfer_met_bonus = cijfer_zonder_bonus + 0.5
+print( "Gefeliciteerd, met de bonus heb je nu een" + str(cijfer_met_bonus) + "!" )
+</pre
+-->
+
+<p class="opdracht">Afsluitende Opdracht 2.4 Centimeters naar meters</p>
+<p>Schrijf een programma dat centimeters naar meters omrekent. Vraag de gebruiker om een geheel getal in te voeren. Deel dit door 100 en print het antwoord op het scherm.</p>
+<p>Dus als een gebruiker 250 intikt, dan is de uitvoer:</p>
+<p><i>Het aantal centimeters is: 250</i></p><i>
+</i>
+<p><i>Dat is 2.5 meter</i></p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af24" target="_blank"></iframe></p>
+
+<!-- ANTWOORD
+<pre class="python">
+print("Hoeveel centimeters moet ik naar meters omrekenen?")
+invoer = input()
+aantal_centimeters = int(invoer)
+print( "Het aantal centimeters is:", aantal_centimeters )
+
+aantal_meters = aantal_centimeters / 100
+print( str(aantal_centimeters)= " is " + str(aantal_meters) + "meter" )
+</pre>
+
+OF
+
+<pre class="python">
+print("Hoeveel centimeters moet ik naar meters omrekenen?")
+invoer = input()
+aantal_centimeters = int(invoer)
+print( "Het aantal centimeters is:", aantal_centimeters )
+
+print( str(aantal_centimeters / 100) + "meter" )
+</pre>
+
+OF
+-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave24">hier</a> de voorbeelduitwerking.</p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave24)-->
+
+
+
+<p class="opdracht">Afsluitende Opdracht 2.5: BMI berekenen</p>
+<p>Je kunt je BMI uitrekenen door je gewicht in kilo's te delen door het kwadraat van je lichaamslengte in meters. Als je bijvoorbeeld 65 kilo weegt en je bent 1,70 meter lang, dan bereken je je BMI als volgt: 65 kilo / (1.70 x 1.70 meter) = 22.5 (afgerond).</p>
+
+<p>Schrijf een programma dat de BMI berekent. Vraag de gebruiker zijn lengte in meters en zijn gewicht in kilogram. Laat de gebruiker zien wat is ingevoerd en bereken en print de BMI. Bedenk dat lengte een kommagetal is.</p>
+Het resultaat zou zoiets moeten zijn:<p></p>
+
+
+<p><img src="http://course.cs.ru.nl/pythonVO/img/H2_af25_uitvoer_console.jpg" alt="Opg Af2.5 uitvoer console voorbeeld"></p>
+
+
+
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af25"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave25" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave25)-->
+<!--
+<pre class="python">
+invoer = input( "Hoeveel kilogram weeg je? ")
+gewicht_in_kg = int(invoer)
+print("Je gewicht is " + str(gewicht_in_kg))
+
+invoer = input( "Wat is je lengte in meters? ")
+lengte_in_m = float(invoer)
+print("Je lengte is " + str(lengte_in_m))
+
+BMI = gewicht_in_kg / ( lengte_in_m*lengte_in_m )
+BMI_afgerond = round(BMI,1)
+print( "Je BMI is:", BMI_afgerond )
+</pre>
+
+OF
+
+<pre class="python">
+print("Hoeveel kilogram weeg je?")
+invoer = input()
+gewicht_in_kg = int(invoer)
+print("Je gewicht is " + str(gewicht_in_kg))
+
+invoer = input( "Wat is je lengte in meters?")
+lengte_in_m = float(invoer)
+print("Je lengte is " + str(lengte_in_m))
+
+print( "Je BMI is:", round( ( gewicht_in_kg / ( lengte_in_m*lengte_in_m ) ),1) )
+
+</pre>
+ -->
+
+
+<p class="opdracht">Afsluitende Opdracht 2.6: Invulverhaal</p>
+
+
+<p>Je maakt een invulverhaal.</p>
+<ol>
+    <li>Schrijf een kort verhaaltje of gebruik dat hieronder. Streep een aantal woorden door en vervang ze door hun beschrijving;</li>
+    <li>Voor elke beschrijving vraag je de gebruiker om iets in te vullen. Als ze letterlijk het eerste invullen wat er in hen opkomt,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;wordt het juist grappig;</li>
+    <li> Elk antwoord sla je op in een andere variabele;</li>
+    <li> Daarna print je de nieuwe tekst af.
+    </li>
+</ol>
+
+
+<p>Je mag je eigen verhaal verzinnen of dit gebruiken:</p>
+
+
+<p>COOL PYJAMAFEEST.</p>
+
+<p>_ _ _ _ (Naam beste vriend) geeft een super pyjamafeestje met als thema _
+    _ _ _ (kleuterprogramma). Dat wordt dus de hele avond _ _ _ _ (zelfde
+    programma) kijken. Op je _ _ _ _ (vreemd voertuig) rijd je met een snelheid
+    van _ _ _ _ (getal met 3 nullen) km per uur naar haar huis. Het hele huis is versierd
+    in de kleuren _ _ _ _ (felle kleuren) en _ _ _ _ (kleur die vloekt bij
+    andere) en door het hele huis galmt de beat van _ _ _ _
+    (carnavalskraker).</p>
+
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/Af26"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave26" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--
+
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave26)
+-->
+
+
+<!--ANTWOORD
+<pre class="python">
+print( "Naam beste vriend" )
+naam_beste_vriend = input()
+print( "kleuterprogramma" )
+kleuterprogramma = input("kleuterprogramma")
+
+print(naam_beste_vriend + " geeft een super pyjamafeestje met als thema " + kleuterprogramma + "kleuterprogramma) dat word dus de hele avond " + kleuterprogramma + " kijken.")
+</pre>
+-->
+
+
+<p class="opdracht">Afsluitende Opdracht 2.7 Hoe lang duurt het nog?</p>
+
+<p>13 uur, 47 minuten en 28 seconden is (13 * 60 * 60) + (47 * 60) + 28 = 49648 seconden.</p>
+
+<p>Schrijf een programma dat een aantal uren, minuten en seconden omrekent naar het aantal seconden.</p>
+
+<ol>
+    <li>Gebruik drie variabelen: één voor uren, één voor minuten en één voor seconden. Dit is in de code hieronder al gegeven;</li>
+    <li>Toon de tijd als volgt op het scherm: <i>13:47.28;</i></li>
+    <li>Bereken het aantal seconden (aan de hand van de variabelen);</li>
+    <li>Toon het aantal seconden op het scherm;</li>
+    <li>Voorzie van commentaar.</li>
+</ol>
+<!-- GIVEN:
+<pre class="python">
+#Dit programma berekent het aantal seconden.
+uren = 13
+minuten = 47
+seconden = 28
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/Af27"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#AfOpgave27" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#AfOpgave27)-->
+
+<!-- ANTWOORD
+#Dit programma berekent het aantal seconden.
+uren = 13
+minuten = 47
+seconden = 28
+
+#drukt tijdstip af als 13:47.28
+print( str(uren) + ":" + str(minuten) + "." + str(seconden) )
+
+#bereken totaal aantal seconden
+totaal_aantal_seconden = uren * 60 * 60 + minuten * 60 + seconden
+#druk af:
+print("Totaal aantal seconden:", totaal_aantal_seconden)
+
+
+Op het scherm moet geprint zijn:
+13:47.28
+Totaal aantal seconden: 49648
+
+-->

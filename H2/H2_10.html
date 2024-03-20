@@ -1,0 +1,112 @@
+10: Gebruiker om een getal vragen
+
+<!--<table style="table-layout: auto;">
+    <tbody>
+        <tr>
+            <td>
+-->
+
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+
+<!-- IA H2_10
+<h2 id="theorie_inputcasting">Gebruiker om een getal vragen</h2>-->
+
+<!--[VIDEOUITLEG: over getallen vragen met input()](https://web.microsoftstream.com/video/c9b142a0-66fc-409c-b1e6-4544de396af5)-->
+<!-- <iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/c9b142a0-66fc-409c-b1e6-4544de396af5?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe><br>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/zVB6QMSN9eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+
+<p>De functie <code>input()</code> geeft altijd een string (tekst) terug. Verwacht je van de gebruiker een getal, dan moet je de invoer omzetten van tekst naar een getal met <code>int()</code> (voor een geheel getal):</p>
+
+<pre class="python">print( "Wat is je lievelingsgetal?" )
+invoer = input()
+lievelingsgetal = int( invoer )				# invoer omzetten van tekst naar een getal
+print( "Je lievelingsgetal is", lievelingsgetal )
+</pre>
+<p>Als je een kommagetal verwacht, gebruik je <code>float()</code>. Je converteert van het een datatype (tekst) naar een ander datatype (getal). Dat heet <i>type casting</i>.</p>
+<pre class="python">print( "Wat is de temperatuur?" )
+invoer = input()
+temperatuur = float( invoer )				# invoer omzetten van tekst naar een kommagetal
+print( "De temperatuur is", temperatuur, "graden." )
+</pre>
+
+<p><iframe height="700px" width="100%" src="https://repl.it/@smer/H23v2?lite=true#main.html" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe><br></p>
+
+<p class="opdracht">Opdracht 2.9 Leeftijd vragen</p>
+<p>Schrijf een programma dat de gebruiker om zijn leeftijd vraagt en dan print:</p>
+<p><i>Jij bent .... jaar oud.</i></p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/232-Leeftijd-vragen"></iframe></p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#opgave232)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave232" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+<pre class="python">
+print( "Hoe oud ben je?" )
+invoer = input( "Hoe oud ben je?" )
+leeftijd = int( invoer )
+print( "Je bent", leeftijd, "jaar oud." )
+</pre>
+-->
+
+
+<p class="opdracht">Opdracht 2.10 Sterretjes afdrukken</p>
+<p>Schrijf een programma dat de gebruiker vraagt hoeveel sterretjes hij wil zien, en dan precies zoveel sterretjes afdrukt. Laat de gebruiker ook zien wat is getypt. Bijvoorbeeld: als de gebruiker '4' intikt, wordt het volgende geprint:<br><br>
+    <i>Hier zijn de 4 sterretjes:</i><br>
+    <i>'****</i>
+</p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/233-Sterretjes-afdrukken"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave233" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H2_oplossingen.html#opgave233)-->
+
+<!--
+<pre class="python">
+print( "Hoeveel sterretjes wil je zien?" )
+invoer = input(  )
+aantal_sterretjes = int( invoer )
+print("Hier zijn de", aantal_sterretjes, "sterretjes:")
+print( aantal_sterretjes * "*" )
+</pre>
+-->
+<p class="opdracht">Opdracht 2.11 Gebruiker kiest lengte</p>
+<!--<h3 id="opgave234">Opgave 2.3.4  Gebruiker kiest lengte</h3>-->
+<p>Schrijf een programma dat de gebruiker om een lengte vraagt en dan een lijn met die lengte tekent. Ook hier laat je de gebruiker zien wat is ingetikt.</p>
+<!-- <iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/H2234-Gebruiker-kiest-lengte"></iframe> PYTHON TURTLE -->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/234-Gebruiker-kiest-lengte-py3"></iframe></p>
+
+
+<!-- GIVEN CODE:
+<pre class="python">
+import turtle       # importeer de turtle module
+
+turtle.pendown()    # zet pen neer
+turtle.forward(150) # 150 stappen vooruit
+
+turtle.done()       # klaar
+</pre>
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H2_oplossingen.html#opgave234" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--
+
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H3_oplossingen.html#opgave234)-->
+
+
+<!--
+import turtle       # importeer turtle module
+
+print("Hoe lang?")
+invoer = input()
+lengte = int( invoer )
+print( "Je wilt een lijn van lengte " +str(lengte) )
+
+turtle.pendown()    # zet pen neer
+turtle.forward(lengte) # 150 stappen vooruit
+
+turtle.done()       # klaar
+-->
