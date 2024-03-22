@@ -1,0 +1,109 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--	<p>2: Functies met een retourwaarde</p>
+
+	
+
+<h1>H6.2 - Functies met retourwaarde</h1>
+
+-->
+<p>Een functie kan informatie opleveren. Die informatie heet de retourwaarde. Dat resultaat moet je in je hoofdprogramma in een variabele opslaan. In je programma kun je later met die variabele verder werken.</p>
+
+
+<p>In de code hieronder wordt de functie <code>kiesWillekeurigCompliment()</code> aangeroepen in het hoofdprogramma. De retourwaarde van <code>kiesWillekeurigCompliment()</code> is een <code>gekozen_compliment</code>. De retourwaarde wordt teruggeven aan het hoofdprogramma en moet opgeslagen worden in de variabele <code>compliment_van_de_dag</code>. Het bijbehorende stroomdiagram zie je onder de code.
+
+    <!--
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/Th-8b4-Kies-een-kleur-willekeurig?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+    <!--
+<pre class="python">
+import random
+
+### FUNCTIEDEFINITIE
+#kiest een willekeurige compliment
+def kiesWillekeurigeCompliment():
+	willekeurig = random.randint(1,3) #kies een willekeurig getal: 1,2 of 3
+	if willekeurig == 1:
+		gekozen_compliment = "lief"
+	elif willekeurig == 2:
+		gekozen_compliment = "leuk"
+	else:
+		gekozen_compliment = "slim"
+
+	return gekozen_compliment
+
+### HOOFDPROGRAMMA
+compliment_van_de_dag = kiesWillekeurigeCompliment()
+print("Jij bent "+ compliment_van_de_dag + "!" )
+</pre>
+-->
+
+</p>
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/H62v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<table>
+    <tbody>
+        <tr>
+            <td><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6.2_willekeurigComplimentHoofdprogramma.jpg" alt="Stroomdiagram hoofdprogramma" width="400" height="450" class="img-fluid atto_image_button_text-bottom"></td>
+            <td><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6.2_willekeurigCompliment.jpg" alt="Stroomdiagram kiesWillekeurigCompliment" width="650" height="620" class="img-fluid atto_image_button_text-bottom"></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<p class="opdracht" id="Opgave621">Opdracht 6.3 Dobbelen</p>
+<p>Schrijf een programma dat voor een Monopoly-spel twee dobbelstenen werpt.</p>
+<p>Het programma bestaat uit twee onderdelen (zie ook de stroomdiagrammen hieronder):</p>
+<ol>
+    <li>Een functie <code>gooiDobbelsteen()</code> die een willekeurig getal tussen de 1 en 6 bepaalt en dit retourneert. Het rechter stroomdiagram hieronder toont de werking van de functie <code>gooiDobbelsteen()</code>.</li>
+    <li>Het hoofdprogramma waarin je:
+        <ul>
+            <li>de functie <code>gooiDobbelsteen()</code> aanroept en het resultaat in de variabele <code>eersteDobbelworp</code> opslaat;
+            </li>
+            <li>de functie <code>gooiDobbelsteen()</code> een tweede keer aanroept en het resultaat in de variabele <code>tweedeDobbelworp</code> opslaat;
+            </li>
+            <li>de uitkomst van beide worpen uitprint. Het linker stroomdiagram hieronder toont het algoritme voor het <b>hoofdprogramma</b>.
+            </li>
+        </ul>
+    </li>
+
+</ol>
+
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <!--Python611_Stroomdiagram_Hoofdprogramma_dobbelen.jpg-->
+                <img src="https://moodle.informatica-actief.nl/draftfile.php/147455/user/draft/323428874/Python611_Stroomdiagram_Hoofdprogramma_dobbelen_v2.jpg" alt="Stroomdiagram voor het hoofdprogramma van dobbelen" width="400" height="483" class="img-fluid atto_image_button_text-bottom">
+            </td>
+            <td>
+                <!-- Python611_Stroomdiagram_gooiDobbelsteen.jpg -->
+                <img src="http://course.cs.ru.nl/pythonVO/img/Python611_Stroomdiagram_gooiDobbelsteen.jpg" alt="Stroomdiagram voor functie gooiDobbelsteen()" width="600" height="294" class="img-fluid atto_image_button_text-bottom"><br>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<p>Het linker stroomdiagram beschrijft het <b>hoofdprogramma</b>, het rechter de functie <code>gooiDobbelsteen()</code>.</p>
+<p>De opdracht is om een functie <code>gooiDobbelsteen</code> te schrijven die je vanuit je hoofdprogramma twee keer aanroept, zoals hierboven is uitgelegd.</p>
+
+<!-- ANTWOORD
+import random
+
+### FUNCTIEDEFINITIES
+#gooit een willekeurige dobbelsteen
+def gooiDobbelsteen():
+	waarde = random.randint(1,6) #kies een willekeurig getal: 1,2 of 3
+	return waarde
+
+### HOOFDPROGRAMMA
+eersteDobbelworp = gooiDobbelsteen()
+tweedeDobbelworp = gooiDobbelsteen()
+print("Je hebt gegooid", eersteDobbelworp, "en", tweedeDobbelworp )
+-->
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/621-Dobbelen"></iframe></p>
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave621" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave621)-->

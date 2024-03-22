@@ -1,0 +1,90 @@
+<!--
+<p>4: While-loop met een logische vlag</p>
+<h1 id="H73">H7.3 - <code>while</code>-loop met een logische vlag</h1>
+-->
+<p>Voor het programmeren van een spel heb je altijd één hoofdlus: zolang het spel niet is afgelopen, herhaal dan: vraag de gebruiker om invoer en doe daar iets mee in het spel.</p>
+<p>Een spel kan aflopen om verschillende redenen, bijvoorbeeld omdat er gewonnen is of juist omdat de beurten of levens op zijn. Dit wordt op verschillende momenten in het spel bepaald. Om bij te houden of een spel wel of niet is afgelopen maken we gebruik van een <i>logische vlag</i> (in het Engels: Boolean Flag).
+</p>
+
+
+<!--
+<p>Zoals je hierboven zag, wil soms dat het aantal keren dat iets herhaald wordt afhankelijk is van wat er tijdens de uitvoer gebeurt. Bijvoorbeeld, iemand moet steeds een getal raden totdat het goed geraden is. Raad de gebruiker het getal goed, dan spring je uit de lus.</p>
+-->
+<!--
+<p><b>Hoe een <code>while</code>-loop met logische vlag werkt</b></p>-->
+<!--
+[VIDEOUITLEG: while-loop met logische
+vlag](https://web.microsoftstream.com/video/daa4eefe-e65b-4cd3-b8a8-70de69201ae7)-->
+<!--
+<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/daa4eefe-e65b-4cd3-b8a8-70de69201ae7?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p><br>
+-->
+<!--
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/pA-WeerCd5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/Tptt6GUZlX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Een <i>logische vlag</i> is een variabele die je vooraf op <code>True</code> of <code>False</code> zet. De waarde van de vlag gebruik je in een conditie die bepaalt of het programma wel of niet doorgaat. De waarde van de vlag pas je aan zodra de situatie veranderd is. Dit is handig voor het controleren van een wachtwoord of het maken van een spelletje.</p>
+
+
+<p>We bekijken een voorbeeld van een quiz: de gebruiker moet de som van 3+2 uitrekenen. Zolang het antwoord niet goed is ingevoerd, vragen we de gebruiker om het opnieuw te proberen. Het volgende stroomdiagram laat het algoritme zien met gebruik van een logische vlag <code>goed_geraden</code>:</p>
+
+<!-- Python7_Stroomdiagram_spelRekenQuiz.jpg-->
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_Stroomdiagram_spelRekenQuiz.jpg" alt="Stroomdiagram voor while-loop met logische vlag" width="450"><br>
+            </td>
+            <td>
+                <p>Toelichting op het stroomdiagram hiernaast en de bijbehorende code hieronder:</p>
+                <ul>
+                    <li>regel 2: de logische vlag heet <code>goed_geraden</code> en begint op <code>False</code>;
+                    </li>
+                    <li>regel 4: in de conditie van de loop wordt naar de waarde van <code>goed_geraden</code> gekeken. Zolang nog niet <code>goed_geraden</code>, dan worden de acties eronder uitgevoerd;
+                    </li>
+                    <li>regels 5 t/m 12: acties van de loop:
+                        <ul>
+                            <li>regels 5 en 6: de gebruiker moet een antwoord op de vraag geven;
+                            </li>
+                            <li>regels 8, 9 en 10: als het antwoord goed is, wordt de vlag <code>goed_geraden</code> op <code>True</code> gezet;
+                            </li>
+                            <li>als het antwoord fout is blijft de vlag <code>goed_geraden</code> op <code>False</code>;
+                            </li>
+                        </ul>
+                    </li>
+                    <li>regel 4: na afloop van de acties springt het programma weer naar de conditie van de loop:
+                        <ul>
+                            <li>zolang de conditie <code>True</code> is, worden de acties in de lus weer uitgevoerd;
+                            </li>
+                            <li>zodra bij de controle blijkt dat de conditie <code>False</code> is, springt het programma uit de lus en zal de herhaling niet meer uitgevoerd worden;
+                            </li>
+                        </ul>
+                    </li>
+                    <li>regel 14: na afloop van de <code>while</code>-loop wordt er <i>Spel afgelopen</i> geprint.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!--
+<pre class="python">
+ANTWOORD = 5
+goed_geraden = False #om te beginnen staat de vlag op False
+
+while not goed_geraden: #herhaal zolang nog niet geraden
+	print( "3 + 2 = " )
+	invoer = input( )  #vraag antwoord op quiz vraag
+	gebruikers_antwoord = int( invoer )
+	if gebruikers_antwoord == ANTWOORD: #er is goed geraden
+		print("Goed geraden!")
+		goed_geraden = True #de vlag wordt op True gezet, hierna zal de while-loop niet nog een keer uitgevoerd gaan worden
+
+	else: #fout geraden
+		print("Jammer, fout... probeer het nog een keer") #vlag blijft op niet geraden, de loop wordt weer een keer herhaalt
+
+print("Spel afgelopen")
+</pre>
+-->
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/H72v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>

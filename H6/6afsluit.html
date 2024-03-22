@@ -1,0 +1,354 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<div class="content">
+
+    <!-- HIER KOMT DE INHOUDE VAN DE PAGINA -->
+
+    <!--
+<h4 id="H6AfOpgaven">H6 - Afsluitende Opdrachten</h4>
+-->
+
+    <p>Met de volgende afsluitende opdrachten kun je kijken hoe goed je de stof beheerst. Controleer steeds je eigen oplossing met de voorbeelduitwerking.</p>
+
+
+    <p class="opdracht" id="AfOpgave61">Afsluitende opdracht 6.1 Vind de fout</p>
+    <p>
+        Voer de onderstaande code uit.</p>
+    <ol style="list-style-type: lower-alpha">
+        <li>Wat is er fout aan de volgende code?</li>
+        <li>Waar komt "None" vandaan achter "De berekende oppervlakte"?</li>
+        <li>Los het probleem in de functie op.</li>
+    </ol>
+
+    <!-- GEGEVEN CODE:
+
+### FUNCTIEDEFINITIE
+def oppervlakte_van_driehoek( basis, hoogte ):
+    opp = 0.5 * basis * hoogte
+    print( "Een driehoek met basis", basis, "en hoogte",
+        hoogte, "heeft een oppervlakte van", opp )
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+berekende_oppervlakte = oppervlakte_van_driehoek( 5, 4 )
+print( "De berekende oppervlakte is:", berekende_oppervlakte )
+-->
+    <p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/Af61-Vind-de-fout"></iframe></p>
+    <p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave61" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+    <!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave61)-->
+    <!-- ANTWOORD:
+
+Op regel 6 moet de oppervlakte met <code>return</code> opgeleverd worden.
+
+<pre code="python">
+### FUNCTIEDEFINITIE
+def oppervlakte_van_driehoek( basis, hoogte ):
+    opp = 0.5 * basis * hoogte
+    print( "Een driehoek met basis", basis, "en hoogte",
+        hoogte, "heeft een oppervlakte van", opp )
+	return opp
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+berekende_oppervlakte = oppervlakte_van_driehoek( 5, 4 )
+print( "De berekende oppervlakte is:", berekende_oppervlakte )
+</pre>
+-->
+
+    <p class="opdracht" id="AfOpgave62">Afsluitende opdracht 6.2 Munt opgooien</p>
+
+
+    <p>Schrijf een programma dat een munt opgooit:</p>
+    <ul>
+        <li>Het linker stroomdiagram hieronder geeft aan hoe het hoofdprogramma eruitziet. Dit roept de functie <code>gooiMunt()</code> aan en drukt het resultaat af.</li>
+        <li>Het rechter stroomdiagram toont de functie <code>gooiMunt()</code>. De functie <code>gooiMunt()</code> geeft willekeurig een tekst "KOP" of
+            "MUNT" als resultaat. Maak gebruik van een willekeurig gekozen getal dat 0 of 1 wordt. Als dit 0 is, dan wordt het "KOP", anders "MUNT".</li>
+    </ul>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <!--Python6_Stroomdiagram_muntOpgooien_hoofdprogramma.jpg-->
+                    <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6_Stroomdiagram_muntOpgooien_hoofdprogramma.jpg" alt="Stroomdiagram van hoofdprogramma voor opdracht Munt opgooien" width="400">
+                </td>
+                <td>
+                    <!--Python6_Stroomdiagram_gooiMunt.jpg -->
+                    <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6_Stroomdiagram_gooiMunt.jpg" alt="Stroomdiagram van functie gooiMunt" width="800" height="564" class="atto_image_button_text-bottom"><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/Af62-Munt-opgooien"></iframe></p>
+
+    <p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave62" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+    <!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave62)-->
+    <!-- ANTWOORD
+<pre class="python">
+import random
+
+### FUNCTIEDEFINITIE
+def gooiMunt():
+  random_getal = random.randint (0, 1)
+  if random_getal == 0:
+    return("KOP")
+  else:
+    return("MUNT")
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+opgegooid = gooiMunt()
+print( "Er is gegooid:", opgegooid )
+</pre>
+
+-->
+
+
+    <p class="opdracht" id="AfOpgave63">Afsluitende opdracht 6.3 Geldig e-mailadres</p>
+
+
+    <p>Schrijf een programma dat de gebruiker om een e-mailadres vraagt en controleert of dit geldig is. Het volgende stroomdiagram geeft het algoritme van het hoofdprogramma weer:</p>
+
+
+    <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6_Stroomdiagram_geldigEmailadres_hoofdprogramma.jpg" alt="Stroomdiagram van hoofdprogramma voor opdracht Munt opgooien" width="500">
+
+    <p>
+        Om je code overzichtelijk te houden maak je natuurlijk gebruik van functies:
+    </p>
+    <ol style="list-style-type: lower-alpha">
+        <li>Schrijf een functie <code>vraagInvoer()</code> die de gebruiker om een invoer vraagt, netjes print wat de gebruiker heeft ingevoerd en dit retourneert. Test je functie.
+        </li>
+        <li>Schrijf een functie <code>controleEmailadres()</code> dat een e-mailadres als parameter krijgt en op de eisen controleert. In het geval dat het e-mailadres niet voldoet, geef je feedback over wat er precies mis mee is en return je <code>False</code>. Als het e-mailadres goed is, meld je dat aan de gebruiker en return je <code>True</code>.
+            <ul>
+                <li>Het e-mailadres moet minstens 5 en maximaal 20 karakters bevatten.
+                </li>
+                <li>De volgende vreemde tekens mogen niet voorkomen: "?", "%", "&amp;".
+                </li>
+                <li>Een apenstaartje "@" en een punt "." moeten wel voorkomen.
+                </li>
+            </ul>
+        </li>
+        <li>In het hoofdprogramma gebruik je de functies <code>vraagInvoer()</code> en <code>controleEmailadres()</code>. Als het e-mailadres geldig is, print <i>Toegang verleend</i> en anders <i>Jammer</i>.
+        </li>
+        <li>Test het programma met verschillende invoeren.
+        </li>
+    </ol>
+    <p></p>
+
+    <!--
+De eisen aan het emailadres:
+<ul>
+<li>Het moet minstens 5 en maximaal 20 karakters bevatten
+</li><li>De volgende vreemde tekens mogen niet voorkomen: "?", "%", "&"
+</li><li>Een appenstaartje "@" en een punt "." moeten wel voorkomen
+</li></ul>-->
+
+    <p><iframe width="100%" height="1200px" src="https://repl.it/team/InformaticaActief/Af63-Geldig-emailadres"></iframe></p>
+    <p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave63" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+    <!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave63)-->
+    <!-- ANTWOORD
+
+<pre code="python">
+### FUNCTIEDEFINITIES	
+def vraagInvoer():
+    print("Geef je emailadres op:")
+    invoer = input()
+    print("Je hebt ingevoerd:", invoer)
+    return invoer
+
+def controleEmailadres( emailadres ):
+    if len(emailadres) <= 5 or len(emailadres) >= 20:
+        print("De lengte van de gebruikersnaam is niet goed.")
+        return False
+    elif ("?" in emailadres) or ("%" in emailadres) or ("&" in emailadres):
+        print("De volgende vreemde tekens mogen niet voorkomen: ?, %, & ")
+        return False
+    elif ("@" not in emailadres or "." not in emailadres):
+        print("Een emailadres moet een @ en een . bevatten. ")
+        return False
+    else:
+        print("Jouw email adres voldoet aan de eisen.")
+        return True
+
+### HOOFDPROGRAMMA	
+emailadres = vraagInvoer()
+email_is_geldig = controleEmailadres(emailadres)
+
+if email_is_geldig:
+    print("Toegang verleend")
+else:
+    print("Jammer")
+	
+</pre>
+
+-->
+
+
+    <p class="opdracht" id="AfOpgave64">Afsluitende opdracht 6.4 Deelbaar door 7</p>
+    <p>Schrijf een programma dat bepaalt of een getal deelbaar is door 7:</p>
+    <ol style="list-style-type: lower-alpha">
+        <li>Schrijf de functie <code>isDeelbaarDoor7()</code> dat een getal als parameter krijgt, het resultaat <code>True</code> retourneert als een gegeven getal deelbaar is door 7 en anders <code>False</code>.
+        </li>
+        <li>Roep de functie <code>isDeelbaarDoor7()</code> aan vanuit je hoofdprogramma.
+        </li>
+        <li>Sla het resultaat van de functie op in een variabele.
+        </li>
+        <li>Druk de waarde van deze variabele in het hoofdprogramma af.
+        </li>
+        <li>Test je functie met verschillende waarden.
+        </li>
+        <li>Schrijf commentaar bij je code. Geef aan wat de invoer en uitvoer zijn, en voor welke waarden je programma werkt.
+        </li>
+    </ol>
+
+    <p>Tips:
+        Met modulo ( <code>%</code> ) kun je bepalen of deelbaar is door een ander getal of niet. Bijvoorbeeld:
+    </p>
+    <ul>
+        <li>Als <code>getal%7</code> gelijk is aan 0, dan is getal deelbaar door 7.
+        </li>
+        <li>Als <code>getal%7</code> ongelijk is aan 0, dan is getal niet deelbaar door 7.
+        </li>
+    </ul>
+    <p></p>
+    <!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave64)-->
+
+    <p><iframe width="100%" height="1000px" src="https://repl.it/team/InformaticaActief/Af64-Deelbaar-door-7"></iframe></p>
+    <p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave64" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+    <!-- ANTWOORD
+<pre class="python">
+### FUNCTIEDEFINITIE
+# Doel van de functie is om te bepalen of een gegeven getal deelbaar is door 7. Werkt ook voor kommagetallen, 0 en negatieve getallen
+# Invoer: een int of float
+# Uitvoer: boolean (True of False)
+def isDeelbaarDoor7(getal):
+    if getal%7 == 0:
+        return True
+    else:
+        return False
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+antwoord = isDeelbaarDoor7(14)
+print(antwoord)
+
+antwoord = isDeelbaarDoor7(1)
+print(antwoord)
+
+antwoord = isDeelbaarDoor7(0)
+print(antwoord)
+
+antwoord = isDeelbaarDoor7(-7)
+print(antwoord)
+
+antwoord = isDeelbaarDoor7(-7.0)
+print(antwoord)
+
+</pre>
+
+-->
+
+
+
+
+    <p class="opdracht" id="AfOpgave65">Afsluitende opdracht 6.5 BMI</p>
+    <!-- DE BMI MOETEN ZE OOK AL BERKENEN IN H2-->
+    <!--
+<p><iframe frameborder="0" width="100%" height="800px" src="https://repl.it/student_embed/assignment/4246060/3c76b6609bc1336679d5eb5270464d87"></iframe></p>
+Deze opdracht wordt nog niet automatisch gecontroleerd. Klik <a href="EigenFuncties_oplossingen.html#opgave-8b.1-bmi">hier</a> om je eigen oplossing te vergelijken met een voorbeeld uitwerking.-->
+
+    <p>De Body Mass Index (BMI) geeft een schatting van het gezondheidsrisico van je lichaamsgewicht in verhouding tot je lichaamslengte. Schrijf een programma dat een gebruiker om zijn gegevens vraagt (deel A), de BMI berekent (deel B) en vervolgens een advies geeft (deel C). Het linker stroomdiagram geeft het algoritme voor het hoofdprogramma weer. Het rechter stroomdiagram laat zien hoe het advies gegeven wordt (deel C).</p>
+
+    <p>
+    </p>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <!-- Python6_Stroomdiagram_BMIhoofdprogramma.jpg-->
+                    <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6_Stroomdiagram_BMIhoofdprogramma.jpg" alt="Stroomdiagram van hoofdprogramma voor opdracht BMI" width="300">
+                </td>
+                <td>
+                    <!-- Python6_Stroomdiagram_BMIadvies.jpg-->
+                    <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python6_Stroomdiagram_BMIadvies.jpg" alt="Stroomdiagram voor BMI advies" width="950" height="559" class="img-fluid atto_image_button_text-bottom"><br>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+
+
+
+
+<p><b>DEEL A</b>. Invoer vragen</p>
+
+<p>In je hoofdprogramma vraag je de gebruiker om de lengte (in meters) en gewicht (in kilogram) in te tikken. Bedenk dat het kommagetallen zijn. Gebruik dus float in plaats van int.</p>
+
+<p><b>DEEL B</b>. BMI berekenen</p>
+<p>De BMI bereken je door het gewicht in kilo’s te delen door de lengte in meters in het kwadraat. Als je bijvoorbeeld 1,62 meter lang bent en 56 kilo weegt, heb je een BMI van 21,3:</p>
+<p>berekening: <code>(56 /(1.62 * 1.62))</code> </p>
+
+<ol style="list-style-type: lower-alpha">
+
+    <li>Schrijf een functie die de BMI berekent. Deze krijgt lengte en gewicht als parameters mee en geeft als resultaat de BMI terug.</li>
+    <li>Roep je functie aan in het hoofdprogramma.</li>
+    <li>Sla het resultaat van je functie (dus de BMI) op in het hoofdprogramma en print het daarna.</li>
+</ol>
+
+<p><b>DEEL C</b>. Advies geven</p>
+<p>Een BMI-score van 18,5 wordt als te licht gezien, tussen de 18,5 en de 25 heb je een gezond gewicht en daarboven heb je overgewicht.</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Schrijf een functie die de BMI krijgt en als resultaat advies teruggeeft, zoals in het stroomdiagram hierboven. Het advies luidt:
+        <ul>
+            <li>Bij een BMI kleiner dan of gelijk aan 18,5: <i>Je mag best wel wat aankomen</i>.
+            </li>
+            <li>Bij een BMI groter dan 18,5 en kleiner dan 25: <i>Blijf op dit gewicht</i>.
+            </li>
+            <li>Bij een BMI groter dan of gelijk aan 25: <i>Je kunt het beste wat afvallen</i>.
+            </li>
+        </ul>
+    </li>
+    <li>Roep je functie aan in het hoofdprogramma.</li>
+    <li>Print het resultaat van je functie, dus het advies aan de gebruiker.</li>
+</ol>
+<p><iframe width="100%" height="1200px" src="https://repl.it/team/InformaticaActief/Af65-BMI"></iframe></p>
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave65" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+    <!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#AfOpgave65)-->
+    <!-- ANTWOORD
+### FUNCTIEDEFINITIES
+#schrijf hier je def voor BMI berekenen
+def BMI_berekenen (aantal_m, aantal_kg):
+	BMI = aantal_kg/(aantal_m * aantal_m)
+	return BMI
+
+#bepaal de gezondheidscategorie bij BMI
+def advies_bepalen(BMI):
+	if BMI <= 18.5: # te licht
+		advies = "Je mag best wel wat aankomen"
+		return "te licht"
+	elif BMI > 18.5 and BMI < 25: #gezond gewicht
+		advies = "Blijf op dit gewicht"
+	else: #BMI>= 25: te zwaar
+		advies = "Je kunt het beste wat afvallen"
+	return advies
+
+### HOOFDPROGRAMMA
+
+#vraag hier de gebruiker om zijn gegevens
+print("Hoe lang ben je (in meters)?")
+lengte = float( input() )
+print("Hoeveel weeg je (in kg)?")
+gewicht = float( input() )
+
+#roep hier je functie aan voor het berekenen van de BMI
+berekende_BMI = BMI_berekenen (lengte, gewicht)
+print("BMI:", berekende_BMI)
+advies = advies_bepalen(berekende_BMI)
+print("Onze advies is:", advies)
+
+-->
+</div>
