@@ -248,10 +248,10 @@ else:
 <p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H8_oplossingen.html#AfOpgave84">hier</a> voor een voorbeelduitwerking.</p>
 
 
-<p class="opdracht" id="AfOpgave85">Afsluitende Opgave 8.5 Een bepaald aantal even getallen</p>
+<p class="opdracht" id="AfOpgave85">Afsluitende opdracht 8.5 Een bepaald aantal even getallen</p>
 <p>Schrijf een programma dat de gebruiker om een getal vraagt. Vervolgens print je dat aantal even getallen beginnend bij 0</p>
 
-<p>Dus, als de gebruiker 5 invoert, dan worden 0, 2, 4, 6, en 8 afgedrukt.</p>
+<p>Dus, als de gebruiker 5 invoert, dan worden 0, 2, 4, 6 en 8 afgedrukt.</p>
 
 <p>Tip: Zorg eerst dat je programma werkt voor 5. Breid het daarna uit met de vraag aan de gebruiker.</p>
 

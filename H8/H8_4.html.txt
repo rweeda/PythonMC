@@ -7,7 +7,7 @@
 <p><iframe width="640" height="360" src="https://www.youtube.com/embed/HyNZLCIeSxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
 
 
-<p>Standaard telt de for-loop steeds 1 op. Je kunt zelf de stapgrootte aangeven door
+<p>Standaard telt de <code>for</code>-loop steeds 1 op. Je kunt zelf de stapgrootte aangeven door
     <code>range()</code> met drie parameters aan te roepen: eerst het startgetal, dan de eindgrens en als derde een
     stapgrootte.
 </p>
@@ -66,7 +66,7 @@ Wijzig in bovenstaande code de drie parameters een paar keer, om het effect van 
 
 
 <p class="opdracht" id="opgave831">Opdracht 8.6 3...2...1...Af!</p>
-<p>De volgende code telt van 3 tot en met 1, en print dan <i>Af!</i>. Helaas staan de regels code in de verkeerde volgorde en staat er een regel te veel in. Kan jij de code fixen?</p>
+<p>De volgende code telt van 3 tot en met 1 en print dan <i>Af!</i>. Helaas staan de regels code in de verkeerde volgorde en staat er een regel te veel in. Kan jij de code fixen?</p>
 
 <!--
 <pre class="python">

@@ -45,7 +45,7 @@ print( "Zit 100 NIET in de lijst?", 100 not in temperatuurlijst ) #controleer of
 <p class="opdracht" id="opgave934">Opdracht 9.7 Jackpot</p>
 <p>Tijdens de trekking van een loterij moet gekeken worden of het lot in de lijst met verkochte lotnummers voorkomt.</p>
 
-<p>Schrijf code om te controleren of een lotnummer voorkomt. Als dit voorkomt, print dan <i>Gefeliciteerd</i>, en anders <i>Jammer</i>.</p>
+<p>Schrijf code om te controleren of een lotnummer voorkomt. Als dit voorkomt, print dan <i>Gefeliciteerd</i> en anders <i>Jammer</i>.</p>
 
 <!-- GEGEVEN CODE -->
 <pre class="python">lotenlijst = [12254, 45567, 23534, 54546, 65556, 76765]	#maak een lijst met lotnummers

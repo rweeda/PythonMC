@@ -23,7 +23,9 @@ Figuur 6.2: Stroomdiagram van een geneste beslissing -->
 
 <p>De vertaling van het bovenstaande stroomdiagram in code is:</p>
 
-<!-- <pre class ="python"> leeftijd = 21 if leeftijd < 12:
+<!-- <pre class ="python"> 
+leeftijd = 21 
+if leeftijd < 12:
   print( "kind" )
 else:
   if leeftijd < 18:
