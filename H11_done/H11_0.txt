@@ -1,0 +1,15 @@
+<h4 id="H111">Hoofdstuk 11 - Tekstbestanden</h4>
+<p>Python wordt vaak gebruikt voor dataverwerking: het lezen, wijzigen en schrijven van tekstbestanden. Data word vaak opgeslagen in tekstbestanden, omdat dit soort bestanden makkelijk tussen verschillende programma's uitgewisseld kunnen worden. Je kunt het bijvoorbeeld gebruiken om high-scores van een spelletje bij te houden en dan maakt het niet uit of je spel op een Mac- of Windows-pc gespeeld wordt.</p>
+
+
+<p><span style="font-size: 1rem;">In dit onderwerp:</span></p>
+<ul>
+    <li>leer je hoe je bestanden kan openen en sluiten met <code>open()</code> en <code>close()</code>;</li>
+    <li>leer je hoe je uit een bestand kan lezen met <code>read()</code>, <code>readline()</code> en <code>readlines()</code>;</li>
+    <li>leer je hoe je naar een bestand kan schrijven met <code>write()</code>, <code>writeline()</code> en <code>writelines()</code>;</li>
+    <li>leer je hoe je bestanden kunt openen in een 'mode': om te lezen ("r"), te schrijven ("w"), toe te voegen ("a") of een combinatie daarvan ("w+" en "a+").</li>
+    <li>leer je hoe je CSV-bestanden (comma seperated of door komma's gescheiden) gebruikt en de gegevens met&nbsp;<code>.split(',')&nbsp;</code>uit zo'n bestand in een lijst zet.</li>
+</ul>
+<p></p>
+
+<div class="fa fa-clock-o fa-3x"></div><br> <b>1 uur</b>

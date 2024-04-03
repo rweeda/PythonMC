@@ -1,0 +1,104 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.6
+6: Logische operatoren
+<h4 id="H43">H4.3 - Logische operatoren</h4>-->
+<table style="table-layout: auto;">
+    <tbody>
+        <tr>
+            <td>
+
+                <!-- HIER BEGINT PAGINA INHOUD -->
+
+                <!--IA H4.6
+6: Logische operatoren
+<h4 id="H43">H4.3 - Logische operatoren</h4>-->
+
+
+                <!--[VIDEOUITLEG: van logische operatoren](https://web.microsoftstream.com/video/1ec27173-6f1e-4383-b771-5013f66280f2)-->
+                <!--<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/1ec27173-6f1e-4383-b771-5013f66280f2?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p>
+-->
+                <p><iframe width="640" height="360" src="https://www.youtube.com/embed/hfU3qJbMb3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+                <p>Condities kun je combineren met een combinatie van de drie logische operatoren: <code>and</code>, <code>or</code> en <code>not</code>. </p>
+                <ul>
+                    <li>Als <b><code>and</code></b> tussen twee condities staat, is het resultaat <code>True</code> als beide condities <code>True</code> zijn; anders is het resultaat <code>False</code>.
+                    </li>
+                    <li>Als <b><code>or</code></b> tussen twee condities staat, is het resultaat <code>True</code> als één of beide condities <code>True</code> is. Het resultaat is alleen <code>False</code> als beide <code>False</code> zijn.
+                    </li>
+                    <li><b><code>not</code> </b>kun je voor een conditie plaatsen om deze om te keren van <code>True</code> naar <code>False</code> en andersom.
+                    </li>
+                </ul>
+
+
+                <p>We bekijken een voorbeeld. Bij het inloggen op een website moeten <b>zowel</b> de gebruikersnaam als het wachtwoord kloppen. Hiervoor gebruik je de <code>and</code>:
+                    <!-- TIP: eventueel waarheidstabel toevoegen -->
+                    <!--
+<pre class="python">
+gebruikersnaam = "Janneke"
+wachtwoord = "geenIdee"
+
+if (gebruikersnaam == "Janneke") and (wachtwoord == "appelmoes"):
+    print("je bent ingelogd")
+
+else:
+    print ("je bent niet ingelogd")
+</pre>-->
+
+                </p>
+                <p><iframe height="500px" width="100%" src="https://repl.it/@smer/H43v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+                <p class="opdracht" id="opgave431">Opdracht 4.12 Het is weekend!</p>
+                Schrijf een programma dat de gebruiker vraagt om de dag van de week en dan print of het weekend is of niet.
+                <ul>
+                    <li>Vraag de gebruiker welke dag van de week het is, bijvoorbeeld: "maandag".
+                    </li>
+                    <li>Sla de gebruikersinvoer op in een variabele <code>vandaag</code>.
+                    </li>
+                    <li>Als <code>vandaag</code> zaterdag of zondag is, druk dan af: <i>Het is weekend!</i>
+                    </li>
+                    <li>Anders druk je af: <i>Helaas, geen weekend.</i>
+                    </li>
+                    <li>Test met verschillende dagen van de week.
+                    </li>
+                </ul>
+
+                <!-- GEGEVEN CODE:
+<pre class="python">
+# vraag de gebruiker om invoer en sla dit op in een variabele 'vandaag'
+
+
+if #controleer hier iets
+    print( "Het is weekend!" )
+#vul hier ook iets in
+    print( "Helaas, geen weekend.")
+</pre>-->
+
+                <p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/431-Het-is-weekend?lite=true#main.py"></iframe></p>
+
+
+                <!-- ANTWOORD
+<pre class="python">
+print( "Welk dag is het vandaag?" )
+vandaag = input()
+
+if vandaag == "zaterdag" or vandaag == "zondag":
+    print( "Het is weekend!" )
+else:
+    print( "Helaas, geen weekend.")
+</pre>
+-->
+
+                <!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave431)-->
+                <p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave431" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+                <p>Let op: Links en rechts van de operatoren moeten complete voorwaarden staan.
+
+                    Dus in Python kun je niet zeggen:<br>
+
+                    Als <code>vandaag == "zaterdag" or "zondag"</code> (dus: "<i>Als het vandaag zaterdag of zondag is</i>"), maar moet je expliciet de variabele&nbsp;<code>vandaag</code> herhalen, dus: <code>vandaag == "zaterdag" or vandaag == "zondag"</code>. De uitkomst levert anders namelijk niet altijd een correct antwoord op, bijvoorbeeld als je bij de code hierboven "<i>donderdag</i>" invult, geeft de code aan dat het weekend is.
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>

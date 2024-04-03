@@ -1,0 +1,17 @@
+<h4>Hoofdstuk 13 - Strings</h4>
+<p>In computerprogramma's worden teksten weergegeven door strings. In dit hoofdstuk leer je over strings en de functies die beschikbaar zijn om strings te gebruiken en aan te passen.</p>
+
+<p><span style="font-size: 1rem;">In dit onderwerp:</span></p>
+<ul>
+    <li>leer je waar strings voor gebruikt worden;</li>
+    <li>leer je hoe je strings over meerdere regels kunt gebruiken;</li>
+    <li>leer je hoe een index (posities van letters) bij een string werkt en hoe je dus door de tekens van een string kan lopen;</li>
+    <li>leer je delen van tekst (substrings) uit een string te halen;</li>
+    <li>leer je de volgende stringfuncties gebruiken: <code>strip()</code>, <code>upper()</code>, <code>lower()</code>, <code>find()</code>, <code>replace()</code>, <code>split()</code>, <code>+</code> en <code>*</code>;
+    </li>
+    <li>leer je dat strings onveranderbaar zijn, dus dat je, als je een stringfunctie gebruikt,
+        een nieuwe variabele moet maken om het resultaat in op te slaan;</li>
+    <li>leer je hoe je de ASCII-waarde van een teken kunt krijgen met <code>ord()</code> of andersom <code>chr()</code>.
+    </li>
+</ul>
+<div class="fa fa-clock-o fa-3x"></div><br> <b>1 uur</b>

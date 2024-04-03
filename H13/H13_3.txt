@@ -1,0 +1,29 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>3: Een nieuwe regel in een string</p>
+
+<h2 id="newline-in-een-string">13.2.3 Newline in een string</h2>
+-->
+<p>Met een
+    <i>newline</i>-teken (<code>\n</code>) geef je aan dat er op een nieuwe regel begonnen moet worden.
+</p>
+<p>Bijvoorbeeld: <code>print("a\nb")</code> drukt 'a' op de ene regel af en 'b'
+    op een volgende regel.</p>
+
+
+<p class="opdracht" id="opgave1321">Opdracht 13.1 Nieuwe regel</p>
+Zet in de code hieronder het newline-teken op de juiste plaats.
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraStrings1331-Nieuwe-regel#main.py"></iframe></p>
+
+<!-- Gebruik één regel code om de tekst "_Hoi Hallo_" _over twee regels af te
+drukken:_
+
+_Hoi_
+
+_Hallo_
+
+-->
+
+Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1321">hier</a> voor een voorbeelduitwerking.

@@ -1,0 +1,45 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>9: ASCII gebruiken in Python</p>
+<h2 id="ascii">ASCII</h2>-->
+<p>Zoals je bij de cursus 'Informatie digitaal' hebt geleerd wordt ASCII-code gebruikt om tekens te coderen. Hieronder zie je een deel van de ASCII-tabel. De hexadecimale code voor ieder teken staat
+    naast de decimale code. </p>
+
+<div class="figure"> <img src="http://course.cs.ru.nl/pythonVO/img/ASCII_tabel.PNG" alt="ASCII tabel">
+    <p class="caption">ASCII-tabel</p>
+</div>
+
+<p>Bij elk teken hoort een decimale waarde. Om erachter te komen welke waarde bij een teken hoort, gebruik je <code>ord()</code>. Bijvoorbeeld: <code>ord('A')</code> levert de waarde van 'A' op: 65.</p>
+
+<p>Om erachter te komen welk teken bij een waarde hoort, gebruik je <code>chr()</code>. Aan <code>chr()</code> geef je de decimale waarde mee en dat levert het bijbehorende
+    teken op. Bijvoorbeeld, <code>chr(65)</code> is de letter 'A'. </p>
+<p><iframe height="350px" width="100%" src="https://repl.it/@smer/105-ASCII?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+<pre class="python">
+print( ord( 'A' ) )
+print( ord( 'a' ) )
+print( chr( 65 ) )
+print( chr( 97 ) )
+</pre>
+-->
+
+<p class="opdracht" id="opgave1329">Opdracht 13.9 Het alfabet afdrukken</p>
+<!--<p class="opdracht" id="opgave-10.5.1_alfabet_afdrukken"><span style="color:red">Opdracht</span>
+10.5.1 Het alfabet afdrukken</p>-->
+<p>Druk alle hoofdletters van "A" tot en met "Z" af.</p>
+
+<p>Tip: dit doe je natuurlijk niet door alle letters één voor één in te
+    tikken! Maak gebruik van de functies <code>ord()</code> of
+    <code>chr()</code>. Met <code>print(... , end=" ")</code> druk je een
+    spatie af in plaats van een nieuwe regel.
+</p>
+
+<!-- ANTWOORD for i in range( 26 ):
+	letter = chr (i+65)
+	print(letter, end=" ")
+-->
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraOpgave1338-Alfabet-afdrukken#main.py"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1329">hier</a> voor een voorbeelduitwerking.</p>

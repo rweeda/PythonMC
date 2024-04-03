@@ -1,0 +1,35 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.2
+<p>5: Een lijst wegschrijven met <code>writelines()</code></p>
+
+<h2>Schrijven met <code>writelines()</code></h2>
+
+
+-->
+<p>Met <code>writelines()</code> kun je een lijst van strings naar een bestand schrijven. Run het voorbeeld
+hieronder, klik op ‘Show Files’ en dan op het bestand "uitvoer.txt" om de inhoud te
+bekijken.</p>
+
+
+<!-- <pre class="python"> tekstlijst = ["hoi","hallo"]
+
+bestand = open("uitvoer.txt", "w") bestand.writelines(tekstlijst)
+
+bestand.close() </pre>-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th1633-writelines?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave1124">Opdracht 11.6 Van lijst naar bestand</p>
+
+<p>Schrijf een programma dat de lijst <code>lijst= ["rood\n","wit\n",
+        "blauw"]</code> naar een bestand schrijft. Elk element van de lijst moet
+    op een nieuwe regel komen te staan.</p>
+<p>Na afloop staan er dus drie
+    regels tekst in een nieuw bestand.</p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden6"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1123">hier</a> de voorbeelduitwerking.</p>
+<!-- <pre class="python"> lijst= ["rood\n","wit\n", "blauw"]
+
+bestand = open("uitvoer.txt", "w") bestand.writelines(lijst)
+
+bestand.close() </pre> -->

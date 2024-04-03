@@ -1,0 +1,113 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2 <p>6: Strings doorlopen met een <code>for</code>-loop</p> <h2 id="strings-doorlopen">13.2.5 Strings doorlopen
+met een for-loop</h2> -->
+
+<p>Je kunt de tekens van een string &eacute;&eacute;n voor &eacute;&eacute;n doorlopen met een
+    <code>for</code> loop:
+</p>
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th105?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!-- <pre class="python"> woord = "appel" for letter in woord: print( letter ) </pre> -->
+
+
+<!-- <p>Je kunt met indices ook een string doorlopen. Zo doe je het met een
+<code>for</code> loop:</p>
+<p><iframe height="350px" width="100%" src="https://repl.it/@smer/Th106?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>-->
+
+<!--TH10.6 <pre class="python"> woord = "appel" for i in range( len( woord )
+):
+    print( woord[i] )<table style="table-layout: auto;">
+</pre> -->
+
+
+<p class="opdracht" id="opgave1323">Opdracht 13.3 Dagen van de week verkort</p>
+<!-- was
+12.5.1-->
+<!--<p><iframe frameborder="0" width="100%" height="400px" src="https://repl.it/student_embed/assignment/1256899/478293cdc87c909cdff02e29c0349380"></iframe></p>-->
+
+<p>Schrijf een <code>for</code>-loop die een lijst met strings doorloopt en van elke string de eerste twee
+    karakters print. Met de lijst <code>[ 'maandag', 'dinsdag', 'woensdag' ]</code> wordt dus het volgende
+    geprint:</p>
+<p><i>ma di wo</i></p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraOpgave1333-Dagen-vd-week"></iframe></p>
+
+<!-- Practice Exercise 3_4 (for + if) Schrijf een for-loop die over een lijst
+met strings itereert, en van elk woord de eerste twee karakters print. De
+lijst [ ‘maandag’, ‘dinsdag’, ‘woensdag’ ] zou dus moeten resulteren in: ma
+di wo ANTWOORD: dagenVanDeWeek =  [ 'maandag', 'dinsdag', 'woensdag']
+
+for dag in dagenVanDeWeek:
+	print( dag[0]+dag[1] )
+
+UITVOER: ma di wo -->
+
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1323">hier</a> voor een voorbeelduitwerking.</p>
+
+
+
+
+<p class="opdracht" id="opgave1324">Opdracht 13.4 Print klinkers uit woorden in een
+    lijst</p>
+
+<p>Gebruik een <code>for</code>-loop om alle letters van een string één voor één
+    te doorlopen en de letter af te drukken als het een klinker is (dus als het een: a, e, i, o, u of y is).</p>
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Hextra1334-Print-klinkers-uit-woord"></iframe></p>
+<!-- Practice
+Exercise 3_6 (for + if) Schrijf een for-loop die langs alle letters van een string loopt en de letter uitprint, maar
+alleen als het een klinker is ('aeiou'). Gebruik string s = "een Nederlander heeft programmeertaal Python bedacht."
+
+ANTWOORD: tekst = "een Nederlander heeft programmeertaal Python bedacht."
+
+for letter in tekst:
+	if letter in "aeiou":
+		print( letter )
+
+OF
+		
+tekst = "een Nederlander heeft programmeertaal Python bedacht."
+	
+for letter in tekst:
+	if letter in ["a", "e", "i", "o", "u"]:
+		print( letter )
+
+
+UTIVOER: e e e a e e e o a e e a a o e a -->
+<p>Controleer je code door de klinkers handmatig te tellen.</p> 
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1324">hier</a> voor een voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave1325">Opdracht 13.5 Aantal voorkomens in een woord</p>
+
+<p>Schrijf een programma dat de gebruiker om een woord vraagt, telt hoe vaak de letter 'e' erin voorkomt en het resultaat dan
+    afdrukt.</p>
+
+<p>Het algoritme:</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Maak een teller;
+    </li>
+    <li>Vraag de gebruiker om een woord
+        in te voeren en sla het woord op in een variabele ;</li>
+    <li>Doorloop het woord per letter;
+    </li>
+    <li>Als de letter gelijk is aan 'e', verhoog je een teller; </li>
+    <li>Na het doorlopen van het woord druk je netjes af hoe
+        vaak de letter 'e' voorkomt. </li>
+</ol>
+
+<!--ANTWOORD: ingevoerde_woord = input( "Typ een woord:" )
+
+letter_teller = 0 for letter in range( 0, len( ingevoerde_woord ) ):
+    if( ingevoerde_woord[letter]=="e" ):
+        letter_teller += 1
+print("De letter e komt", letter_teller,"keer voor")
+
+-->
+<p><iframe width="100%" height="750px" src="https://replit.com/team/InformaticaActief/Hextra1335-Aantal-voorkomens-in-woord"></iframe></p>
+<p>Klik
+    <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1325">hier</a>
+    voor een voorbeelduitwerking.
+</p>

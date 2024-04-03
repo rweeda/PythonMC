@@ -1,0 +1,27 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>5: Slicing: strings opknippen</p>
+
+<h2 id="string-indices">String slicing</h2> -->
+<p>Je kunt een string ophakken in
+    delen. Dat heet <i>slicing</i>. </p>
+<p>Je geeft dan aan vanaf welke en <b>tot</b> welke
+    index (positie) je wilt hebben (let op: dus <b>niet</b> tot en met).</p>
+
+<p> In het voorbeeld
+    hieronder wordt de tekst gepakt vanaf index 1 (dus letter 'y') tot index 4
+    (dus tot en met index 3, dus letter 'h'):</p>
+
+<!--
+<pre class="python">
+tekst = "Python"
+deel_van_tekst = tekst[1:4]  #indices 1 tot 4 (oftewel index 1 t/m 3)
+
+print(deel_van_tekst) </pre>-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/Th1013?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!-- tekst = "Python" deel_van_tekst = tekst[1:4]
+
+print(deel_van_tekst) -->

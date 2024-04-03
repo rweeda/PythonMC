@@ -1,0 +1,269 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>3: Functies met retourwaarden en parameters</p>
+	
+
+<h1>H6.3 - Functies met retourwaarden en parameters</h1>
+-->
+
+<p>Voor de meeste berekeningen heb je informatie (parameters) nodig en lever je ook een retourwaarde (resultaat) op. </p>
+
+
+<p>Bekijk de code hieronder. De functie <code>plakWoordenAanElkaar()</code> krijgt twee woorden als parameters binnen, plakt deze aan elkaar en slaat het samengestelde woord op in de variabele <code>resultaat</code>.
+    <!--
+<p><iframe height=700px" width="100%" src="https://repl.it/@smer/Th85?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+    <!--
+<pre class="python">
+### FUNCTIEDEFINITIE
+def plakWoordenAanElkaar( woord1, woord2 ):
+    resultaat = woord1 + woord2
+    return(resultaat)
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+samenstelling = plakWoordenAanElkaar( "fiets", "bel" )
+print(samenstelling)
+</pre>
+
+-->
+
+</p>
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H63v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+We bekijken hoe de code wordt uitgevoerd:<p></p>
+<ol>
+    <li>De code wordt van boven naar beneden gelezen, maar definities worden overgeslagen.
+    </li>
+    <li>Op regel 7 wordt de functie <code>plakWoordenAanElkaar()</code> aangeroepen met twee strings.
+    </li>
+    <li>De code springt dan naar regel 2, de definitie van de functie. Hier wordt bepaald dat de eerste string "fiets" in de variabele <code>woord1</code> wordt opgeslagen en de tweede string "bel" in variabele <code>woord2</code>.
+    </li>
+    <li>Op regel 3 worden de twee strings aan elkaar geplakt en wordt het samengestelde woord opgeslagen in de variabele <code>resultaat</code>.
+    </li>
+    <li>Op regel 4 wordt met een <code>return</code> de waarde van <code>resultaat</code> opgeleverd.
+    </li>
+    <li>De functie is afgelopen en gaat terug naar regel 7. De variabelen <code>woord1</code>, <code>woord2</code> en <code>resultaat</code> werden in de functie gemaakt en bestonden alleen in de functie. Na regel 4 bestaan ze niet meer.
+    </li>
+    <li>Op regel 7 wordt de waarde van <code>resultaat</code>, namelijk "fietsbel" teruggegeven aan het hoofdprogramma. Om "fietsbel" in het hoofdprogramma te onthouden wordt het resultaat opgeslagen in de variabele <code>samenstelling</code>.
+    </li>
+    <li>Op regel 8 wordt de variabele <code>samenstelling</code> afgedrukt.
+    </li>
+</ol>
+
+
+
+Merk op dat:
+<ul>
+    <li>de variabelen <code>woord1</code>, <code>woord2</code> en <code>resultaat</code> in de functie gemaakt worden en alleen in de functie bestaan. Zij heten <em>lokale variabelen</em>.
+    </li>
+    <li>dat wat met een <code>return</code> wordt opgeleverd in het hoofdprogramma in een variabele <b>moet</b> worden opgeslagen. In dit voorbeeld gebeurt dat in de variabele <code>samenstelling</code> op regel 7
+    </li>
+</ul>
+
+
+
+
+
+
+<p class="opdracht" id="opgave631">Opdracht 6.4 Een berekening retourneren</p>
+
+<p>Lees de code hieronder.</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Bedenk een zinvolle naam voor de functie <code>berekenIets()</code>. Pas het ook aan in de code. Run je code om te controleren of deze nog goed werkt.
+    </li>
+    <li>Geef ook zinvolle namen aan de variabelen a en b. Pas het ook aan in de code. Run je code om te controleren of deze nog goed werkt.
+    </li>
+    <li>Wat is de levensduur van <code>korting</code>? Dat wil zeggen, op welk regelnummer wordt de variabele aangemaakt? En na welk regelnummer houdt ze op te bestaan?
+    </li>
+</ol>
+
+<!--<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/4282619/01e4ddf9e2972897af8fa207c73df6ee"></iframe></p>-->
+
+<!-- GEGEVEN CODE:
+
+### FUNCTIEDEFINITIE
+def berekenIets(a, perc_korting):
+	korting = a * perc_korting/100
+	b = a - korting
+	return b
+	
+### HOOFDPROGRAMMA
+prijs_met_korting = berekenIets(20.00, 30)
+print("Met korting kost het product nu " + str(prijs_met_korting) + " euro" )
+
+-->
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/631-Een-berekening-retourneren"></iframe></p>
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave631" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave631)-->
+<!--ANTWOORDEN
+1. Het programma berekend de nieuwe prijs van een artikel, gegeven de oude prijs en kortingspercentage.
+2. berekenKorting
+<pre class="python">
+### FUNCTIEDEFINITIE
+def berekenKorting(oude_prijs, perc_korting):
+	korting = oude_prijs * perc_korting/100
+	nieuwe_prijs = oude_prijs - korting
+	return nieuwe_prijs
+	
+### HOOFDPROGRAMMA
+prijs_met_korting = berekenKorting(20.00, 30)
+print("Met korting kost het product nu " + str(prijs_met_korting) + " euro" )
+</pre>
+3. De variabele <code>korting</code> wordt aangemaakt op regel 3. Omdat het binnen de functie wordt aangemaakt, bestaat het niet meer na afloop van het programma. Dus, na regelnummer 5 bestaat het niet meer en kun je het niet meer gebruiken. Hetzelfde geldt voor de andere variabelen die in de functie worden aangemaakt. Daarom is het nodig om de <code>nieuwe_prijs</code> te retourneren zodat het daarna nog gebruikt kan worden (in de print).
+-->
+
+
+<p class="opdracht" id="opgave632">Opdracht 6.5 Fietsen en wielen</p>
+<!--
+<p><iframe frameborder="0" width="100%" height="800px" src="https://repl.it/student_embed/assignment/3554063/3cc6197533fa9711e8054fc4b09a37ec"></iframe></p>-->
+
+<p>De functie <code>telAantalWielen()</code> telt aan de hand van het aantal fietsen hoeveel wielen er zijn en print dit. Het <code>aantal_wielen</code> is een lokale variabele en bestaat dus alleen binnen de functie.</p>
+
+<p>Op regel 8 willen we het aantal kunnen printen in een volzin. De uitvoer van je programma moet zijn:
+    <i>"Met 10 fietsen heb je 20 wielen."</i>
+</p>
+
+<ol style="list-style-type: lower-alpha">
+    <li>Haal het commentaar '#' op regel 8 weg. Welke foutmelding krijg je? Leg uit wat het probleem is.</li>
+    <li>Los het probleem op. Om het <code>aantal_wielen</code> op regel 8 te kunnen gebruiken moeten er twee dingen gebeuren:
+        <ol>
+            <li>aan het einde van de functie <code>telAantalWielen()</code> moet de variabele <code>aantal_wielen</code> worden opgeleverd (het wordt nu alleen op regel 4 geprint, maar niet opgeleverd) en
+            </li>
+            <li>de waarde die opgeleverd wordt door de functie moet worden opgeslagen op regel 7 (tip: <code>aantal_wielen = ... </code> )
+            </li>
+        </ol>
+    </li>
+    <li>Test je functie. Krijg je de uitvoer die verwacht wordt?</li>
+</ol>
+
+<!-- GEGEVEN CODE:
+<pre class="python">
+### FUNCTIEDEFINITIE
+def telAantalWielen( aantal_fietsen ):
+  aantal_wielen = aantal_fietsen * 2
+  print( aantal_wielen )
+
+### HOOFDPROGRAMMA
+telAantalWielen( 10 ) # roep functie aan
+#print("Met zoveel fietsen heb je", berekend_aantal_wielen, "wielen." )
+</pre>-->
+
+<p><iframe width="100%" height="700px" src="https://repl.it/team/InformaticaActief/632-Fietsen-en-wielen"></iframe></p>
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave632" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave632)-->
+<!-- ANTWOORD:
+
+# GLOBALE VARIABELEN
+aantal_fietsen = 10
+
+#DEFINITIES
+def telAantalWielen( aantal_fietsen ):
+  aantal_wielen = aantal_fietsen * 2
+  return aantal_wielen
+
+### HOOFDPROGRAMMA
+berekend_aantal_wielen = telAantalWielen( aantal_fietsen ) # roep functie aan
+print("Met", aantal_fietsen, "fietsen heb je", berekend_aantal_wielen, "wielen." )
+
+
+-->
+
+
+<p class="opdracht" id="opgave633">Opdracht 6.6 Toetscijfer berekenen</p>
+<!--<p><iframe frameborder="0" width="100%" height="600px"
+src="https://repl.it/student_embed/assignment/890398/b5f619500c34cae4846e2c503e3bc375"></iframe></p>
+-->
+
+<p>Je cijfer op een wiskundetoets bestaande uit 60 punten wordt zo berekend:</p>
+<p><code>cijfer = ( aantal_punten*9 ) / 60 + 1 </code></p>
+<p>Heb je 40 punten gehaald, dan is je cijfer een 7.</p>
+<!--Zet regelnummers aan (Tip: 'L')<br>-->
+
+<p><b>DEEL A</b>: </p>
+<p>Maak een definitie voor het berekenen van je cijfer:</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Op regel 3 zet je de functiedefinitie, dus de naam van de functie met tussen haakjes de parameter en een <code>:</code> aan het einde van de regel.
+    </li>
+    <li>Op regel 4 zet je de berekening van het cijfer.
+    </li>
+    <li>Op regel 5 retourneer je het resultaat met een <code>return</code>.
+    </li>
+</ol>
+
+<p><b>DEEL B</b>: </p>
+<p>Roep de functie aan en print je eindcijfer:</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Roep de functie op regel 9 aan met <code>berekenCijfer( 40 )</code>.
+    </li>
+    <li>Sla op regel 9 ook het resultaat op in een variabele.
+    </li>
+    <li>Op regel 10 print je die variabele.
+    </li>
+</ol>
+
+<!-- GEGEVEN CODE:
+
+### FUNCTIEDEFINITIE
+
+#def ....
+	#cijfer = (aantal_punten*9) / 60 + 1
+	#return(...)
+	
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+
+#roep hier je functie aan en sla het resultaat op in een variabele
+#print(...)-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/633-Toetscijfer-berekenen"></iframe></p>
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave633" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave633)-->
+<!--
+ANTWOORD
+<pre class="python">
+### FUNCTIEDEFINITIE
+def berekenCijfer(aantal_punten):
+    cijfer = (aantal_punten * 9) / 60 + 1
+    return( cijfer )
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+behaalde_cijfer = berekenCijfer( 40 )
+print(behaalde_cijfer)
+</pre>
+-->
+
+
+
+<p class="opdracht" id="opgave634">Opdracht 6.7 Volume van een balk</p>
+
+<p>Schrijf een functie die het volume van een balk berekent en oplevert:</p>
+<ul>
+    <li>De functie krijgt drie parameters mee: de lengte, breedte en hoogte.
+    </li>
+    <li>Het volume van een balk bereken je door de lengte, breedte en hoogte met elkaar te vermenigvuldigen.
+    </li>
+    <li>In het hoofdprogramma roep je de functie aan en sla je de retourwaarde op in een variabele.
+    </li>
+    <li>Druk daarna het berekende volume af.
+    </li>
+</ul>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/634-Volume-van-een-balk"></iframe></p>
+<!-- ANTWOORD:
+
+### FUNCTIEDEFINITIE
+#deze functie levert het volume van een balk op
+def berekenVolumeBalk ( lengte, breedte, hoogte ):
+    volume = lengte * breedte * hoogte
+    return volume
+
+### HOOFDPROGRAMMA MET AANROEP VAN FUNCTIE
+berekende_volume = berekenVolumeBalk( 4,3,5 )
+print( "Het volume is", berekende_volume )
+
+-->
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave634)-->
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H6_oplossingen.html#opgave634" target="_blank">hier</a> de voorbeelduitwerking.</p>

@@ -1,0 +1,50 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.1
+1: Lezen uit tekstbestanden</p>
+
+<h1 id="H111">H11.1 - Lezen van tekstbestanden</h1>
+
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/F28VrnOkhBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Om een tekstbestand te lezen, moet je het bestand eerst openen, dan de inhoud ervan lezen en daarna het bestand weer sluiten.</p>
+
+<p><b>Openen van een bestand met <code>open()</code></b></p>
+<p>Een bestand openen doe je met <code>open()</code>.
+    De <code>open()</code>-functie heeft twee parameters. De eerste is de naam van het bestand en met de tweede geef je aan wat je met het bestand wilt doen, bijvoorbeeld:
+</p>
+<ul>
+    <li>alleen lezen: "r" (staat voor het Engelse "read");</li>
+    <li>(vooraan) schrijven: "w" (staat voor het Engelse "write");</li>
+    <li>achteraan toevoegen: "a" (staat voor het Engelse "append").</li>
+</ul>
+
+<p>We kijken eerst naar hoe je een bestand opent om te lezen en na afloop weer sluit.</p>
+
+<p>De <code>open()</code>-functie levert een handle (of handvat) op, die je daarna gebruikt om allerlei andere
+    dingen met het bestand te kunnen doen, zoals de inhoud lezen of erin schrijven. In onze voorbeelden is
+    <code>bestand</code> de handle naar het bestand. Omdat we willen lezen geven we als tweede parameter
+    een "r" op:
+</p>
+
+
+<pre class="python">bestand = open( "groet.txt", "r" )
+</pre>
+
+<p><b>Lezen uit een bestand met <code>read()</code></b></p>
+<p>De makkelijkste manier om te lezen wat er
+    in een bestand staat, is met <code>read()</code>. Deze levert een <code>string</code> op met daarin de inhoud
+    van het hele bestand.</p>
+
+<pre class="python">tekst = bestand.read()
+</pre>
+<p>Ook tekens die je niet meteen ziet, worden in de <code>string</code> opgeslagen. Een voorbeeld is een nieuwe regel (als je op ENTER drukt), die als <code>\n</code> wordt gecodeerd.</p>
+
+
+<p><b>Sluiten van een bestand met <code>close()</code></b></p>
+
+<p>Een bestand sluiten doe je met <code>close()</code>.</p>
+<pre class="python"> bestand.close() </pre>
+<p>Het is een goede gewoonte om bestanden te sluiten zodra je ze niet meer gebruikt. Dit kan anders problemen
+    opleveren als het bestand ook door een ander programma gebruikt wordt.</p>

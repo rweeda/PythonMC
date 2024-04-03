@@ -1,0 +1,234 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.3
+<p>7: Gegevens opslaan in een CSV-bestand</p>
+
+<h1 id="H113">H11.3 - Gegevens opslaan in een CSV-bestand</h1>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/n2WhYWBkSFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Je kunt bestanden gebruiken om data in op te slaan, bijvoorbeeld de high-score of de toestand van een spel.
+    Zo kan een speler, nadat het programma is afgesloten, later toch nog doorgaan waar die gebleven is. Wat hierbij
+    belangrijk is, is dat je goed bedenkt hoe je de data in een bestand gaat opslaan, bijvoorbeeld de volgorde. Dat is
+    nodig voor het uitlezen van de gegevens als die later weer gebruikt worden.</p>
+
+<p>Data kunnen als een .CSV-bestand opgeslagen worden. CSV staat voor "Comma-Separated Values", met komma
+    gescheiden waarden. Dit wordt vaak gebruikt voor het importeren en exporteren van data uit tabellen in spreadsheets en
+    databases. Data worden dan in een specifieke volgorde opgeslagen, telkens gescheiden door een komma.</p>
+
+<p>Stel dat je bij een spel gegevens wilt opslaan, zoals de spelersnaam en de score:</p>
+<ul>
+    <li>Tom,12
+    </li>
+    <li>Janneke,50
+    </li>
+    <li>Luna,20 </li>
+</ul>
+
+<p>Om de stand bij te houden na het afsluiten van het spel, kun je deze als .CSV-bestand opslaan. Om een nieuwe
+    score toe te voegen aan het bestand, schrijf je de gegevens achteraan in het bestand, steeds met een komma
+    ertussen en een nieuwe regel na afloop.</p>
+
+<ol style="list-style-type: lower-alpha">
+    <li>Bekijk de inhoud van "stand.csv".
+    </li>
+    <li>Run het onderstaand programma en bekijk het resultaat in "stand.csv".
+    </li>
+</ol>
+<!--
+<pre class="python">
+speler_naam = "Floor"
+speler_score = 60
+
+bestand = open("stand.csv", "a") #a omdat je achteraan bestand wil toevoegen
+
+#schrijf elk element in je lijst naar het bestand, telkens met een ','
+bestand.write('\n')									#op een nieuwe regel toevoegen
+bestand.write(speler_naam)
+bestand.write(',')									#komma tussen elk element toevoegen
+bestand.write( str(speler_score) )	#eerst nog een tekst van getallen maken
+
+	bestand.close() print("klaar") </pre> -->
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/Th-1651-lijstNaarBestand?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups
+allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!-- opdracht
+haal complimenten uit bestand, zet in lijst en kies een willekeurige
+-->
+
+<!-- zonder extra komma:
+# gegevens_overgezet = 0 #bijhouden hoeveel uit lijst is overgezet
+# for gegeven in speler_stand:
+# 	bestand_handle.write( str(gegeven) )
+	
+# 	#alleen komma toevoegen als niet de laatste gegeven is
+# 	if gegevens_overgezet < len(speler_stand)-1:
+# 		bestand_handle.write(",")
+# 		gegevens_overgezet += 1
+-->
+
+<p>Je kunt de gegevens uit een bestand ook weer in een lijst zetten. Met <code>.split()</code> kun je als
+    parameter aangeven welk teken gebruikt wordt tussen de verschillende gegevens, bijvoorbeeld
+    <code>.split(",")</code> als je de gegevens met een komma scheidt. De gegevens worden in een lijst gezet.
+</p>
+<!-- <pre class="python"> bestand = open("stand.csv", "r")
+
+inhoud_als_lijst = bestand.readlines() # zet elk regel in een lijst
+print("inhoud_als_lijst:", inhoud_als_lijst) #even printen ter controle
+
+for spelergegevens in inhoud_als_lijst: #voor elke speler in de lijst:
+  print("spelergegevens:", spelergegevens) #even printen ter controle
+  speler_stand = spelergegevens.split(',') #maak per speler een lijst van stand, zoals: ["Tom",12]
+
+  speler_naam = speler_stand[0] #de spelernaam is het eerste element
+  speler_score = speler_stand[1] #de score is het tweede element
+  print("Speler " + speler_naam + " heeft een score van " + speler_score, end="") #druk af, zonder nieuwe regel
+
+bestand.close()
+</pre>
+-->
+
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/Th-1652-bestandNaarLijst?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms
+allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave1131">Opdracht 11.8 Van bestand naar scherm</p>
+<p>We gaan nu aan de slag met een .CSV-bestand. Bekijk "emailadressen.csv" om een idee te krijgen van de structuur.</p>
+<ol style="list-style-type: lower-alpha">
+    <li>
+        <p><b>Deel A:</b> schrijf een programma dat voor elke regel in het bestand de volgende regel afdrukt: "Het
+            e-mailadres van <i>naam</i> is <i>emailadres</i>".</p>
+        <p>De uitvoer is dus:<br>
+        <i>Het em-ailadres van
+                Piet Janssen is piet.janssen@gmail.com</i><br><i>
+            Het e-mailadres van Janneke Huizen is
+                janneke.huizen@hotmail.com<br>
+        </i>
+        <i>Het e-mailadres van Remco Wijlers is
+                r.wijlers@montessoricollege.nl</i></p>
+           <p>Op de plek van <i>naam</i> staat natuurlijk de naam en net zo bij <i>e-mailadres</i>.</p>
+        <p>Tip: het handigste is om de regels in een lijst te zetten met
+            <code>readlines()</code>.
+        </p>
+
+   
+    </li>
+
+
+    <li>
+        <p><b>Deel B:</b> splits nu ook de voor- en achternaam, dus: "Voornaam is: <i>voornaam</i>" en
+            "Achternaam is: " <i>achternaam</i>".</p>
+        <p>De uitvoer is dus:<br>
+        <i>Het e-mailadres van Piet Janssen is
+                piet.janssen@gmail.com</i><br>
+          <i>Voornaam is: Piet</i><br>
+        <i>Achternaam is: Janssen</i><br>
+        <br>...</p>
+    </li>
+</ol>
+
+<p><iframe width="100%" height="800px" src="https://replit.com/team/InformaticaActief/Bestanden8"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1131">hier</a> de voorbeelduitwerking.</p>
+<!--
+bestand = open("emailadressen.csv", "r")
+
+bestand_als_lijst = bestand.readlines() # zet elk regel in een lijst
+print(bestand_als_lijst)
+
+for persoonsgegevens in bestand_als_lijst:
+  gegevens_van_persoon = persoonsgegevens.split(';') #maak per persoon een lijst van stand, zoals: ["Renske Weeda",r.weeda@montessoricollege.nl]
+
+  naam = gegevens_van_persoon[0] #de naam is het eerste element
+  emailadres = gegevens_van_persoon[1] #het emailadres is het tweede element
+  print("Het emailadres van " +naam + " is " + emailadres, end="") #druk af, zonder nieuwe regel
+
+#DEEL B
+  naam_als_lijst = naam.split(' ')
+  voornaam = naam_als_lijst[0]	#de voornaam is altijd het eerste element
+  achternaam = naam_als_lijst[1]
+  print("Voornaam is: " + voornaam)
+  print("Achternaam is: " + achternaam)
+
+
+bestand.close()
+-->
+
+
+<!--
+<h2>16.6 Encoding</h2>
+Tekstfiles hebben een zogeheten “encoding” (letterlijk betekent dit “versleuteling,” maar
+die term wordt nooit gebruikt). Dit is een systeem dat voorschrijft hoe de tekens in een bestand
+geïnterpreteerd moeten worden. Encoding kan verschillend zijn tussen besturingssystemen.
+Je kunt de standaard manier van encoding voor een besturingssysteem zien
+door de functie sys.getfilesystemencoding() aan te roepen.
+<pre class="python">
+from sys import getfilesystemencoding
+print( getfilesystemencoding () )
+</pre>
+Als je een tekstbestand leest dat een andere manier van encoding gebruikt dan je bestandssysteem
+prefereert, kun je een UnicodeDecodeError krijgen. Of je deze fout krijgt
+voor een bepaald bestand, hangt af van je besturingssysteem. Een vervelende consequentie
+daarvan is, dat als je code hebt geschreven die een bestand leest en die fatsoenlijk werkt,
+en je die code naar een ander besturingssysteem brengt, een bestand dat voorheen gelezen
+kon worden plotseling de code laat stuklopen.
+
+
+Een eenvoudige manier om dit probleem te omzeilen is een extra parameter toevoegen aan
+het openen van een bestand, die aangeeft welk encoding mechanisme je wilt gebruiken
+om het bestand te lezen. Je doet dit via een parameter encoding=<encodingnaam>, waarbij
+<encodingnaam> een string is die verschillende waardes kan hebben. Een paar typische
+waardes voor deze parameter zijn:
+• ascii: 7-bits encoding, tekens met waardes in het bereik 00-7F
+• latin-1: 8-bits encoding, tekens met waardes in het bereik 00-FF
+• mbcs: 2-byte encoding, die momenteel vervangen wordt door UTF-8
+• utf-8: encoding met een variabel aantal bytes
+
+<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3928226/7b44e7662b35c7d56725c8f1f41de183"></iframe></p>
+-->
+
+<!--
+Code voor high score bijhouden
+scoreLijst = []
+
+
+def scoreOpslaan(spelerNaam, spelerScore):
+	bestand_handle = open("score.txt", "w+")
+
+	bestand_handle.write(spelerNaam + "," + str(spelerScore) + ",")
+	bestand_handle.close()
+
+
+
+
+#def scoreOphalen(spelerNaam):
+def scoreOphalenUitBestand():
+	bestand_handle = open("score.txt", "r")
+	gegevens_in_bestand = bestand_handle.read()
+	speler_scoreLijst = gegevens_in_bestand.split(',') #zet gegevens uit bestand in een lijst
+	return speler_scoreLijst
+	
+	# print( speler_scoreLijst )
+
+def nieuweScoreToevoegenVooraanLijst(scoreLijst, spelerNaam, score):
+	scoreLijst = [spelerNaam] + [score] + scoreLijst
+	print (scoreLijst)
+
+def scoreOphalenUitLijst(spelerNaam):
+	if spelerNaam in scoreLijst:
+		positie_van_naam = scoreLijst.index(spelerNaam) #haal de index van de speler op
+		score = scoreLijst[positie_van_naam + 1] # de score komt er direct achteraan
+	else:
+		score = 0
+
+	return score
+
+scoreLijst = scoreOphalenUitBestand()
+spelerNaam = input("Wat is jouw spelernaam?")
+spelerScore = scoreOphalenUitLijst(spelerNaam)
+print("speler", spelerNaam, "heeft score", spelerScore)
+
+scoreLijst = nieuweScoreToevoegenVooraanLijst(scoreLijst,"Piet", 4)
+
+
+
+-->

@@ -1,0 +1,89 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+<p>Functies zonder parameters en zonder retourwaarde</p>
+
+<h2>Functies zonder parameters en zonder retourwaarde</h2>
+-->
+<p>Code die bij elkaar hoort of die vaker gebruikt wordt, zet je samen in een functie. Soms heeft een functie geen parameters, omdat deze geen specifieke informatie nodig heeft. Soms levert een functie geen retourwaarde op, maar "doet ze iets".</p>
+
+<p>Bekijk het voorbeeld hieronder. De vijf regels code voor het tekenen van een driehoek horen bij elkaar omdat ze samen een doel bereiken. Daarom staan ze bij elkaar in een functie <code>tekenDriehoek()</code>. Deze functie heeft geen parameters (er staat niets tussen de haakjes) en ook geen retourwaarde (ze levert niks op, maar ze doet iets).</p>
+<!--
+<pre code="python">
+import turtle
+### FUNCTIEDEFINITIE
+def tekenDriehoek():
+	turtle.forward(50)
+	turtle.right(120)
+	turtle.forward(50)
+	turtle.right(120)
+	turtle.forward(50)
+### HOOFDPROGRAMMA MET FUNCTIEAANROEP
+turtle.pendown()
+tekenDriehoek()
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H54v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave541">Opdracht 5.4 Figuurtje tekenen</p>
+<p>Bekijk de code hieronder. Beantwoord voor jezelf de volgende vragen zonder de code te runnen:
+</p>
+<ol>
+    <li>Vat in je eigen woorden samen wat de functie <code>tekenFiguur()</code> doet. Wat zou een betere naam voor de functie zijn?
+    </li>
+    <li>Heeft <code>tekenFiguur()</code> informatie nodig om zijn werk te doen? Oftewel: krijgt hij parameters mee?
+    </li>
+    <li>Levert <code>tekenFiguur()</code> informatie op (die bijvoorbeeld later in het programma nog gebruikt kan worden)? Oftewel: heeft <code>tekenFiguur()</code> een coderegel met <code>return</code>?
+    </li>
+    <li>Roep <code>tekenFiguur()</code> aan op regel 15, dus na <code>turtle.right(135)</code>.
+    </li>
+    <li>Als <code>tekenFiguur()&nbsp;</code>niet in een functie had gestaan, hoe vaak had je dan <code>turtle.forward(50)</code> moeten intikken om hetzelfde resultaat te krijgen?
+    </li>
+</ol>
+<p></p>
+<p>Run de code om je vermoedens te controleren.</p>
+
+
+<!--<p><iframe height=600px width=100% src=https://repl.it/@ProgrammereninP/H5541-Figuurtje-tekenen></iframe></p>-->
+<!--
+<p>
+De antwoorden vind je <a href="http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H5_oplossingen.html#opgave541" target="_blank">hier</a>.
+</p>-->
+
+<!--<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/541-Figuurtje-tekenen-1"></iframe></p>-->
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/541-Figuurtje-tekenen"></iframe></p>
+
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H5_oplossingen.html#opgave541" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<!-- GEGEVEN CODE
+<pre class="python">
+import turtle
+### FUNCTIEDEFINITIE
+def tekenFiguur():
+	turtle.forward(50)
+	turtle.right(120)
+	turtle.forward(50)
+	turtle.right(120)
+	turtle.forward(50)
+### HOOFDPROGRAMMA MET FUNCTIEAANROEP
+turtle.pendown()
+tekenFiguur()
+turtle.right(135)
+
+turtle.done()
+</pre>
+
+
+
+[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H5_oplossingen.html#opgave541)
+-->
+
+<!-- ANTWOORD
+<ol>
+<li> Functie tekenFiguur tekent een gelijkzijdige driehoek met zijdes van lengte 50. <code>tekenDriehoek/code> is daarom een betere naam voor de functie.
+</li><li> Nee, geen parameters.
+</li><li> Nee, het heeft geen <code>return</code> en levert dus geen informatie op dat later in het programma gebruikt kan worden.
+</li><li> Het programma tekent een spirograaf door nog een driehoekje te tekenenen, net een beetje gedraaid ten op zichte van de eerste..
+</li><li> Zonder de functie <code>tekenFiguur</code> zou je 3*2=6 keer de regel <code>turtle.forward(50)</code> moeten intikken.
+</li></ol>
+-->

@@ -1,0 +1,46 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.1
+2: Openen, lezen, printen en sluiten van een bestand</p>
+
+
+<h2>Code voor het openen, lezen, printen en sluiten van een bestand</h2>
+
+-->
+<p>Hieronder zie je een compleet programma dat een bestand opent, de inhoud leest en deze in een string <code>tekst_uit_bestand</code> zet, de inhoud print en het
+    bestand weer sluit.</p>
+<p>In de linker kolom zie je welke bestanden gebruikt worden.</p>
+<!-- <pre class="python">
+bestand = open( "pc_rose.txt", "r" )
+print( bestand.read() )
+bestand.close()
+</pre>-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/bestandenLezen?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<!--
+bestand = open( "groet.txt", "r" )   # open het bestand om te lezen ("r")
+tekst_uit_bestand = bestand.read()   # lees de inhoud van het bestand en sla het op in een variabele
+print(tekst_uit_bestand)             # print naar de console
+bestand.close()                      # sluit het bestand
+-->
+
+
+
+<p class="opdracht" id="opgave111">Opdracht 11.1 Foutmelding herkennen</p>
+<p></p>
+<ol style="list-style-type: lower-alpha">
+    <li>Druk op 'run' om te lezen wat er in het bestand "groet.txt" staat.</li>
+
+    <li>Klik op 'Show files'. Je ziet dat er in de map drie bestanden staan, waaronder "main.py" met de code.
+    </li>
+    <li>Klik op "groet.txt" om de inhoud van dat bestand zien.</li>
+
+
+    <li>Wijzig in de code van "main.py" de bestandsnaam "groet.txt" in een andere naam. Welke foutmelding krijg je als je op 'run' drukt?</li>
+    <li>Wijzig in de code van "main.py" de bestandsnaam in "afscheid.txt" (dus bij <code>open(...)</code>). Druk op 'run'. Welke tekst staat er nu in het bestand "afscheid.txt"?</li>
+</ol>
+<p></p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden1"></iframe></p>
+<!--<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave111" target="_blank">hier</a> de voorbeeld uitwerking.</p>-->

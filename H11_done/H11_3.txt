@@ -1,0 +1,208 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.1
+<p>3: Regel lezen met <code>readline()</code></p>
+
+
+<h2>Code voor het openen, lezen, printen en sluiten van een bestand</h2>
+
+
+
+
+<h2>Regel lezen met <code>readline()</code></h2>
+-->
+<!--
+<p>Met <code>read()</code> kun je dus de hele inhoud van een bestand in &eacute;&eacute;n <code>string</code> opslaan. Ook tekens die je niet meteen ziet, zoals een nieuw regel (ENTER) worden in de string opgeslagen (als <code>\n</code>).</p>
+-->
+<p>Om een tekstbestand regel voor regel te lezen, kun je de <code>readline()</code>-functie gebruiken. Deze functie leest telkens één regel uit het bestand en zet deze in een string. Een regel is alle tekst tot de volgende nieuwe regel, inclusief het <code>\n</code>-teken. Daarna komt de volgende regel. Als je aan het einde van het bestand bent en je probeert een nieuwe regel te lezen, krijg je een lege string terug.</p>
+
+<!--
+<pre class="python">
+bestand = open("dikkertjeDap.txt", "r")
+
+regel = bestand.readline()  #lees eerste regel
+print(regel)                #print naar de console
+
+regel = bestand.readline()  #lees tweede regel
+print(regel)
+
+bestand.close()
+</pre>
+-->
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th-1625-readline?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<!-- bestand = open("dikkertjeDap.txt", "r")
+
+regel = bestand.readline()  #lees eerste regel
+print(regel)                #print naar de console
+
+regel = bestand.readline()  #lees tweede regel
+print(regel)
+
+regel = bestand.readline()  #lees derde regel
+print(regel)
+
+regel = bestand.readline()  #lees vierde regel
+print(regel)
+
+bestand.close()
+-->
+<p>Omdat <code>print()</code> de tekst steeds op een nieuwe regel afdrukt, krijg je nu extra lege regels: één bij elke regeleinde <code>\n</code> in <i>dikkertjeDap.txt</i> en de andere bij <code>print()</code>. Met <code>print( tekst, end="" )</code> druk je geen extra lege regel meer af.</p>
+
+
+
+<h2>Regels lezen en dan in een lijst zetten met <code>readlines()</code></h2>
+<p>Met <code>readlines()</code> kun je elke regel van een tekstbestand in een <b>lijst</b> zetten, waarbij elke regel een apart element wordt.</p>
+<!--
+<pre class="python">
+bestand = open("dikkertjeDap.txt", "r")
+
+inhoud_lijst = bestand.readlines() #zet inhoud in een lijst, elk regel als aparte element
+print(inhoud_lijst)
+
+bestand.close()	#sluit bestand
+</pre>-->
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th1626a-readlines?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<!-- bestand = open("dikkertjeDap.txt", "r")
+
+inhoud_lijst = bestand.readlines() #zet inhoud in een lijst, elk regel als aparte element
+print(inhoud_lijst)
+
+bestand.close()	#sluit bestand-->
+
+
+
+
+<!--<p>Als je de code uitvoert zie je de <code>\n</code> verschijnen, daarmee wordt een 'nieuwe regel' aangegeven in het tekstbestand.</p>
+-->
+<p>Nu de tekst in een lijst staat, kun jij je kennis over lijsten gebruiken om er handige dingen mee te doen, zoals elke regel met een <code>for</code>-loop te doorlopen:
+</p>
+<!--
+<pre class="python">
+bestand = open("roses.txt")
+tekst = bestand.readlines() #zet de inhoud van bestand in een lijst
+
+for tekstregel in tekst: #voor elke tekstregel in de lijst
+  print(tekstregel)
+
+bestand.close()
+</pre>
+-->
+<!--
+<pre class="python">
+bestand = open("roses.txt", "r")
+
+inhoud_lijst = bestand.readlines() 					#zet inhoud in een lijst, elk regel als aparte element
+print(inhoud_lijst[0])											#print het eerste element uit lijst (dus de eerste regel)
+print(inhoud_lijst[1])											#print het tweede element uit lijst
+print(inhoud_lijst[ len(inhoud_lijst)-1] )	#print het laatste element uit lijst					
+
+bestand.close()	#sluit bestand
+</pre>
+
+<p><iframe height="600px" width="100%" src="https://repl.it/@smer/Th1626b-readlines-lists?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>-->
+
+<!--bestand = open("roses.txt", "r")
+
+inhoud_lijst = bestand.readlines() 					#zet inhoud in een lijst, elk regel als aparte element
+print(inhoud_lijst[0])											#print het eerste element uit lijst (dus de eerste regel)
+print(inhoud_lijst[1])											#print het tweede element uit lijst
+print(inhoud_lijst[ len(inhoud_lijst)-1] )	#print het laatste element uit lijst					
+
+bestand.close()	#sluit bestand
+-->
+
+
+
+
+<!--
+<pre class="python">
+bestand_handle = open("roses.txt")
+
+klaar_met_lezen = False
+while not klaar_met_lezen:
+	tekst = bestand_handle.readline()
+	if tekst == "":
+		klaar_met_lezen = True
+	else:
+		print( tekst )
+
+bestand_handle.close()
+</pre>
+-->
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th-1625b-readline?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+bestand = open("roses.txt", "r")
+
+regel = bestand.readline() #lees eerste regel
+print(regel, end="")
+regel = bestand.readline() #lees tweede regel
+print(regel, end="")
+regel = bestand.readline() #lees derde regel
+print(regel, end="")
+regel = bestand.readline() #lees vierde regel
+print(regel, end="")
+
+bestand.close()-->
+
+<p class="opdracht" id="opgave112">Opdracht 11.2 Inhoud afdrukken</p>
+<p>Schrijf een programma dat het bestand 'dikkertjeDap.txt' openmaakt (met "r" voor read), de inhoud naar de console print en daarna het bestand sluit.</p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden2"></iframe></p>
+
+<!-- antwoord:
+<pre class="python">
+bestand = open("roses.txt", "r")						#open bestand
+
+inhoud_lijst = bestand.readlines() 					#zet inhoud in een lijst, elk regel als aparte element
+
+for regel in inhoud_lijst:
+	print(regel, end="")											#print elk element uit lijst, zonder extra lege regel van de print
+
+bestand.close()															#sluit bestand
+</pre>
+
+Uitvoer:
+Roses are red,
+Violets are blue,
+Sugar is sweet,
+And so are you.
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1112">hier</a> de voorbeelduitwerking.</p>
+<!--
+<p>Wil je de lijst afdrukken zonder een extra lege regel, dan gebruik je weer <code>print( tekst, end="")</code>:
+<pre class="python">
+bestand = open("roses.txt", "r")        #open bestand om te lezen
+
+inhoud_bestand = bestand.readlines()    #zet inhoud in een lijst
+for line in inhoud_bestand:             #print elke regel in lijst
+    print (line, end="")
+
+bestand.close()
+</pre>
+-->
+
+<!-- ANTOOWRRD VOOR 16.2
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/printRegelsMetReadlines?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p></p>
+-->
+
+<p class="opdracht" id="opgave1113">Opdracht 11.3 Letters tellen</p>
+<p>Schrijf een programma dat telt (en print) hoe vaak de letter 'a' of 'A' voorkomt in het bestand. Tip: gebruik <code>tekst.count('A')</code>. Vergeet niet na afloop het bestand ook te sluiten.</p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden3"></iframe></p>
+
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1113">hier</a> de voorbeelduitwerking.</p>
+<!--
+<pre class="python">
+bestand = open("roses.txt", "r")  #open bestand om te lezen	
+tekst = bestand.read()	    #sla inhoud van bestand op in variabele
+
+aantal_A = tekst.count('A')
+aantal_A += tekst.count('a')
+
+bestand.close()		            #sluit bestand
+
+print(aantal_A)
+</pre>-->

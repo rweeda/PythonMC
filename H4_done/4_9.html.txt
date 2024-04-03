@@ -1,0 +1,79 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--
+<h4 id="H45">H4.5 - Uitgebreidere condities</h4>
+<p>9: Uitgebreidere condities</p>
+-->
+<h2>Geneste condities</h2>
+<p>Je kunt binnen een beslissing weer een
+    beslissing hebben.</p>
+<p>
+    Een geneste if-else is een manier om beslissingen te nemen op basis van meerdere voorwaarden. Een geneste if-else bestaat uit een reeks if-else-verklaringen die in elkaar zijn genest.
+    De eerste if-else-verklaring wordt geëvalueerd en als deze <code>True</code> is, wordt de bijbehorende code uitgevoerd. Als de eerste if-else-verklaring <code>False</code> is, wordt de tweede if-else-verklaring geëvalueerd en als deze <code>True</code> is, wordt de bijbehorende code uitgevoerd.
+    Dit gaat door totdat er geen if-else-verklaringen meer zijn of totdat er een <code>True</code> is gevonden. Als geen van de if-else-verklaringen <code>True</code> is, wordt de code in het else-blok uitgevoerd.
+</p>
+<p>Hieronder zie je een voorbeeld stroomdiagram van een geneste if-else-verklaring:</p>
+
+<!-- ![Figuur 6.2: Stroomdiagram van een geneste
+beslissing](http://course.cs.ru.nl/greenfoot/python/img/PythonAfb6.2.jpg)
+Figuur 6.2: Stroomdiagram van een geneste beslissing -->
+
+<p><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python4_Stroomdiagram_genesteIf.jpg" alt="Figuur 6.2: Stroomdiagram van een geneste beslissing" width="750" height="736" class="img-fluid atto_image_button_text-bottom"></p>
+
+
+<p>De vertaling van het bovenstaande stroomdiagram in code is:</p>
+
+<!-- <pre class ="python"> 
+leeftijd = 21 
+if leeftijd < 12:
+  print( "kind" )
+else:
+  if leeftijd < 18:
+    print( "tiener" )
+  else:
+    if leeftijd < 30:
+      print( "jong" )
+    else:
+      if leeftijd < 50:
+        print( "ouder" )
+      else:
+        print( "oud" )
+		
+</pre>-->
+<p><iframe height="800px" width="100%" src="https://repl.it/@smer/H45v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave451">Opdracht 4.15 Geneste condities</p>
+<p> Verander in de code hieronder de waarde van de variabele <code>leeftijd</code>. Leg aan je buurman of buurvrouw uit hoe de geneste <code>if-else</code> werkt.</p>
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/451-Geneste-condities#main.py"></iframe></p>
+
+
+<!--[Voorbeeld
+uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave451)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave451" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave452">Opdracht 4.16 Nadenken over geneste condities</p>
+<p>Voor welke waarden van <code>getal</code> zal <i>B</i> worden
+    geprint?</p>
+
+<!-- <pre class="python"> getal = 0
+
+if getal < 3:
+	print("A")
+
+else:
+	if getal < 6:
+		print("B")
+	else:
+		print("C")
+</pre>-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/452-Nadenken-over-geneste-condities#main.py"></iframe></p>
+
+<!-- [Voorbeeld
+uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave452)-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave452" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD: 4 en 5 -->
+
+<!-- HIER EINDIGT PAGINA INHOUD -->

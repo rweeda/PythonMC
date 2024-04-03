@@ -1,0 +1,113 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+<!--
+7: Verkorte operatoren
+
+<h1 id="H34">H3.4 - Verkorte operatoren</h1>-->
+
+<!--
+[VIDEOUITLEG: over verkorte operatoren](https://web.microsoftstream.com/video/84228f80-a744-4c26-bdb3-b9918d561d14)
+-->
+<!--<iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/84228f80-a744-4c26-bdb3-b9918d561d14?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/uzDWNAcyc5s?list=PLg-UJOqx8J_8mAxTGSPJ4VZg-9BhpMH6_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+</p>
+<p>Door gebruik te maken van <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> kunnen we rekenen met variabelen. Het komt in code vaak voor dat we 1 willen optellen bij een variabele. Bijvoorbeeld, als we dingen gaan tellen, dan wordt onze teller telkens eentje hoger. Omdat dit zo vaak gebeurt, zijn er verkorte operators: <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>.<br>
+
+</p>
+<p><code>score += 1</code> doet hetzelfde als <code>score = score + 1</code> en betekent: <br><i>de nieuwe waarde van score wordt de oude waarde van score plus 1</i>.
+
+</p>
+<p>Bekijk de volgende code:</p>
+<!--
+aantal_bananen = 100
+aantal_bananen = aantal_bananen + 1 # aantal_bananen ophogen met één
+print( aantal_bananen )
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H34v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>De code doet hetzelfde als:</p>
+<!--aantal_bananen = 100
+aantal_bananen += 1 # aantal_bananen ophogen met één
+print( aantal_bananen )
+-->
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H34v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+
+<p class="opdracht">Opdracht 3.8 Verkorte operatoren
+
+
+
+
+</p>
+<p>Bedenk, zonder de code te runnen, wat de code hieronder print? Maak een tracetabel. Controleer daarna of je gelijk hebt.</p>
+<!-- GEGEVEN CODE:
+<pre class="python">
+aantal_bananen = 100
+aantal_bananen += 12
+aantal_bananen -= 13
+aantal_bananen *= 19
+print( aantal_bananen )
+</pre>
+
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/341-Verkorte-operatoren"></iframe></p>
+
+<!-- [Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave341) -->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave341" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- antwoord
+1881
+-->
+
+
+
+
+
+<p class="opdracht">Opdracht 3.9 Omschrijven met een verkorte operator
+</p>
+<p>Herschrijf de code zodat deze gebruik maakt van een verkorte operator.</p>
+
+<!-- GEGEVEN CODE:
+aantal_meters = 100
+aantal_meters = aantal_meters + 50
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/342-Omschrijven-met-een-verkorte-operator"></iframe></p>
+
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave342)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave343" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- antwoord
+aantal_meters = 100
+aantal_meters += 50
+-->
+
+
+<p class="opdracht">Opdracht 3.10 Score aanpassen
+
+</p>
+<p>Stel je speelt een spelletje. Je score is nu 120 punten. Je pakt een muntje op waarmee je score verhoogd wordt met 10 punten. Daarna zet je een stap waarmee je score met 1 punt omlaag gaat.</p>
+
+<p>Pas de code hieronder aan zodat je eindscore berekend en geprint wordt. Gebruik hiervoor de verkorte operatoren. Voeg met # commentaar toe aan de regels die je toevoegt.</p>
+
+<!-- GEGEVEN CODE:
+
+score = 120
+
+print( score )
+-->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/343-Score-aanpassen"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave343)-->
+<p>Bekijk <a href="Https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H3_oplossingen.html#opgave343" target="_blank">hier</a> de voorbeelduitwerking.</p>
+<!-- ANTWOORD
+
+score = 120
+score += 10 #muntje gepakt, 10 punten erbij
+score -= 1  #stap gezet, punt eraf
+print( score )
+-->
+
+<!-- HIER EINDIGT PAGINA INHOUD -->

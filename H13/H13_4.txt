@@ -1,0 +1,76 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>4: Index: positie van karakters in een string</p>
+
+<h2 id="string-indices">13.2.4 String indices</h2>-->
+<p>Ieder teken in een
+    string heeft een positie (dit heet een index). Het eerste teken staat op index 0 en
+    loopt op tot en met de lengte van de string <b>min 1</b>.</p>
+
+
+<p></p>
+<ul>
+    <li>De lengte van een string <code>woord</code> kun je berekenen met
+        <code>len(woord)</code>.
+    </li>
+    <li>De eerste letter van een string staat op
+        positie 0.</li>
+    <li>De laatste letter van de string heeft dus index
+        <code>len(woord)-1</code>.
+    </li>
+</ul>
+<p></p>
+
+<p>Het woord "python" heeft lengte 6. De 'p' zit op positie 0, 'y'
+    op positie 1 en 'n' op positie 5 (lengte -1).</p>
+
+<p>Je kunt een teken uit een string krijgen met de variabelenaam en de index tussen vierkante haken [ ]. Bijvoorbeeld:</p>
+
+<!--
+<pre class="python">
+woord = "aardbei"
+print( woord[4] ) #print letter op index 4, dus de 5e letter: 'b'
+print( woord[2] ) #print teken op index 2, dus de 3e letter: 'r'
+print( woord[0] ) #print teken op index 0, dus de 1e letter: 'a'
+</pre>
+-->
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th104?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<!-- th 10.4 <pre class="python"> woord = "aardbei" print( woord[4] ) print(
+woord[2] ) print( woord[0] ) </pre> -->
+
+<!--<p>Dit drukt af: <br> b<br> r<br> a<br></p>-->
+
+<!--<p class="opdracht" id="opgave-10.3.1-letters-uit-een-woord"><span
+style="color:red">Opdracht</span> 10.3.1 Letters uit een woord</p>
+<p><iframe frameborder="0" width="100%" height="500px" src="https://repl.it/student_embed/assignment/2105038/2e66785d801e11f0f50d92f0b4f9faf8"></iframe></p>
+<a href="Strings_oplossingen.html#opgave-10.3.1-letters-uit-een-woord">Klik
+hier</a> voor de uitwerking.-->
+
+
+<p class="opdracht" id="opgave1322">Opdracht 13.2 Letters uit een woord</p>
+<p>Hoe zou je de
+    eerste letter van een willekeurig woord afdrukken? En de laatste? Kun je
+    iets slims bedenken met de lengte van het woord?</p>
+
+<p>Gegeven het woord, maak gebruik van indices (de posities van de
+    letters) om af te drukken:</p>
+<ol style="list-style-type: lower-alpha">
+    <li>de eerste en
+    </li>
+    <li>de laatste letter.
+    </li>
+</ol>
+<p>Let op: in de code krijg je een woord "fiets", maar voor het afdrukken van de laatste letter mag je niet het getal '4'
+    gebruiken; dat moet je namelijk berekenen zodat je code voor elk woord werkt.</p>
+
+<!-- oplosssing: woord = "fiets" eerste_letter = woord[0]
+print(eerste_letter) laatste_letter =  woord[ len(woord)-1 ] print(
+laatste_letter )
+
+-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraOpgave1332-Letters-uit-woord"></iframe></p>
+<p>Controleer je code met een ander woord, bijvoorbeeld: “programmeertaal”.</p>
+
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1323">hier</a> voor een voorbeelduitwerking.</p>

@@ -1,0 +1,174 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>8: Handige stringfuncties</p>
+
+<h2 id="string-methodes">13.2.6 <code>string</code> methodes</b></p>
+
+-->
+
+<p>Er is een aantal handige functies die je kunt gebruiken om strings aan te passen. Na het aanpassen van
+    een string moet je deze opslaan in een variabele. Dat komt omdat strings
+    onveranderbaar zijn.</p>
+
+<p><b><code>strip()</code></b></p>
+<p><code>strip()</code> verwijdert spaties aan het begin en einde van een
+    string, inclusief "newline"-tekens en andere tekens die
+    als spaties gezien kunnen worden. Zo roep je de functie aan:
+    <code>variabelenaam.strip()</code>. Het resultaat moet je dan in een variabele
+    opslaan, vandaar <code>tekst = </code>.
+</p>
+
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/TH108?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+<pre class="python">
+tekst = "   En nu iets heel anders \n    "
+print( "[" + tekst + "]" )
+
+tekst = tekst.strip()
+print( "[" + tekst + "]" )
+</pre>-->
+
+<p>In dit voorbeeld laat '[start]' en '[einde]' zien wat er overblijft na het 'strippen' van de
+  spaties en het newline-teken <code>‘\n’</code>.</p>
+
+<p>Andere tekens verwijderen kan door deze als parameter, tussen aanhalingstekens, mee te geven:</p>
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th108bstrip?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<!--https://replit.com/@smer/Th108bstrip?v=1-->
+
+<!-- <p class="opdracht" id="opgave-10.4.1-strip">Opdracht 13.3.5<code>strip()</code></p> Voer
+de code hieronder uit. Voeg commentaar toe om uit te leggen hoe het werkt.
+<pre class="python"> tekst = "   En nu iets heel anders \n    " print( "[" +
+tekst + "]" )
+
+tekst = tekst.strip() print( "[" + tekst + "]" ) </pre>
+
+Voor deze opdracht is geen model oplossing beschikbaar. -->
+
+<p><b><code>upper()</code> en <code>lower()</code></b></p>
+<p><code>upper()</code> maakt hoofdletters van alle letters in een string en
+    <code>lower()</code> kleine letters. Je moet het resultaat wel in een variabele
+    opslaan, want de oorspronkelijke tekst wordt niet aangepast.
+</p>
+<p><iframe height="450px" width="100%" src="https://repl.it/@smer/Th109?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+<pre class="python">
+tekst = "Programmeren is leuk!"
+hoofdletter_tekst = tekst.upper() #maak hoofdletters en in nieuwe variabele opslaan
+print( hoofdletter_tekst )
+
+kleineletter_tekst = tekst.lower() #maak kleine letters van tekst en opslaan in nieuwe variabele
+print( kleineletter_tekst )
+
+
+print("oorspronkelijke tekst:", tekst) #oorspronkelijke tekst is niet gewijzigd
+</pre>-->
+
+
+<p class="opdracht" id="opgave1326">Opdracht 13.6 <code>upper()</code> en
+    <code>lower()</code>
+</p>
+<p>Print de tekst hieronder drie keer:</p>
+<ol style="list-style-type: lower-alpha">
+    <li>gewoon afdrukken </li>
+    <li>alleen met hoofdletters afdrukken </li>
+    <li>alleen met kleine letters
+        afdrukken </li>
+</ol>
+<!--tekst = "Oefening baart kunst" print( tekst ) print(
+tekst.upper() ) print( tekst.lower() ) -->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Hextra1335-Upper-Lower"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1326">hier</a> voor een voorbeelduitwerking.</p>
+
+
+
+<p><b><code>find()</code></b></p>
+
+<p><code>find()</code> kun je
+    gebruiken om te zoeken in een string. Je krijgt dan
+    de index (positie) waar de tekens beginnen. Als de tekens niet voorkomen, dan levert het -1
+    op.</p>
+
+<!--
+<pre class="python">
+tekst = "Humpty Dumpty zat op de muur"
+print( tekst.find( "zat" ) )
+print( tekst.find( "t" ) )
+print( tekst.find( "q" ) )
+</pre>
+-->
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th1010?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave1327">Opdracht 13.7 <code>find()</code></p>
+
+<p>Schrijf code om
+    te bepalen op welk index (positie) de volgende tekens in de tekst voorkomen: </p>
+<ul>
+    <li>"Lang"
+    </li>
+    <li>"lang" </li>
+    <li>"leven" </li>
+    <li>"f" </li>
+</ul>
+<p>tekst: <i>"Lang zal hij leven, Lang zal hij leven, Lang zal
+        hij leven in de gloria, In de gloria, in de gloria" </i></p>
+
+<p>Bekijk elke regel die in de console wordt afgedrukt. Kun je uitleggen waarom die wordt afgedrukt?</p>
+
+<!--ANTWOORD tekst = "Lang zal hij leven, Lang zal hij leven, Lang zal hij
+leven in de gloria, In de gloria, in de gloria"
+
+print( tekst.find("Lang") ) print( tekst.find("lang") ) print(
+tekst.find("leven") ) print( tekst.find("f") ) -->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraOpgave1336-Find"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1327">hier</a> voor een voorbeelduitwerking.
+
+</p>
+
+
+<p><b><code>replace()</code></b></p>
+<p><code>replace()</code>
+    vervangt tekens door andere tekens. Tussen de haakjes geef je als parameters eerst mee welke tekens gezocht moeten worden en als tweede waar deze door vervangen moeten worden. Ter herinnering: je moet het resultaat opslaan in een variabele.</p>
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/TH1011?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+<pre class="python">
+tekst = " Humpty Dumpty zat op de muur "
+print( tekst.replace( "zat op" , "viel van" ) )
+</pre>
+-->
+
+
+<p class="opdracht" id="opgave1328">Opdracht 13.8 <code>replace()</code></p>
+
+<p>De code
+    hieronder vervangt "zat op" door "viel van". Maar als je daarna de variabele
+    <code>tekst</code> afdrukt, zie je dat die niet veranderd is. Pas de code aan
+    zodat de aanpassing opgeslagen wordt in de variabele <code>tekst</code>.
+</p>
+<!--
+gegeven tekst = "Humpty Dumpty zat op de muur" print( tekst.replace( "zat op"
+, "viel van" ) ) print(tekst)
+
+-->
+
+
+<!-- ANTWOORD tekst = "Humpty Dumpty zat op de muur" print( tekst.replace(
+"zat op" , "viel van" ) ) print(tekst)
+
+tekst = tekst.replace( "zat op" , "viel van" ) print(tekst) -->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/HextraOpgave1337-Replace"></iframe></p>
+
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H13_oplossingen.html#opgave1328">hier</a> voor een voorbeelduitwerking.</p>
+
+<!-- Uitvoer: Humpty Dumpty viel van de muur
+ Humpty Dumpty zat op de muur
+ -->

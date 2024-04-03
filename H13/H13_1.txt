@@ -1,0 +1,71 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>1: Inleiding strings (herhaling)</p>
+
+<h2 id="herhaling-omgaan-met-strings">13.2.1 Omgaan met strings HFSTK 10.1 </h2>
+-->
+<p>Ter herhaling: een string is een tekst, met daaromheen enkele of dubbele
+aanhalingstekens. Een string kan nul of meer tekens lang zijn. Je kunt twee strings aan
+elkaar plakken met de <code>+</code>-operator en strings herhalen met de <code>*</code>-operator
+</p>
+
+<!--
+<pre class="python">
+woord1 = "fiets"
+woord2 = ' bel '
+print( woord1 )
+print( woord2 )
+print( woord1 + woord2 )
+print( 3 * woord1 )
+print( woord2 * 3 )
+print( 2 * woord1 + 2 * woord2 )
+-->
+
+<p><iframe height="350px" width="100%" src="https://repl.it/@smer/Th101?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>De lengte van een string kun je bepalen met de <code>len()</code>-functie.
+    <!--
+<pre class="python">
+tekst = "fiets"
+lengte = len(tekst) #bepaal lengte van woord
+
+print(lengte)
+</pre>-->
+</p>
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th101b?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p>Met <code>in</code> kun je testen of een letter in een string voorkomt:</p>
+<!--
+<pre class="python">
+woord = "fiets"
+
+if "e" in woord:
+	print( "e gevonden in ", woord )
+</pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th102b?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+
+Met een for loop kun je alle tekens in een string doorlopen. Bekijk het volgende voorbeeld:</p>-->
+<!-- th10.2
+<pre class="python">
+woord1 = "mango"
+woord2 = "banaan"
+
+for letter in woord1:
+    if letter in woord2:
+        print( woord1, "en", woord2, "bevatten beide de letter", letter )
+</pre>
+-->
+<!-- <p><iframe height="500px" width="100%" src="https://repl.it/@smer/Th102?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+
+
+<!--
+<p class="opdracht" id="opgave-10.1-herhaling"><span style="color:red">Opdracht</span> 10.1 Korte herhaling van strings</p>
+<p><iframe frameborder="0" width="100%" height="400px" src="https://repl.it/student_embed/assignment/849988/1ef5c05b2080f052c7e47b0ba8bfaf25"></iframe></p>
+-->

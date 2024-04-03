@@ -1,0 +1,182 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+
+
+<h1 id="H11AfOpgaven">H11 - Bestanden: Afsluitende Opgaven</h1>
+-->
+<p>Met de volgende afsluitende opdrachten kun je kijken hoe goed je de stof beheerst. Controleer steeds je eigen oplossing met de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave111">Afsluitende opdracht 11.1 Vat samen</p>
+<p>
+    Wat is het doel van het programma hieronder? Vat kort in je eigen woorden samen wat het programma doet. Let op: er wordt gevraagd naar een samenvatting, niet een regel-voor-regeluitleg.</p>
+<!--
+<pre class="python">
+def functie2():
+	inhoud = bestand.read()
+	inhoud = inhoud.replace('\n'," ")
+	inhoud = inhoud.replace(',',"")
+	inhoud = inhoud.split(" ")
+	return inhoud
+
+bestand = open("invoer_bestand.txt", "r")
+resultaat = functie2()
+print(resultaat)
+bestand.close()
+</pre>-->
+<!-- GIVEN INVOER_BESTAND.TXT
+
+Renske Weeda, r.weeda@montessoricollege.nl, 06-12345679
+Jan Janssen, j.janssen@montessoricollege.nl, 06-12345678
+Piet Hoekstra, p.hoekstra@gmail.com, 06-12345677
+-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H11AfOpgave111-samenvatten"></iframe></p>
+
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#AfOpgave111">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave112">Afsluitende opdracht 11.2 Hoofdletters maken van tekst in een bestand</p>
+<p>Schrijf een programma dat de inhoud van het bestand "kuikentjePiep.txt" inleest, alle letters omzet in hoofdletters en dat in een nieuw bestand "KUIKENTJEPIEP.txt" zet.</p>
+
+<!--
+<pre class="python">
+leesbestand_handle = open("roses.txt", "r")          #open bestand om te lezen	
+tekst = leesbestand_handle.read()	            #sla inhoud van bestand op in variabele
+tekst = tekst.upper()
+print(tekst)
+leesbestand_handle.close()		            #sluit bestand
+
+schrijfbestand_handle = open("ROSES.txt", "w") #open/maak bestand om in te schrijven
+schrijfbestand_handle.write(tekst)                  #schrijf tekst in bestand
+schrijfbestand_handle.close() 	                    #sluit bestand
+</pre>-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H11AfOpgave112-Hoofdletters-maken"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#AfOpgave112">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave113">Afsluitende opdracht 11.3: Gebruikersinvoer opslaan</p>
+<p>Schrijf een programma dat de gebruiker om zijn hobby's vraagt en deze in een bestand opslaat.
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Maak (en open) een bestand "hobby.txt".</li>
+    <li>Herhaal 3 keer:</li>
+    <ol style="list-style-type: lower-alpha">
+        <li>Vraag de gebruiker om een hobby,</li>
+        <li>Zet de hobby in het bestand waarbij komma's worden gebruikt om de hobby's te scheiden.</li>
+    </ol>
+    <li>Sluit het bestand.</li>
+</ol>
+<p></p>
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H11AfOpgave113-gebruikersinvoer-opslaan"></iframe></p>
+<!--
+bestand = open("hobby.txt", "w")
+
+for i in range (3):
+	ingevoerde_hobby = input("Wat is je hobby? ")
+	bestand.write(ingevoerde_hobby)
+	bestand.write(",")
+	
+bestand.close()
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#AfOpgave113">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave114">Afsluitende opdracht 11.4: Het aantal drieletterwoorden</p>
+<p>In het bestand "kuikentjePiep.txt" staat de tekst van een kinderliedje. Schrijf een programma dat telt hoeveel drieletterwoorden er in het liedje voorkomen.</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Vervang eerst alle regeleindes (oftewel <code>'\n'</code>) door een spatie (oftewel <code>" "</code>)</li>
+    <li>Verwijder alle komma's. Tip: Vervang ze door <code>""</code>.</li>
+    <li>Zet ieder woord als apart element in een lijst. Tip: Gebruik <code>split(" ")</code>.</li>
+    <li>Doorloop daarna de lijst (met een <code>for</code>-loop. Als het woord lengte 3 heeft, verhoog je een teller.</li>
+    <li>Print na afloop de teller en sluit het bestand.
+    </li>
+</ol>
+
+<!-- ANTWOORD
+<pre class=""python">
+bestand = open("kuikentjePiep.txt", "r")
+
+inhoud = bestand.read()                 # zet tekst in een string
+inhoud = inhoud.replace('\n'," ")       #vervang alle nieuwe regels door een spatie
+inhoud = inhoud.replace(',',"")         #verwijder alle kommas
+inhoud_per_woord = inhoud.split(" ")   #zet elk woord als apart element in de lijst
+
+
+print(inhoud_per_woord)
+
+woord_teller = 0
+for woord in inhoud_per_woord:              print(in# voor elk woord in de tekst, herhaal het volgende:
+	if len(woord) == 3:                    #zoek de drie-letter woorden
+		print("3-letter woord gevonden!", woord)
+		woord_teller += 1
+
+print(woord_teller)
+
+bestand.close()
+</pre>
+-->
+<p><iframe width="100%" height="1000px" src="https://replit.com/team/InformaticaActief/H11AfOpgave114-aantal-3-letter-woorden"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#AfOpgave114">hier</a> de voorbeelduitwerking.</p>
+
+<!--
+AFSLUITENDE OPGAVE:
+
+2) gebruiker om invoer vragen totdat hij 0 opgeeft, en steeds op een nieuwe regel in bestand zetten-->
+
+
+<p class="opdracht" id="AfOpgave115">Afsluitende opdracht 11.5: Persoonlijkebrievengenerator</p>
+<p>In het bestand "abo_gegevens.txt" staan de abonnementsgegevens van een nieuwe klant bij KPN. Om een nieuwe klant welkom te heten worden de gegevens automatisch uit het bestand gelezen en op de juiste plek in een brief gezet.</p>
+<p>Jouw taak is om de gegevens uit het bestand te lezen en de variabelen <code>voornaam</code>, <code>databundel</code>, <code>belminuten</code> en <code>maandprijs</code> de juiste waarden te geven zodat de welkomstbrief geprint kan worden.</p>
+
+
+
+<!--<p class="opdracht" id="afsluitende-opgave-16.5-RLE">Afsluitende opdracht 16.5: Run-Length-Encoding</p>-->
+
+
+<!-- GIVEN:
+bestand = open("abo_gegevens.txt", "r")
+
+### GEGEVENS INLEZEN
+
+### JUISTE WAARDEN AAN VARIABELEN TOEKENNEN
+#voornaam = ...
+#databundel = ...
+#belminuten = ...
+#maandprijs = ...
+
+### PRINT BRIEF
+print("Beste " + voornaam + ",")
+print("Welkom bij KPN. Je hebt een abonnement afgesloten met " + databundel +  "data " + " en " + belminuten + " belminuten." )
+print("Het abonnement kost " + maandprijs + " per maand.")
+print("Namens KPN wensen je veel plezier met je nieuwe abonnement!")
+
+-->
+
+<!--ANTWOORD:
+### LEES GEGEVENS IN
+bestand = open("abo_gegevens.txt", "r")
+
+inhoud = bestand.read()
+inhoud = inhoud.replace('\n'," ")       #vervang alle nieuwe regels door een spatie
+inhoud = inhoud.split(" ")   #zet elk woord als apart element in de lijst
+print("Inhoud", inhoud)
+
+voornaam = inhoud[0]
+databundel = inhoud[1]
+belminuten = inhoud[2]
+maandprijs = inhoud[3]
+
+#### PRINT BRIEF
+print("Beste " + voornaam + ",")
+print("Welkom bij KPN. Je hebt een abonnement afgesloten met " + databundel + "data en " + belminuten + " belminuten." )
+print("Het abonnement kost " + maandprijs + " per maand.")
+print("Namens KPN wensen je veel plezier met je nieuwe abonnement!")
+
+
+-->
+<p><iframe width="100%" height="1000px" src="https://replit.com/team/InformaticaActief/H11AfOpgave115-brief-generator"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#AfOpgave115">hier</a> de voorbeelduitwerking.</p>

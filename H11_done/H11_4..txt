@@ -1,0 +1,119 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.2
+<p>4: Schrijven naar een tekstbestand</p>
+
+
+<h1 id="H112">H11.2 - Schrijven naar tekstbestanden</h1>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/-6Ydra69CyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Het schrijven in een tekstbestand lijkt veel op het lezen uit een tekstbestand. Je opent het
+    bestand, schrijft erin en sluit het weer.</p>
+
+<h2>Openen om te schrijven</h2>
+<p>Om in een bestand te kunnen schrijven, <code>open()</code> je het bestand met "w" (voor write) als tweede parameter. Bijvoorbeeld:</p>
+<p><code>bestand = open("bestandsnaam.txt", "w")</code> </p>
+<p>Als het bestand nog niet bestaat, wordt het aangemaakt.</p>
+
+
+<p>Let op: bestaat het bestand wel, dan wordt het leeggemaakt! Je zult geen waarschuwing krijgen die zegt: "Weet je het zeker?" Het bestand wordt gewoon leeggemaakt. Dus je moet heel erg voorzichtig zijn met het openen van een bestand om te schrijven.</p>
+
+
+<h2>Schrijven met <code>write()</code></h2>
+<p>Met <code>write()</code> schrijf je naar een tekstbestand. Als parameter geef je tussen aanhalingstekens de bestandsnaam mee. Je moet wel eerst het bestand openen met <code>open("bestandsnaam.txt", "w")</code> en na afloop weer sluiten met <code>close()</code>.</p>
+<!--
+<p>De code hieronder vraagt de gebruiker wat tekst in te tijken, en schrijft deze dan naar een bestand. Zodra de gebruiker een lege string intypt, stopt het programma. Aan het einde opent het programma het
+geschreven bestand, leest de inhoud, en toont die op het scherm. Voer deze code uit, geef
+op zijn minst twee strings in, en zie wat er gebeurt.</p>-->
+
+<p>De code hieronder vraagt de gebruiker wat tekst in te typen en schrijft deze dan naar een bestand. Aan het einde opent het programma het geschreven bestand, leest de inhoud en toont die op het scherm.</p>
+
+<p>Klik in de linker kolom op het bestand "ingevoerdeTekst.txt" om de inhoud van het bestand zien.</p>
+
+<!--
+<pre class="python">
+tekst = input("Geef een regel tekst om in het bestand te zetten: ")
+
+bestand = open("ingevoerdeTekst.txt", "w")
+bestand.write(tekst)
+bestand.close()
+
+bestand = open("ingevoerdeTekst.txt")
+tekst_in_bestand = bestand.read()
+print("Dit staat er nu in het bestand: ", tekst_in_bestand)
+bestand.close()
+
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/bestandSchrijven?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p>Je kunt allerlei soorten bestanden maken, bijvoorbeeld met je eigen naam als extensie: <code>bestand = open("uitvoer.renske", "w")</code>. Probeer het maar!</p>
+
+
+
+<p class="opdracht" id="opgave1121">Opdracht 11.4 In bestand schrijven</p>
+<p>Schrijf een programma dat tekst in een bestand opslaat en daarna, om te checken, afdrukt.
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Vraag de gebruiker om een zin in te tikken en sla die op in een variabele <code>tekst</code>.</li>
+  <li>Met <code>open</code> maak je een nieuw leeg bestand en zet de tekst daarin.</li>
+    <li>Sluit het bestand.</li>
+    <li>Open het bestand en druk de inhoud af naar de console.</li>
+    <li>Sluit het bestand.</li>
+    <li>Check of de inhoud overeenkomt met wat was ingetikt.</li>
+</ol>
+<p></p>
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden4"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1121">hier</a> de voorbeelduitwerking.</p>
+
+<!--ANTWOORD
+<pre class="python">
+tekst = input("Geef een regel tekst om in het bestand te zetten: ")
+
+bestand1 = open("mijn_eigen_bestand.txt", "w")
+bestand1.write(tekst)
+bestand1.close()
+
+bestand2 = open("mijn_eigen_bestand.txt", "r")
+tekst_in_bestand = bestand2.read()
+print("Dit staat er nu in het bestand: ", tekst_in_bestand)
+bestand2.close()
+</pre>
+-->
+
+<p class="opdracht" id="opgave1122">Opdracht 11.5 Bestanden kopiëren</p>
+
+<p>Schrijf een programma dat de inhoud van een bestand naar een ander kopieert.
+</p>
+<ol style="list-style-type: lower-alpha">
+    <li>Schrijf code om de inhoud van ''kuikentjePiep.txt'' in te lezen en sla de inhoud op in een variabele.</li>
+    <li>Maak een bestand ''writetest.tmp''.</li>
+    <li>Schrijf de tekst naar het bestand ''writetest.tmp''.</li>
+    <li>Schrijf code om de inhoud van ''writetest.tmp'' op het scherm te printen.</li>
+</ol>
+<p></p>
+<p>Tip: Je kunt dit programma makkelijk maken door code van hierboven bij elkaar te plakken.</p>
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden5"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1122">hier</a> de voorbeelduitwerking.</p>
+<!--
+Opgave Schrijf een programma dat de inhoud van “pc_rose.txt” leest, en exact
+dezelfde inhoud schrijft in een bestand “pc_writetest.tmp.” Open dan het bestand
+“pc_writetest.tmp” en toon de inhoud. Je kunt dit programma gemakkelijk bouwen door
+wat van de hierboven gegeven code bij elkaar te plakken.
+-->
+<!--
+ANTWOORD
+<pre class="python">
+leesbestand = open("roses.txt", "r")          #open bestand om te lezen	
+tekst = leesbestand.read()	            #sla inhoud van bestand op in een string variabele
+leesbestand.close()		            #sluit bestand
+
+schrijfbestand=  open("writetest.tmp", "w") #open/maak bestand om in te schrijven
+schrijfbestand.write(tekst)                  #schrijf tekst in bestand
+schrijfbestand.close() 	                    #sluit bestand
+</pre>
+-->

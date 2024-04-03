@@ -1,0 +1,58 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H11.2
+<p>6: Toevoegen aan een tekstbestand</p>
+
+<h2>Toevoegen aan tekstbestanden (in plaats van overschrijven)</h2>
+
+-->
+<p>Om tekst toe te voegen aan een bestand (Engels: "append"), gebruik je
+    <code>"a"</code> als de tweede parameter bij het openen van het bestand,
+    bijvoorbeeld: <code>bestand = open("bestand.txt", "a")</code>. De inhoud wordt
+    niet verwijderd, maar nieuwe data worden achteraan toegevoegd.
+</p>
+
+<!-- werkt niet in opgave modus <p class="opdracht" id="opgave-16.7-toevoegen-aan-bestand">Opgave</span> 16.7 Toevoegen aan een
+bestand</p>
+<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/3958839/146a383a45ba02e52ce9ce79540c3cc8"></iframe></p>
+
+
+-->
+
+<p class="opdracht" id="opgave1125">Opdracht 11.7 Toevoegen aan een bestand</p>
+
+
+<ol style="list-style-type: lower-alpha">
+    <li>Run het programma hieronder en tik een woord in.
+    </li>
+    <li>Klik op het bestandsicoontje <img src="https://course.cs.ru.nl/pythonVO/img/file_icon.JPG"> en dan op "uitvoer.txt" om de inhoud van het bestand zien.</li>
+    <li>Doe dat nog een keer. Hoe ziet je bestand er nu uit?</li>
+    <li>Verander nu de <code>"a"</code> in een <code>"w"</code>. Hoe ziet je bestand er nu uit?</li>
+    <li>Kan je in je eigen woorden omschrijven wat het verschil is tussen argument <code>"a"</code> en <code>"w"</code>?</li>
+</ol>
+
+
+<!--
+
+<pre class="python"> tekst = input("Geef een regel tekst om in het bestand te
+zetten: ")
+
+bestand_handle = open("uitvoer.txt", "a") bestand_handle.write(tekst)
+bestand_handle.close() </pre> -->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/Bestanden7"></iframe></p>
+
+<!--<p><iframe height="400px" width="100%" src="https://repl.it/@smer/Th-164-append?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+<!-- GEEN IDEE WAAR DIT VAN IS: <pre class="python"> leesbestand_handle =
+open("roses.txt", "r")          #open bestand om te lezen	tekst =
+leesbestand_handle.read()	            #sla inhoud van bestand op in variabele
+tekst = tekst.upper() print(tekst) leesbestand_handle.close()		
+#sluit bestand
+
+schrijfbestand_handle = open("ROSES.txt", "a") #open/maak bestand om in te
+schrijven schrijfbestand_handle.write(tekst)                  #schrijf tekst
+in bestand schrijfbestand_handle.close() 	                    #sluit bestand
+</pre>-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H11_oplossingen.html#opgave1124">hier</a> de voorbeelduitwerking.</p>

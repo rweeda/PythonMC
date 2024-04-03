@@ -1,0 +1,95 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H4.3
+<p>3: Keuze met de if constructie</p>
+-->
+
+
+<!--
+<h4 id="H42">H4.2 - Keuzes met de <code>if</code> constructie </h4>
+-->
+
+
+<!-- [VIDEOUITLEG: if constructie](https://web.microsoftstream.com/video/72f3e1f4-9619-4cf9-96c9-eeffb4cd3b22)-->
+<!--<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/72f3e1f4-9619-4cf9-96c9-eeffb4cd3b22?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p></p>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/pXsTJWFNDKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<!--<h2><code>if</code> constructie</h2>-->
+<p>Een keuze zoals <i>als... dan...</i> heet in Python een <code>if</code>-constructie. Het begint met een test (conditie) in de <code>if</code>. Als uit de test <i>True</i> (waar) komt, dan worden de aangegeven acties uitgevoerd die onder de conditie ingesprongen staan. Inspringen doe je met de <b>Tab</b>-knop. Anders worden die acties overgeslagen.</p>
+
+<p>Bekijk de code hieronder voor een programma dat kledingadvies geeft:</p>
+
+<!--
+<pre class="python">
+weer = "regen"
+
+if weer == "regen":
+	print("Neem een paraplu mee,")
+	print("of een jas.")
+
+print("Klaar")
+ </pre>
+ -->
+
+
+<p><iframe height="500px" width="100%" src="https://repl.it/@smer/H42v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<p>Merk op:
+</p>
+<ul>
+    <li>Er staat een dubbele punt achter de <i>conditie</i> van de <code>if</code>.
+    </li>
+    <li>De <i>acties</i> staan ingesprongen (met een <i>Tab</i> naar rechts).
+    </li>
+    <li>Als de conditie bij de <code>if</code> <code>True</code> is, worden de ingesprongen acties uitgevoerd (de twee <code>print</code>s op regel 4 en 5).
+    </li>
+    <li>Als de conditie <code>False</code> is, dan wordt de ingesprongen code overgeslagen.
+    </li>
+    <li>Het programma gaat daarna verder vanaf waar er niet meer is ingesprongen (regel 7). De regel met <code>print("Klaar")</code> wordt <b>altijd</b> uitgevoerd. Deze is niet ingesprongen en hoort daarom niet bij de <code>if</code>.
+    </li>
+</ul>
+
+
+
+
+<!--
+<h4><span style="color:green">Stroomdiagram van een <code>if</code> constructie</span></h4>-->
+
+<p>Een <i>stroomdiagram</i> is een schematische weergave van een algoritme. Het onderstaand stroomdiagram geeft het algoritme voor kledingadvies weer uit het voorbeeldprogramma hierboven:</p>
+
+<p><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python4_Stroomdiagram_kledingAdvies.jpg" alt="Stroomdiagram voor algoritme kledingadvies" width="450"></p>
+
+
+
+<!-- Python4_Stroomdiagram_kledingAdvies.jpg-->
+
+<p>Om een stroomdiagram te lezen, begin je bij het <i>Start</i>-blok en volg de pijlen. Ieder blokje dat je tegenkomt, voer je uit. Een ruit geeft een conditie aan. De uitkomst van de conditie bepaalt of je daarna de <code>True</code>- of de <code>False</code>-pijl volgt. Wanneer je het <i>Stop</i>-blok tegenkomt, ben je klaar.</p>
+
+
+<p class="opdracht" id="opgave421">Opdracht 4.3 Een 6 dobbelen</p>
+Hieronder staat code die hoort bij het gooien van een dobbelsteen.
+Schrijf de juiste conditie op regel 3, zodat er een tekst wordt afgedrukt als er een 6 wordt gegooid (dus als <code>dobbelworp</code> gelijk is aan 6).
+
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H4_oplossingen.html#opgave421)-->
+<!--
+<pre class="python">
+dobbelworp = 6
+
+if #HIER CODE AANVULLEN
+	print("Yes! Je hebt een 6 gegooid")
+
+</pre>
+-->
+
+<!-- ANTWOORD
+<pre class="python">
+dobbelworp = 6
+
+if dobbelworp == 6 :
+	print("Yes! Je hebt een 6 gegooid")
+
+</pre>
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/421-6-dobbelen"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H4_oplossingen.html#opgave421" target="_blank">hier</a> de voorbeelduitwerking.</p>

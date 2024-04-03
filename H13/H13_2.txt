@@ -1,0 +1,30 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H13.2
+<p>2: Strings over meerdere regels</p>
+
+<h2 id="strings-over-meerdere-regels">13.2.2 Strings over meerdere
+regels</h2> -->
+
+<p>Een string kan bestaan uit meerdere regels tekst. In Python gebruik je dan drie
+    aanhalingstekens voor en achter de tekst in plaats van 	&eacute;&eacute;n:
+</p>
+<!--
+<pre class="python"> lange_string = """Python is een programmeertaal die begin jaren 90 ontworpen en ontwikkeld werd door Guido van Rossum.
+        Python is ontwikkeld met het oog op leesbare code.
+        (Bron: Wikipedia)'''
+
+print( lange_string ) </pre>-->
+<p><iframe height="450px" width="100%" src="https://repl.it/@smer/Th103?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+<!--Th10.3 <pre class="python"> lange_string = """Ik heb mijn buik vol van te
+worden behandeld als een schaap. Wat is de zin van op vakantie gaan als je
+gewoon maar een toerist bent die wordt rondgereden in een bus ..."""
+
+print( lange_string ) </pre> -->
+<!--
+<h3id="opgave-10.2.1-stings-over-meerdere-regels"><span
+style="color:red">Opdracht</span> 10.2.1 Strings over meerdere regels</p>
+<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/850034/3e82aa33e7159bc44d3970a53af7ee8f"></iframe></p>
+<a
+href="Strings_oplossingen.html#opgave-10.2.1-stings-over-meerdere-regels">Klik
+hier</a> voor een uitwerking. -->

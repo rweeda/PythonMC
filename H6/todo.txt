@@ -1,2 +1,0 @@
-opmerkingen in stroomdiagrammen verwerken
-stomme pre/postconditions wegklikken
