@@ -1,0 +1,24 @@
+<h4>Hoofdstuk 12 - Geneste loops</h4>
+
+
+
+<p>Je kunt een loop in een andere loop stoppen. Dit gebruik je om alle combinaties van twee dingen af te drukken, bijvoorbeeld van coördinaten of tabellen.</p>
+
+
+
+<p><span style="font-size: 1rem;">In dit onderwerp:</span></p>
+
+<ul>
+
+    <li>leer je hoe je met geneste <code>for</code>-loops moet werken;</li>
+
+    <li>leer je hoe je lijsten kan nesten;</li>
+
+    <li>leer je nesten te combineren met voorwaarden/condities.</li>
+
+</ul>
+<p></p>
+
+
+
+<div class="fa fa-clock-o fa-3x"></div><br> <b>2 uur</b>

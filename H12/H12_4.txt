@@ -1,0 +1,17 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.2
+<p>4: Herhaling: lijst doorlopen met een <code>for</code>-loop</p>
+
+	
+<h1 id="H122">H12.2 - Herhaling <code>for</code> en lijsten </h1>
+
+
+<h2>Lijsten doorlopen met een <code>for</code> loop</h2>
+-->
+<p>Met een <code>for</code>-loop doorloop je alle elementen van een lijst.
+    Het volgende programma
+    doorloopt één voor één alle kleuren in een lijst en print ze.</p>
+
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/H1212v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups
+allow-same-origin allow-scripts allow-modals"></iframe></p>

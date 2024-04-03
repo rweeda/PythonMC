@@ -1,0 +1,83 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--
+
+<p>H12: Afsluitende opdrachten</p>
+
+-->
+<p>Met de volgende afsluitende opdrachten kun je kijken hoe goed je de stof beheerst. Controleer steeds je eigen oplossing met de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave121">Afsluitende opdracht 12.1 Stok kaarten afdrukken</p>
+<p>Schrijf een programma dat alle kaarten van een kaartendeck afdrukt.</p>
+<!-- GIVEN
+kleurLijst = ["Harten", "Schoppen", "Klaveren", "Ruiten"]
+waardeLijst = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Boer", "Vrouw", "Heer", "Aas"]
+-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H12AfOpgave121-kaartendeck"></iframe></p>
+<!-- ANTWOORD
+<pre class="python">
+kleurLijst = ["Harten", "Schoppen", "Klaveren", "Ruiten"]
+waardeLijst = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Boer", "Vrouw", "Heer", "Aas"]
+
+for kleur in kleurLijst:
+	for waarde in waardeLijst:
+		print(kleur,waarde)
+</pre>
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#AfOpgave121">hier</a> een voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="AfOpgave122">Afsluitende opdracht 12.2 Alle mogelijkheden (met <code>for</code>)</p>
+<p>We willen met vier kleuren zoveel mogelijk verschillende vlaggen maken. Schrijf een programma dat alle mogelijke combinaties van vier kleuren afdrukt. Print ook hoeveel combinaties dit zijn.</p>
+<p>Tip: Gebruik meerdere loops die genest zijn.</p>
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H12AfOpgave123-alle-mogelijkheden"></iframe></p>
+<!-- ANTWOORD
+<pre class="python">
+kleurenLijst = ["Rood", "Blauw", "Groen", "Paars"]
+combinatieTeller = 0
+
+
+for kleur1 in kleurenLijst:
+	for kleur2 in kleurenLijst:
+		for kleur3 in kleurenLijst:
+			for kleur4 in kleurenLijst:
+				print( kleur1, kleur2, kleur3, kleur4)
+				combinatieTeller += 1
+					
+print("Aantal mogelijkheden:", combinatieTeller)
+</pre>
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#AfOpgave122">hier</a> een voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="AfOpgave123">Afsluitende opdracht 12.3 Feestinkopen (met <code>for</code>)</p>
+<p>We gaan boodschappen inslaan voor een feestje. Echter, de inkopen moet wel voldoen aan een aantal eisen:
+</p>
+<ul>
+    <li>je mag cola, chips en chocola kopen;</li>
+    <li>je moet precies twaalf dingen meenemen (dus aantal cola+chips+chocola moet gelijk zijn aan twaalf); </li>
+    <li>van ieder mag je maximaal tien stuks;</li>
+    <li>van alle drie niet evenveel (je mag dus niet 3xcola, 3xchips en 2xchocola).</li>
+</ul>
+<p></p>
+<p>Schrijf een programma dat alle toegestane boodschappenlijstjes bepaalt en ook hoeveel dat er zijn.</p>
+<p>Tips: Je hebt drie <code>for</code>-loops nodig en daarin nog minstens twee <code>if</code>-condities.</p>
+
+<p><iframe width="100%" height="1000px" src="https://replit.com/team/InformaticaActief/H12AfOpgave122-feestinkopen"></iframe></p>
+<!-- ANTWOORD
+<pre class="python">
+
+aantal_mogelijkheden = 0
+for cola in range(1,11):
+	for chips in range (1,11):
+		for chocola in range (1,11):
+			if(cola+chips+chocola==12):
+				if(cola!=chips and chips!=chocola):#niet alle drie hetzelfde
+					aantal_mogelijkheden+=1
+					print("cola",cola,"chips", chips, "chocola", chocola,  "aantal mogelijkheden:", aantal_mogelijkheden)
+</pre>
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#AfOpgave123">hier</a> een voorbeelduitwerking.</p>

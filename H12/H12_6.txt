@@ -1,0 +1,63 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.4
+<p>6: Geneste lijsten</p>
+
+<h1 id="H124">H12.4 - Geneste lijsten</h1>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/V80VC7KIljU" title="YouTube
+video player" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Je kunt ook lijsten van lijsten maken. Eigenlijk is dit een tabel (of
+    matrix). Tabellen kom je overal tegen, bijvoorbeeld voor je resultaten van een
+    natuurkunde-experiment of om bij te houden welke stoelen in een bioscoop
+    zijn gereserveerd. Daarnaast worden deze tweedimensionale lijsten ook
+    gebruikt om plaatjes in de computer te representeren (weet je nog, bitmap?)
+    of bij computerspellen:</p>
+
+
+<p></p>
+<div class="figure"> <img src="https://course.cs.ru.nl/pythonVO/img/bitmapImage.PNG" width="100" alt="Bitmap representatie">
+
+    <img src="https://course.cs.ru.nl/pythonVO/img/schaakbord.PNG" width="100" alt="Schaakbord">
+
+    <img src="https://course.cs.ru.nl/pythonVO/img/minesweeper_small.png" width="100" alt="Mijnenveger">
+</div>
+<p></p>
+
+<p>In het voorbeeld hieronder staan drie lijsten (drie rijen) genest in een lijst,
+    samen vormen ze een tabel met X,O,-. Zo kun je bijvoorbeeld een
+    boter-kaas-eierenbord bouwen (een liggend streepje is een lege cel). Om bij
+    een element in een geneste lijst te komen, moet je beide indexen geven, net
+    als een soort coördinaat. Met <code>bord[0][0]</code> kom je bij het element linksboven en met <code>bord[0][2]</code> bij het element rechtsboven.</p>
+
+<!--
+<pre class="python"> bord = [ ["X", "O", "-"], ["X", "O", "O"], ["-", "X","-"] ]
+
+print( bord[0][0], bord[0][1], bord[0][2] ) print( bord[1][0], bord[1][1], bord[1][2] ) print( bord[2][0], bord[2][1], bord[2][2] ) </pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/Th1220?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms
+allow-pointer-lock allow-popups allow-same-origin allow-scripts
+allow-modals"></iframe></p>
+
+
+
+<p class="opdracht" id="opgave1241">Opdracht 12.6 Winnen met Boter-kaas-eieren</p>
+<p>Win
+    het spel hieronder door op regel 3 maar één regel code toe te
+    voegen. Gebruik de co&ouml;rdinaten/indexen om een '-' in een 'X' te
+    veranderen.</p>
+<!-- <pre class="python"> bord = [ ["X", "O", "-"], ["X",
+"O", "O"], ["-", "X", "-"] ]
+
+bord[2][0]="X" #Win het spel door hier 1 regel code toe te voegen om een - in
+een X te veranderen
+
+print( bord[0][0], bord[0][1],bord[0][2] ) print( bord[1][0], bord[1][1],
+bord[1][2] ) print( bord[2][0], bord[2][1], bord[2][2] ) </pre>-->
+
+<p><iframe width="100%" height="360" src="https://replit.com/team/InformaticaActief/H12H1241-boter-kaas-eieren"></iframe></p>
+<!--https://replit.com/team/InformaticaActief/H12H1241-boter-kaas-eieren -->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1241">hier</a> een voorbeelduitwerking.</p>

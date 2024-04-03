@@ -1,0 +1,113 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H123
+<p>5: Geneste <code>for</code>-loops</p>
+
+<h1 id="H123">H12.3 - Geneste <code>for</code> loops</h1>
+
+
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/18ZwEYRanj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Met één <code>for</code> doorloop je de elementen van een bepaalde
+    variabele. Dat kan een <code>teller</code> zijn die van 0 tot een getal
+    looptof dat kunnen elementen van een lijst zijn.</p>
+<p>Met twee <code>for</code>-loops, dus een <code>for</code> in een andere, kun je twee variabelen doorlopen: elke keer
+    dat de buitenste <code>for</code>-loop wordt aangeroepen, wordt de binnenste
+    loop helemaal doorlopen. Bekijk het voorbeeld hieronder waarbij voor elke
+    letter in de lijst de getallen 0 tot 4 worden afgedrukt:</p>
+
+<!--<pre
+class="python"> lijst = ["a", "b", "c"] for letter in lijst:
+	for teller in range(4):
+		print("letter:", letter, "teller:", teller)
+</pre>
+-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/H12v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+
+<p class="opdracht" id="opgave1231">Opdracht 12.3 Coördinaten</p>
+<p>Vul op de
+    streepjes hieronder het programma aan zodat alle coördinaten van (0,0)
+    tot en met (3,4) worden afgedrukt:</p>
+<p> (0,0) (0,1) (0,2) (0,3) (0,4)
+    (1,0) (1,1) ... (3,3) (3,4)</p>
+
+<!-- GIVEN for x_coordinaat in range(________):
+	for ___________ in range(__________):
+		print("(" , x_coordinaat, ",", y_coordinaat, ")")
+-->
+
+<!-- ANSWER for x_coordinaat in range(4):
+	for y_coordinaat in range(5):
+		print("(" , x_coordinaat, ",", y_coordinaat, ")")
+-->
+<p><iframe width="100%" height="400px" src="https://replit.com/team/InformaticaActief/H12H1231-coordinaten"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1231">hier</a> de voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="opgave1232">Opdracht 12.4 Coördinatentabel</p>
+<p>
+    Print een
+    lege regel (met <code>print()</code>) op de juiste plek zodat de
+    coördinaten van (0,0) tot en met (3,4) als tabel worden afgedrukt:</p>
+(0,0) (0,1) (0,2) (0,3) (0,4) <br>
+(1,0) (1,1) ...................... <br>
+..................................... <br>
+...................... (3,3) (3,4) <br>
+
+<p>Tips: met <code>print( ... , end="")</code> zorg je ervoor dat
+    er <i>niet op een nieuwe</i> regel wordt afgedrukt, en met
+    <code>print()</code> druk je een lege regel af.
+</p>
+<p><iframe width="100%" height="400px" src="https://replit.com/team/InformaticaActief/H12H1232-coordinaten-tabel"></iframe></p>
+<!-- GIVEN for x_coordinaat in range(4):
+	for y_coordinaat in range(5):
+		print("(" , x_coordinaat, ",", y_coordinaat, ")", end="")
+-->
+
+<!-- ANSWER for x_coordinaat in range(4):
+	for y_coordinaat in range(5):
+		print("(" , x_coordinaat, ",", y_coordinaat, ")", end="")
+        print()
+-->
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1232">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave1233">Opdracht 12.5 McCombi's</p>
+<p>Bij de McDonald's kan je
+    wat te eten (zie <code>etenLijst</code>) en wat te drinken (zie
+    <code>drankLijst</code>) halen.
+</p>
+<ul>
+    <li><b>Deel A</b>: Print alle mogelijke combinaties van eten en drinken, bv. "Combinatie: McShake &amp; BigMac"</li>
+    <li><b>Deel B</b>: Houd een teller bij van de combinatiemogelijkheden en print die bij elke combinatie.</li>
+</ul>
+
+
+<p><iframe width="100%" height="400px" src="https://replit.com/team/InformaticaActief/H12H1233-McCombis"></iframe></p>
+<!-- ANTWOORD DEEL A: drankLijst = ["water", "ijsthee", "McShake", "McCafe",
+"cola"] etenLijst = [ "BigMac", "McChicken", "McNuggets", "Frietjes",
+"McSalad"]
+
+for drinken in drankLijst:
+	for eten in etenLijst:
+		print("Combinatie:", drinken, "&", eten)
+
+
+DEEL B: etenLijst = [ "BigMac", "McChicken", "McNuggets", "Frietjes",
+"McSalad"] drankLijst = ["water", "ijsthee", "McShake", "McCafe", "cola"]
+
+teller = 0 for drinken in etenLijst:
+	for eten in drankLijst:
+		teller +=1  #teller ophogen
+		print("Combinatie", teller, drinken, "&", eten)
+-->
+
+
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1233">hier</a> de voorbeelduitwerking.</p>

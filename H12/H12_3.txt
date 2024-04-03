@@ -1,0 +1,54 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.2
+<p>3: Herhaling: lijsten</p>
+
+	
+<h1 id="H122">H12.2 - Herhaling <code>for</code> en lijsten </h1>
+-->
+<p>We herhalen nu kort hoe lijsten werken.</p>
+
+<p>Een lijst is een verzameling elementen. De lengte van een lijst (dus het aantal elementen) kun je bepalen met <code>len(lijst)</code>.</p>
+<p>De positie van een element noemen we een <i>index</i>. De index kun je gebruiken om een element op een bepaalde plek te krijgen of daar juist neer te zetten. De index van het laatste element is de lengte van de lijst min 1.</p>
+
+<ul>
+    <li><code>lijst[0]</code> : eerste element</li>
+    <li><code>lijst[1]</code> : tweede element</li>
+    <li>...</li>
+    <li><code>lijst[ (len(lijst)-1) ]</code> : laatste element</li>
+
+</ul>
+<p></p>
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H1212v3?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups
+allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+
+<p class="opdracht" id="opgave1222">Opdracht 12.2 Oefenen met lijsten</p>
+<p>In deze opgaven oefenen we met de index van een lijst:
+</p>
+<ol>
+    <li><b>Deel A</b>: Bekijk de lijst met cijfers: <code>cijferLijst</code>. Wat is de index van het cijfer 3.4? Verander het eerste cijfer in 5.5.</li>
+    <li><b>Deel B</b>: Bekijk de lijst met tekens: <code>tekenLijst</code>. Wat is de index van de underscore,
+        "_"? Gebruik de index om de underscore te vervangen door de letter "t".</li>
+    <li><b>Deel C</b>: Met de laatste regel code willen we van <i>elke cijferLijst</i> het laatste cijfer printen, maar er zit een fout in de code. Kan jij de fout oplossen?</li>
+</ol>
+<p></p>
+
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H12H1221-oefenen-lijsten"></iframe></p>
+
+<!--
+<pre
+class="python">
+#DEEL A cijferLijst = [3.4, 8.0, 6.9, 7.0, 8.2] #vervang 3.4 met 5.5
+
+cijferLijst[0] = 5.5
+print(cijferLijst)
+
+#DEEL B: letterLijst = ["k", "a", "_"] #vervang _ met t letterLijst [2] = "t" print(letterLijst)
+
+#DEEL C: laatste =
+cijferLijst[ len(cijferLijst)-1 ] #pas de fout hier aan print(laatste) </pre>
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1221">hier</a> een voorbeelduitwerking.</p>

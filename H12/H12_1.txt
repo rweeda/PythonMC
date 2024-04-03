@@ -1,0 +1,37 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.1
+<p>1: Inleiding geneste for-loops</p>
+
+	
+<h1 id="H121">H12.1 - Inleiding geneste <code>for</code>-loops</h1>
+-->
+<p>Een loop mag ook in een andere loop. Dit kan je gebruiken om alle combinaties van twee dingen af te drukken. Bijvoorbeeld: combinaties van coördinaten. Je wil dan per x-coördinaat elke y-coördinaat gebruiken.</p>
+<!--
+<pre class="python">
+for x in range (2):
+  for y in range (3):
+    print(x,y)
+
+print("Of met haakjes:")
+for x in range (4):
+  for y in range (3):
+    print("(",x,",",y, ")", end="") #de end zorgt ervoor dat niet met nieuwe regel begonnen wordt
+  print()
+  </pre>-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/Th1218?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Wat gebeurt hier?
+</p>
+<ul>
+    <li>Voor elke waarde van <code>x&nbsp;</code>worden alle waarden van <code>y</code> afgedrukt.</li>
+    <li>In de "buitenste loop" verandert&nbsp;<code>x</code> steeds.</li>
+    <li>In de "binnenste loop" verandert&nbsp;<code>y</code> steeds.</li>
+</ul>
+<p></p>
+<p>Dat zie je ook aan de uitvoer: <code>x</code> blijft eerst op 0 blijft staan, terwijl <code>y</code> steeds verandert. Pas als <code>y</code> zijn maximale waarde heeft bereikt (hier 3), gaat <code>x</code>&nbsp;omhoog en dan doorloopt <code>y</code> weer alle mogelijkheden.</p>
+
+<!--
+Bekijk eventueel het volgende filmpje voor <b>extra</b> uitleg over geneste lijsten:<br>
+<p><iframe width="185" height="105" src="https://www.youtube.com/embed/Go-FfGhxbSM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+-->

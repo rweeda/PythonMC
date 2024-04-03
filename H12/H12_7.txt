@@ -1,0 +1,51 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.4
+<p>7: Een geneste lijst doorlopen met een geneste <code>for</code>-loop</p>
+
+<h2>Geneste <code>for</code> loop om een geneste lijst te doorlopen</h2>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/eRvfUeEkBuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Met een <code>for</code>-loop doorloop je een lijst. Met een geneste
+    <code>for</code>-loop doorloop je een geneste lijst. Als je voor elke kolom
+    in elke rij wat wilt afdrukken gebruik je een <code>for</code> om elke rij te
+    doorlopen en daarbinnen een andere <code>for</code> om elke kolom af te
+    lopen:
+</p>
+<!-- <pre class="python"> bord = [ ["X", "O", "-"], ["X", "O",
+"O"], ["-", "X", "-"] ]
+
+for rij in range (3):
+	for kolom in range (3):
+		print(bord[rij][kolom], end="") #druk zet af, maar zonder naar nieuw regel door te gaan
+	print() #ga naar volgende regel
+
+</pre>-->
+<p><iframe height="300px" width="100%" src="https://repl.it/@smer/TH1221?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms
+allow-pointer-lock allow-popups allow-same-origin allow-scripts
+allow-modals"></iframe></p>
+
+
+
+
+<p class="opdracht" id="opgave1242">Opdracht 12.7 Smiley</p>
+<p>De bedoeling van de code
+    hieronder is om een smiley te printen. </p>
+<ul>
+    <li><b>Deel A</b>: schrijf code om een plaatje van vijf breed en vijf hoog af te drukken.</li>
+    <li><b>Deel B</b>: gebruik de indices om het plaatje in een glimlach te veranderen. Kijk op regel 9 voor een tip.</li>
+</ul>
+<p></p>
+
+<!-- GIVEN <pre class="python"> plaatje = [ [" ","X", " ", "X", " "],
+		   [" ","X", " ", "X", " "],
+		   [" "," ", " ", " ", " "],
+		   [" ","X", "X", "X", " "],
+	           ["X"," ", " ", " ", "X"] ]
+				
+#plaatje[3][0] = "X" </pre> -->
+<p><iframe width="100%" height="800px" src="https://replit.com/team/InformaticaActief/H12H1242-smiley"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1242">hier</a> een
+    voorbeelduitwerking.</p>

@@ -1,0 +1,66 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--IA H12.2
+<p>2: Herhaling: for-loop</p>
+
+	
+<h1 id="H122">H12.2 - Herhaling <code>for</code> en lijsten </h1>
+-->
+<p>We herhalen nu kort de <code>for</code>-loop.</p>
+
+<p>Ter herinnering: er zijn twee manieren om een loop (herhaling) te maken: met <code>for</code> en met
+    <code>while</code>. Met een <code>while</code> kun je elke herhaling maken. De <code>for</code> is iets
+    makkelijker om te schrijven, maar kan je alleen gebruiken als je vooraf precies weet hoe vaak code herhaald moet
+    worden.
+</p>
+
+<p>Er zijn drie soorten <code>for</code>-loops (zie ook Hoofdstuk 8 onderwerp '6: Samenvatting van de for-loop'), afhankelijk van het aantal parameters je meegeeft:</p>
+
+<ol>
+    <li>Paragraaf&nbsp;'1: Herhalingen met een for-loop': Je kunt één getal meegeven. Dan loopt de teller
+        van 0 tot (en niet tot-en-met) dat getal.<p> Bijvoorbeeld: <code>for teller in range(5)</code> herhaalt van 0
+            tot 5, dus vijf keer.</p>
+    </li>
+    <li>Paragraaf&nbsp;'3: Van startgetal tot eindgrens (for met 2 parameters)': Je kunt twee getallen meegeven. Dan loopt de
+        teller van het eerste tot (en niet &lt;i&gt;tot en met&lt;/i&gt;) het tweede getal. <p>Bijvoorbeeld: <code>for teller in
+                range(2,5)</code> herhaalt van 2 tot 5, dus drie keer.</p>
+    </li>
+    <li>Paragraaf&nbsp;'4: Van startgetal tot eindgrens met stapgrootte (for met 3 parameters)': Je kunt drie getallen
+        meegeven. Dan loopt de teller van het eerste tot (en niet&lt;i&gt;tot en met&lt;/i&gt;) het tweede getal, met sprongen van
+        het derde getal. <p>Bijvoorbeeld: <code>for teller in range(1, 6, 2)</code> herhaalt van 1 tot 6 in stappen
+            van twee, dus drie keer (namelijk 1, 3, 5).</p>
+        <p></p>
+    </li>
+
+</ol>
+
+
+<p><iframe height="500px" width="100%" src="https://repl.it/@smer/TH-1230?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+<pre class="python"> #For loop met 1 parameter:
+print("For loop met een parameter loopt van 0 tot dat getal:") for teller in range(3):
+	print (teller)
+
+#For loop met 2 parameters:
+print("For loop met twee parameters, loopt van het eerste tot het tweede getal:")
+for teller in range(5,7):
+	print (teller)
+
+#For loop met 3 parameters:
+print("For loop met drie parameters, loopt van het eerste tot het tweede getal met sprongen van het derde getal:")
+for teller in range(9, 16, 3):
+	print (teller)
+</pre>
+-->
+<p class="opdracht" id="opgave1221">Opdracht 12.1 Oefenen met <code>for</code>-loop</p>
+<p>Het onderstaande programma hoort eerst 1, dan 2, dan 3 "^"'s s (accents circonflexes of
+    dakjes) te printen, maar er zit een fout in. Kun jij de fout oplossen?</p>
+<!--
+<pre
+class="python"> for teller in range(1, 4):
+	print("^"*teller) </pre>-->
+<p><iframe width="100%" height="600px" src="https://replit.com/team/InformaticaActief/H12H1222-oefenen-met-for"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H12_oplossingen.html#opgave1221">hier</a> de voorbeelduitwerking.</p>
