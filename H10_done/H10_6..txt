@@ -1,0 +1,45 @@
+<!-- HIER BEGINT PAGINA INHOUD -->
+
+<!--
+<p>6: Som van alle waarden</p>
+
+
+<h1 id="H106">10.6 - Som van alle waarden</h1>
+-->
+
+<p>Met een <code>for</code>-loop kun je ook bepalen wat de som van alle waarden in de lijst is.
+    Je gebruikt daarvoor een variabele om de som bij te houden. Je doorloopt de lijst en elk getal tel je op bij de som. Om te beginnen is de som 0; na afloop is dat de som van alle waarden in de lijst.</p>
+<!--<pre class="python">
+getallenlijst = [ 4, 2, 3, 1]
+
+som = 0 #som begint op 0
+for getal in getallenlijst:
+	som += getal #tel getal op bij de huidige som
+	
+print(som)
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/106v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave1061">Opdracht 10.8 Totale regenval</p>
+
+<p>Janneke hield voor de maand februari dagelijks bij hoeveel mm regen er gevallen is. Gebruik een loop om de lijst te doorlopen en bepaal hoeveel regen er in totaal gevallen is. Na afloop druk je af hoeveel mm regen er is gevallen, dus <i>"Er is 223 mm regen gevallen".</i></p>
+
+<!--
+<pre class="python">
+regenlijst = [ 8, 10, 15, 20, 18, 15, 13, 14, 16, 34, 12, 10, 0, 0, 0, 1, 2, 0, 4, 8, 0, 0, 1, 2, 1, 10, 8, 1 ]
+</pre>-->
+
+<!-- ANTWOORD:
+<pre class="python">
+regenlijst = [ 8, 10, 15, 20, 18, 15, 13, 14, 16, 34, 12, 10, 0, 0, 0, 1, 2, 0, 4, 8, 0, 0, 1, 2, 1, 10, 8, 1 ]
+
+totaal = 0                                      #totaal begint op 0
+for regenmeting in regenlijst:
+	totaal += regenmeting              #tel huidige meting op bij de totaal tot nu toe
+	
+print("Er is " + str(totaal) + "mm regen gevallen.")
+</pre>
+-->
+<p><iframe width="100%" height="700px" src="https://repl.it/team/InformaticaActief/1061-Totale-regenval"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H10_oplossingen.html#opgave1061" target="_blank">hier</a> de voorbeelduitwerking.</p>
