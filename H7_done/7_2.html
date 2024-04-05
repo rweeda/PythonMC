@@ -1,0 +1,179 @@
+<!--
+
+<p>2: Herhalingen met een while-loop</p>
+<h1 id="H71">H7.1 - Kennis maken met een <code>while</code>-loop: herhalingen</h1>
+-->
+
+<!--[VIDEOUITLEG: while-loop](https://web.microsoftstream.com/video/c0982dc9-c8aa-4f6a-bde4-bc3af61c274f)-->
+<!--<p><iframe width="640" height="360" src="https://web.microsoftstream.com/embed/video/c0982dc9-c8aa-4f6a-bde4-bc3af61c274f?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none;"></iframe></p><br>
+-->
+<!--
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/J4sWEJ_O2pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+-->
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/Xic59t6jFt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Een herhaling zoals <i>zolang.. dan.. </i> heet in Python een <code>while</code>-constructie.</p>
+<ul>
+    <li>Het begint met een test (conditie) in de <code>while</code>.
+    </li>
+    <li>Als uit de conditie <code>False</code> komt slaat Python het blok code dat bij de <code>while</code> hoort over, en gaat daaronder verder.
+    </li>
+    <li>Als uit de test <i>True</i> (waar) komt, dan wordt het blok code onder de <code>while</code> uitgevoerd.
+    </li>
+    <li>Wanneer het blok code uitgevoerd is, gaat Python <b>terug</b> naar de test na de <code>while</code> en test die opnieuw.
+    </li>
+    <li>Als de voorwaarde nog steeds <code>True</code> oplevert, dan wordt het blok code nogmaals uitgevoerd. Dit wordt steeds herhaald, totdat uit de test <code>False</code> komt.
+
+    </li>
+</ul>
+
+<p class="opdracht" id="Opgave712">Opdracht 7.2 Aftellen</p>
+
+<p>Het doel van het programma hieronder is om <code>tijd</code> af te tellen. Eerst vragen we de gebruiker om aan te geven vanaf welk getal we moeten aftellen. Zolang de <code>tijd</code> groter is dan 0, wordt deze eentje minder en dan geprint. Pas als de <code>tijd</code> 0 heeft bereikt, wordt de loop niet uitgevoerd en print je "AF!"</p>
+
+<p>Helaas staan de regels in de verkeerde volgorde. Zet de regels in de juiste volgorde en test je programma.</p>
+<!-- GEGEVEN CODE:
+  tijd -= 1
+invoer = input()
+while tijd > 0:
+print("AF!")
+print("Vanaf welk getal wil je aftellen?")
+  print("tijd is", tijd)
+tijd = int( invoer )
+-->
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/H7712-Aftellen-met-while"></iframe></p>
+
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave712" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="Opgave713">Opdracht 7.3 Driehoekkunst</p>
+
+Dit kunstwerk is getekend door eerst een driehoek te tekenen en dan daarbinnen steeds een iets kleinere te tekenen... en stopt pas als de driehoeken te klein zijn om nog goed te kunnen zien (lengte van 10).<br>
+<table>
+    <tbody>
+        <tr>
+            <td>
+                <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_driehoekKunst.jpg" alt="Driehoek kunst" width="300"><br>
+            </td>
+            <td>
+                <img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_Stroomdiagram_driehoekKunst.jpg" alt="Driehoekkunst" width="300"><br>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+Het programma vraagt op regel 24 aan de gebruiker hoe groot de eerste driehoek moet zijn.
+
+Schrijf zelf de code voor de <code>while</code>-loop (op regel 27): <ul>
+    <li>Zolang de lengte groter is dan 10,
+    </li>
+    <li>teken een driehoek met die lengte.
+    </li>
+    <li>Maak dan de lengte 10 kleiner.
+    </li>
+</ul>
+
+
+<!-- VOORGEGEVEN CODE
+<pre class="python">
+import turtle
+
+### FUNCTIEDEFINITIE
+
+#tekent een driehoek met de gegeven lengte
+def tekenDriehoek( lengte ):
+    turtle.forward( lengte )
+    turtle.right( 120 )
+    turtle.forward( lengte )
+    turtle.right( 120 )
+    turtle.forward( lengte )
+    turtle.right( 120 )
+
+def vraagGebruikerOmLengte():
+    print("Geef een getal tussen de 50 en 200:")
+    invoer = input()
+    lengte = int (invoer)
+    print( "Het eerste driehoek wordt", lengte, "groot.")
+    return lengte
+
+
+### HOOFDPROGRAMMA
+turtle.pendown()
+lengte = vraagGebruikerOmLengte()
+
+#SCHRIJF HIER DE WHILE LOOP MET DAARIN HET TEKENEN VAN DE DRIEHOEK EN VERKLEINEN VAN DE LENGTE
+
+
+
+turtle.done()
+</pre>-->
+
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/H7713-Driehoek-kunstpy3"></iframe></p>
+<!-- ANTWOORD
+import turtle
+
+### FUNCTIEDEFINITIE
+
+#tekent een driehoek met de gegeven lengte
+def tekenDriehoek( lengte ):
+    turtle.forward( lengte )
+    turtle.right( 120 )
+    turtle.forward( lengte )
+    turtle.right( 120 )
+    turtle.forward( lengte )
+    turtle.right( 120 )
+
+def vraagGebruikerOmLengte():
+    print("Geef een getal tussen de 50 en 200:")
+    invoer = input()
+    lengte = int (invoer)
+    print( "Het eerste driehoek wordt", lengte, "groot.")
+    return lengte
+
+
+### HOOFDPROGRAMMA
+turtle.pendown()
+lengte = vraagGebruikerOmLengte()
+while lengte > 10:
+    tekenDriehoek( lengte )
+    lengte -= 10
+turtle.done()
+
+-->
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H7_oplossingen.html#opgave712)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave713" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+
+
+<!--
+<p class="opdracht" id="Opgave713">Opdracht 7.1.3 Geheim getal raden - volgorde code rangschikken </p>
+<p>Het doel van het programma hieronder is om de gebruiker een geheime getal te laten raden. Als het goed geraden wordt er <i>Goed zo! Geraden!</i> geprint. Als het niet goed geraden wordt er <i>Fout...</i> geprint en krijgt de gebruiker nog een poging.</p>
+
+<p>Helaas staan de regels in de verkeerde volgorde. Zet de regels in de juiste volgorde.</p>
+
+geraden_getal = int( invoer )
+invoer = input()
+	invoer = input()
+    geraden_getal = int( invoer )
+while geraden_getal != geheim_getal:
+geheim_getal = 4
+
+print( "Ik heb een getal in gedachten tussen de 1 en 10. Welk getal is dat?" )
+print("Goed zo! Geraden!")
+    print( "Fout. Probeer een ander getal tussen de 1 en 10." )
+-->
+<!-- ANTWOORD
+
+geheim_getal = 4
+print( "Ik heb een getal in gedachten tussen de 1 en 10. Welk getal is dat?" )
+invoer = input()
+geraden_getal = int( invoer )
+
+while geraden_getal != geheim_getal:
+    print( "Fout. Probeer een ander getal tussen de 1 en 10." )
+    invoer = input()
+    geraden_getal = int( invoer )
+
+print("Goed zo! Geraden!")
+-->

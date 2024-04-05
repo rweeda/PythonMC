@@ -1,0 +1,228 @@
+<!--
+<p>5: Oefenen met een logische vlag</p>
+-->
+<p class="opdracht" id="opgave731">Opdracht 7.6 Toegang met wachtwoord</p>
+
+<p>Het doel van het programma hieronder is om een wachtwoord aan de gebruiker te vragen. Pas als het wachtwoord klopt, wordt toegang verleend. Zolang het wachtwoord niet klopt, wordt de gebruiker opnieuw om invoer gevraagd.</p>
+
+<p>Helaas staan de regels in de verkeerde volgorde. Zet de regels in de juiste volgorde en test je programma.</p>
+<!-- GEGEVEN CODE
+    else:
+    invoer = input()
+WACHTWOORD = "Geheim"
+goed_geraden = False
+        goed_geraden = True
+        print("Fout... probeer het opnieuw")
+    if invoer == WACHTWOORD:
+	print( "Voer wachtwoord in: " )
+while not goed_geraden:
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/721-Toegang-met-wachtwoord"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H7_oplossingen.html#opgave721)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave731" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+WACHTWOORD = "Geheim"
+goed_geraden = False                #om te beginnen staat de vlag op False
+
+while not goed_geraden:             #herhaal zolang vlag nog op False staat
+    print( "Voer wachtwoord in: " ) #vraag de wachtwoord
+    invoer = input()
+    if invoer == WACHTWOORD:        #goed geraden
+		print("Goed zo")
+        goed_geraden = True         #de vlag wordt op True gezet, hierna zal de while-loop niet opnieuw uitgevoerd gaan worden
+    else:                           #fout geraden
+        print("Fout... probeer het opnieuw")
+
+-->
+
+
+
+<p class="opdracht" id="opgave732">Opdracht 7.7 Raad het geheime getal</p>
+<!-- <p class="opdracht" id="opgave-7.1.5a-fout-herstellen-in-de-loop">Opdracht 7.1.5.1a Gok het getal</p>
+<p><iframe frameborder="0" width="100%" height="600px" src="https://repl.it/student_embed/assignment/5698294/fe9235daa2cecf4e7122967369159ecf"></iframe></p>-->
+
+We gaan een spelletje maken: <i>Raad het geheime getal</i>.<br>
+Spelregels:
+<ul>
+    <li>De computer kiest een willekeurig getal tussen de 0 en 100 (0 of 100 mag ook)
+    </li>
+    <li>De speler gokt een getal
+    </li>
+    <li>Is het gegokte getal juist, dan wint de speler en krijgt de speler een compliment
+    </li>
+    <li>Is het gegokte getal fout, dan krijgt de speler hierover een melding en moet de speler opnieuw gokken.
+    </li>
+    <li>Na afloop van het spel wordt de speler bedankt.
+    </li>
+</ul>
+
+<p>Het volgende stroomdiagram laat het algoritme zien met gebruik van een logische vlag <code>goed_geraden</code>:</p>
+
+<img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_Stroomdiagram_raadGeheimGetal.jpg" alt="Stroomdiagram voor while-loop met logische vlag" width="450"><br>
+
+
+<p>Hieronder staat een deel van de code. Breid de code uit (aangegeven bij STAP 1 t/m 4) zodat deze overeenkomt met het bovenstaande stroomdiagram.</p>
+
+<!--
+Stappen:
+<ul>
+<li>Op regel 8 komt een while-loop en controleer je of de vlag op False staat
+</li><li>Op regel 13 is de gok goed geraden en wordt de vlag wordt op True gezet
+</li><li>Op regel 16 print de tekst: "Jammer, fout... probeer het opnieuw"
+</li><li>Na afloop print je nog "Bedankt voor het spelen"
+</li></ul>
+-->
+
+<!-- GEGEVEN CODE:
+<pre class="python">
+import random
+
+#GLOBALE VARIABELEN
+TE_RADEN_GETAL = random.randint(0,100) #computer kiest een willekeurige getal tussen 0 en 100 (0 of 100 kan ook)
+
+### HOOFDPROGRAMMA
+goed_geraden = False #om te beginnen staat de vlag op False
+
+# STAP 1. herhaal zolang vlag nog op False staat
+	print(  "Gok een getal tussen de 0 en 100 (0 of 100 mag ook)!" )
+	invoer = input()
+	gebruikers_antwoord = int( invoer )
+
+	if gebruikers_antwoord == TE_RADEN_GETAL: #als getal goed is geraden
+	  print("Goed geraden!")
+		# STAP 2. de vlag wordt op True gezet, hierna zal de while-loop niet opnieuw uitgevoerd gaan worden
+	else: #fout geraden
+		# STAP 3. print de tekst: "Jammer, fout... probeer het opnieuw"
+
+#STAP 4. print "Bedankt voor het spelen"
+</pre>-->
+<p><iframe width="100%" height="800px" src="https://repl.it/team/InformaticaActief/722-Raad-het-geheim-getal"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H7_oplossingen.html#opgave722)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave732" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+
+<pre class="python">
+import random
+#GLOBALE VARIABELEN
+TE_RADEN_GETAL = random.randint(0,100) #computer kiest een willekeurit getal tussen 0 en 100 (0 of 100 kan ook)
+
+
+### HOOFDPROGRAMMA
+goed_geraden = False #om te beginnen staat de vlag op False
+
+while not goed_geraden: #herhaal zolang vlag nog op False staat
+	print(  "Gok een getal tussen de 0 en 100 (0 of 100 mag ook)!" )
+	invoer = input()
+    gebruikers_antwoord = int( invoer )
+
+    if gebruikers_antwoord == TE_RADEN_GETAL: #goed geraden
+	    print("Goed geraden!")
+        goed_geraden = True #de vlag wordt op True gezet, hierna zal de while-loop niet opnieuw uitgevoerd gaan worden
+    else: #fout geraden
+        print("Jammer, fout... probeer het opnieuw")
+
+print("Bedankt voor het spelen")
+</pre>
+
+-->
+
+<!-- VOOR VSC:
+
+<table>
+<tr><td><img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_Stroomdiagram_raadGeheimGetal.jpg" alt="Stroomdiagram voor while-loop met logische vlag" width="450"><br>
+</td><td>
+We gaan een spelletje maken: <i>Raad het geheim getal</i>.<br><br>
+Spelregels:
+<ul>
+<li>De computer kiest een willekeurig getal tussen de 0 en 100 (0 of 100 mag ook)
+</li><li>De speler gokt een getal
+</li><li>Is het gegokte getal juist, dan wint de speler, en krijgt de speler een compliment
+</li><li>Is het gegokte getal fout, dan krijgt de speler hierover een melding en moet de speler opnieuw gokken.
+</li><li>Na afloop van het spel wordt de speler bedankt.
+</li></ul>
+<p>Het stroomdiagram hiernaast laat het algoritme zien, met gebruik van een logische vlag <code>goed_geraden</code>:</p>
+<p>Hieronder staat een deel van de code. Breid de code uit zodat het overeenkomt met het bovenstaande stroomdiagram.</p>
+</td></tr>
+</table>
+
+-->
+
+
+<p class="opdracht" id="Opgave733">Opdracht 7.8 Herhaaldelijk complimentjes geven</p>
+<p>Schrijf een programma dat de gebruiker steeds vraagt of hij een complimentje wil, totdat hij aangeeft dat hij wil stoppen (logische vlag: <code>gebruiker_wil_stoppen</code>). Tikt de gebruiker een 'J' in, dan krijgt hij een complimentje. Dit wordt herhaald tot de gebruiker het zat is en iets anders dan een 'J' intikt. Dan wordt de logische vlag <code>gebruiker_wil_stoppen</code> aangepast.</p>
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/713-Herhaaldelijk-complimentjes-geven"></iframe></p>
+<!--
+<img src="http://course.cs.ru.nl/pythonVO/Jupyter/img/Python7_Stroomdiagram_veelComplimenten.jpg" alt="Stroomdiagram voor veel complimentjes" width="400"><br>
+
+Tip: Kijk naar de code in het voorbeeld hierboven.<br>
+-->
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H7_oplossingen.html#opgave713)-->
+<!--
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/713-Herhaaldelijk-complimentjes-geven"></iframe></p>
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave713" target="_blank">hier</a> de voorbeeld uitwerking.</p>
+-->
+
+<!-- ANTWOORD:
+print("Typ J als je een complimentje wilt ontvangen. Gebruik een andere toets als je geen complimentje wilt.")
+invoer = input()
+
+while invoer == 'J':
+    print( "Ik vind je aardig!" )
+    print( "Typ J als je nog een complimentje wilt ontvangen. Gebruik een andere toets als je geen complimentje meer wilt.")
+    invoer = input()
+
+print("Wat jammer dat je geen complimentje meer wilt ontvangen.")
+
+-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave733" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+
+<p class="opdracht" id="opgave734">Opdracht 7.9 Som van een aantal getallen. De gebruiker geeft het aan als het klaar is</p>
+
+<p>Het doel van het programma hieronder is om de gebruiker een paar getallen te laten invoeren, en na afloop de som af te drukken. De gebruiker mag zelf bepalen wanneer hij klaar is met invoeren. We spreken met de gebruiker af dat er steeds om invoer gevraagd wordt totdat een <code>X</code> wordt ingevoerd.</p>
+
+<p>Helaas staan de regels in de verkeerde volgorde. Zet de regels in de juiste volgorde.</p>
+
+<!-- GEGEVEN CODE
+        print("Je hebt ingevoerd", ingevoerde_getal )
+        totaal += ingevoerde_getal          #tel ingevoerde getal op bij het totaal
+    print("Geef een getal (of 'X' om te stoppen): ")
+    invoer = input(  )                      #vraag gebruiker om invoer
+		ingevoerde_getal = int( invoer )    #zet de invoer om in een getal
+    if invoer == 'X':
+    else:
+print( "Totaal is", totaal )                #druk aan einde het totaal af
+while not klaar:                            #zolang nier klaar, herhaal dan
+klaar = False
+        klaar = True
+totaal = 0
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/723-Som-van-een-aantal-getallen"></iframe></p>
+<!--[Voorbeeld uitwerking](http://course.cs.ru.nl/pythonVO/Jupyter/H7_oplossingen.html#opgave723)-->
+<p>Bekijk <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H7_oplossingen.html#opgave734" target="_blank">hier</a> de voorbeelduitwerking.</p>
+
+<!-- ANTWOORD
+
+<pre class="python">
+totaal = 0
+
+klaar = False
+
+while not klaar:                            #zolang nier klaar, herhaal dan
+    print("Geef een getal (of 'X' om te stoppen): ")
+    invoer = input(  )                      #vraag gebruiker om invoer
+
+    if invoer == 'X':
+        klaar = True
+    else:
+        ingevoerde_getal = int( invoer )    #zet de invoer om in een getal
+        print("Je hebt ingevoerd", ingevoerde_getal )
+        totaal += ingevoerde_getal          #tel ingevoerde getal op bij het totaal
+
+print( "Totaal is", totaal )                #druk aan einde het totaal af
+</pre>
+
+-->
