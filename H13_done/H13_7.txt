@@ -1,0 +1,12 @@
+<!--IA H13.2 <p>7: Strings doorlopen met een <code>while</code>-loop</p>-->
+
+<p>Je kunt ook met een <code>while</code>-loop de letters van een string
+    doorlopen:</p>
+
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/TH107?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p>Een <code>while</code> gebruik je in plaats van een <code>for</code> als je een string aanpast terwijl je deze
+    doorloopt (bijvoorbeeld door er letters uit te halen).</p>
+
+<!-- <pre class="python"> woord = "appel" i = 0 while i < len( woord ): print( woord[i] ) i += 1 </pre> -->
