@@ -1,0 +1,56 @@
+<!-- HIER BEGINT PAGINA INHOUD
+<p>1: Herhalingen met een for-loop</p>
+<h1 id="H81">H8.1 - Kennis maken met een <code>for</code>-loop: een aantal keren herhalen
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/yxG46oJbbHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p>Met <code>range()</code> geef je aan hoe vaak een <code>for</code>-loop herhaald wordt. Het volgende voorbeeld print 3 keer <i>Hallo</i> en na afloop van de loop print het
+    <i>Klaar!</i>.
+</p>
+
+<!--
+<pre class="python">
+for teller in range (3):
+        print("Hallo")
+print("Klaar!")
+</pre>
+-->
+<p><iframe height="200px" width="100%" src="https://repl.it/@smer/H81v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!-- <p><iframe width="100%" height="600px"
+src="https://repl.it/@ProgrammereninP/811v1-print3x-hallo#main.py"></iframe></p>
+
+EN ZONDER HEKEJ MAIN
+
+<p><iframe width="100%" height="600px" src="https://repl.it/@ProgrammereninP/811v1-print3x-hallo"></iframe></p> EMBED
+VIA REPLIT OPENBAAR <p><iframe height="400px" width="100%" src="https://repl.it/@smer/Th7b5a?lite=true#main.py"
+scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms
+allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p> -->
+
+
+<p>Toelichting:</p>
+<ul>
+    <li><code>teller</code> is een variabele die bijhoudt hoe vaak de codeblok is uitgevoerd. De <code>teller</code> begint bij 0. De code wordt herhaald totdat <code>teller</code> gelijk is aan het getal bij <code>range</code>, in dit voorbeeld 3. In dit geval wordt de codeblok dus 3 keer uitgevoerd.</li>
+    <li>De codeblok die onder de <code>for</code> is ingesprongen wordt herhaald.<p></p>
+    </li>
+    <li>Elke keer na het uitvoeren van de codeblok wordt gekeken of de <code>teller</code> gelijk is aan het getal bij <code>range</code>. Als dat zo is, dan wordt de herhaling gestopt en gaat de code verder waar er nog niet is ingesprongen. Anders wordt de <code>teller</code> opgehoogd en herhaalt de codeblok nog een keer.
+    </li>
+</ul>
+
+<p>De volgende code drukt 10 waarden af, beginnend bij 0. Dus: 0, 1, 2, 3, ..., 9:</p>
+<!--
+<pre class="python">
+for teller in range( 10 ):
+    print( teller )
+</pre>
+-->
+<p><iframe height="200px" width="100%" src="https://repl.it/@smer/H81v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<!--
+GOOD:  <p><iframe height="450px" width="100%" src="https://repl.it/@smer/Th7b4?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+-->
+
+<p>In de code hierboven wordt de codeblok onder de <code>for</code> 10 keer uitgevoerd. Omdat we in de
+    informatica altijd bij 0 beginnen te tellen, krijgt <code>teller</code> eerst de waarde 0, dan 1, 2, ...  en als laatste 9.
+    Dat zijn 10 herhalingen.</p>
