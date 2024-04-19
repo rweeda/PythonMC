@@ -1,0 +1,33 @@
+### VARIABELEN
+namen = ["Alex", "Bob", "Janneke", "Tim" ]
+
+### FUNCTIES
+def toonAlle():
+	for naam in namen:
+		print(naam)
+
+def voegNaamToe():
+	naam = input ("Geef een naam: ")
+	namen.append(naam)
+
+def toonNaam():
+	index = int(input("Geef de index van de naam op: "))
+	print( namen[index] )
+
+### HOOFDPROGRAMMA
+keuze = ""
+while keuze != "4":
+  print("1. Toon alles")
+  print("2. Voeg naam toe")
+  print("3. Toon naam")
+  print("4. Stop")
+
+  keuze = input("Geef je keuze: ")
+  if keuze == "1":
+    toonAlle()
+  elif keuze == "2":
+    voegNaamToe()
+  elif keuze == "3":
+    toonNaam() 
+	
+print("Doei")

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mijn titel</title>  
+  </head>
+
+  <body>
+
+			<h1>Welkom</h1>
+			Welkom op mijn receptenpagina. 
+			<br><!-- commentaar: met <br> ga je naar een nieuwe regel -->
+			De tips komen van <a href="https://kookidee.nl/">kookidee</a>.
+			<br>
+			<a href="appeltaart.html">Mijn appeltaart pagina</a>
+
+
+			<table>
+				<tr>
+					<th>Naam</th>
+					<th>Kleur</th>
+					<th>Vorm</th>
+				</tr>
+				<tr>
+					<td>appel</td>
+					<td>groen</td>
+					<td>rond</td>
+				</tr>
+				<tr>
+					<td>banaan</td>
+					<td>geel</td>
+					<td>lang</td>
+				</tr>	
+			</table>
+
+			<hr>
+
+			<h1>Kooptips</h1>
+
+				<h2>Oventemperatuur</h2>
+
+				<p>Er zijn verschillende soorten ovens. Heb je een elektrische oven dan moet je ongeveer <b>10%</b> bij de temperatuur optellen.</p>
+
+				<h2>Afmeten</h2>
+				<p>In veel van recepten meet je ingrediënten af met theelepels (<i>tl.</i>) of eetlepels (<i>el.</i>). Het handigst is om een setje maatlepels aan te schaffen.</p>
+		
+    <h1>Even wat anders:</h1>
+		  <p><a href="test.html">test pagina</a></p>
+      <p><a href="weer.html">Huidige weer</a></p>
+  </body>
+</html>

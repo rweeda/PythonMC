@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mijn titel</title>  
+  </head>
+
+  <body>
+		<h1>Dit is kop h1</h1>
+    	<p>Tekst zet je in een paragraaf, binnen een p-tag.</p>
+
+			<h2>Dit is subkop h2</h2>
+			<p>Met wat tekst</p>
+
+			<h2>Dit is een tweede subkop h2</h2>
+			<p>Ook hier zet je tekst in een paragraaf.</p>
+  </body>
+
+</html>

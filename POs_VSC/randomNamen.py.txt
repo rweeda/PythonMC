@@ -1,0 +1,9 @@
+import random
+print("Hallo V6!")
+print(".. en de beurt is aan....")
+
+namenlijstV6 = ["Thijs", "Wick"		, "Laura" 	,	 "Ru"		,"Nienke" ,	"Bo" 		, "Amiel" , "Stijn G" ,		 "Joep" 	, "Tijn"	,	  "Juule"	,	 "Leonie",		 "Stijn"	,	 "Kira"	,	 "Jet" 	,	 "Maarten", 		 "Anna" 		, "Nina" 		, "Sterre" 	,	 "Ties" 		, "Avalanche", 		 "Yasmin" 		, "Jasper" 		, "Julia" 		]
+
+willekeurigeNaam = random.choice(namenlijstV6)
+print(willekeurigeNaam)
+

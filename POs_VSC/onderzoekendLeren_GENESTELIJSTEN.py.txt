@@ -1,0 +1,82 @@
+### GLOBALE VARIABELEN
+leerlingen = [ ["Alex", 6.7, 7.8, 9.0], 
+							["Bob", 4.5],
+							["Janneke", 5.5, 4.5, 6.1] ]
+
+### FUNCTIES
+def toonAlle():
+	for leerling in leerlingen:
+		for cijfer in leerling:
+			print(cijfer)
+		print("\n") #print een nieuwe lege regel
+
+def zoekLeerling():
+  is_leerling_al_gevonden = False   #TAAK 4A
+  
+  naam = input ("Geef een naam: ")
+  for leerling in leerlingen:
+    if leerling[0] == naam:
+      is_leerling_al_gevonden = True  #TAAK 4A
+      for leerling_gegevens in leerling:
+        print(leerling_gegevens)
+  
+  if is_leerling_al_gevonden == False:  #TAAK 4A
+    print("Leerling", naam, "is niet gevonden!")  #TAAK 4A
+
+def toonLeerlingCijfer():
+	rij = int(input("Geef de rijnummer van de leerling: "))
+	kolom = int(input("Geef de kolomnummer van de leerling: "))
+	cijfer =  leerlingen[rij][kolom]
+	print(cijfer)
+
+def telAantalCijfersVanLeerling(): #TAAK 4B
+  aantal_cijfers = 0
+  naam = input ("Geef een naam: ")
+
+  for leerling in leerlingen:
+    if leerling[0] == naam:
+      print("naam gevonden")
+      for gegevens in leerling:
+        print(gegevens)
+        aantal_cijfers += 1
+
+  aantal_cijfers -= 1 #trek er eentje vanaf want de naam zelf zit oon
+  print("aantal cijfers gevonden voor", naam, "zijn", aantal_cijfers )
+
+
+def voegLeerlingEnCijfersToe(): #TAAK 4c
+  nieuwe_leerling = []
+  naam = input ("Geef een naam: ")
+  nieuwe_leerling.append(naam)
+  aantal_cijfers = int (input ("Hoeveel cijfers wil je invoeren? "))
+  for cijfer in range (aantal_cijfers):
+    nieuwe_cijfer = float (input ("Voer cijfer in: "))
+    nieuwe_leerling.append(nieuwe_cijfer)
+  print("nieuwe_leerling:", nieuwe_leerling)
+  leerlingen.append(nieuwe_leerling)
+  print("leerlingen:", leerlingen)
+
+### HOOFDPROGRAMMA
+keuze = ""
+while keuze != "4":
+  print("1. Toon alles")
+  print("2. Zoek leerling")
+  print("3. Toon leerling cijfer")
+  print("4. Toon aantal cijfers van leerling")
+  print("5. Voeg leerling met cijfers toe")
+  print("6. Stop")
+  print("Geef je keuze: ")
+
+  keuze = input()
+  if keuze == "1":
+    toonAlle()
+  elif keuze == "2":
+    zoekLeerling()
+  elif keuze == "3":
+    toonLeerlingCijfer() 
+  elif keuze == "4": #taak 4b
+    telAantalCijfersVanLeerling()
+  elif keuze == "5": # taak 4c
+    voegLeerlingEnCijfersToe()	
+print("Doei")
+

@@ -1,0 +1,39 @@
+body{
+	background-color: rgb(241, 227, 241);   /*roze*/
+	font-family: Arial; 
+	font-size: 12pt;
+}
+
+h1 { 
+	color: red; 
+} 
+
+h2 { 
+	color: purple; 
+}
+
+h2.gerecht_foto{
+	color: blue;
+}
+h2.gerecht_info{
+	color: green;
+}
+
+a { /* een link naar een andere pagina */
+	color: orange;
+}
+
+a:hover { /* de muis gaat over de link */
+	color: black;
+}
+
+table {
+	border: 1px dashed blue;
+	background-color: yellow;
+}
+
+td {
+	border: 0.5px double;
+	color: green;
+	width: 100px;
+}
