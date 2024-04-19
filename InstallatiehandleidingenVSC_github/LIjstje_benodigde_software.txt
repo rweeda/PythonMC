@@ -1,0 +1,9 @@
+* VSC
+* git
+* Python
+* python extensie voor VSC
+* jupyter extensie
+* python kernel
+
+PO:
+Liveshare
