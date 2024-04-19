@@ -1,0 +1,37 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>6: Index van een element bepalen</p>
+
+
+<h2>Index van een element bepalen</h2>
+-->
+<p>Met <code>.index()</code> kun je de index (de positie) van een element in de lijst krijgen. Als er meerdere elementen zijn, zal de index van het eerste voorkomen gegeven worden. Als het element niet voorkomt in de lijst, krijg je een foutmelding.</p>
+
+<!--
+<pre class="python">
+fruitlijst = ["appel", "banaan", "kers", "banaan", "doerian"]
+index_van_banaan = fruitlijst.index( "banaan" )
+
+print( index_van_banaan )
+</pre>-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H94v3?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<p class="opdracht" id="opgave933">Opdracht 9.6 Index van een element</p>
+<p>Bepaal de index van de letter 'w' in het alfabet. Het gaat erom dat je code schrijft om dit te printen. Tip: Het antwoord moet 22 zijn.</p>
+<!-- GIVEN
+<pre class="python">
+alfabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+</pre>-->
+
+
+<!-- antwoord
+<pre class="python">
+alfabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+index_van_w = alfabet.index( "w" )
+
+print( index_van_w )
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/933-Index-van-een-element"></iframe></p>
+
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H9_oplossingen.html#opgave933">hier</a> voor een voorbeelduitwerking.</p>

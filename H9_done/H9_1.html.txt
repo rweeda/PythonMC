@@ -1,0 +1,46 @@
+<!-- HIER BEGINT PAGINA INHOUD
+
+<p>1: Lijst maken en afdrukken</p>
+-->
+
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/LG-6VIAUrk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+<p><b>Lijst maken</b></p>
+<p>Een lijst maak je door de elementen tussen vierkante haken te zetten en te scheiden met komma's. Hier een paar voorbeelden:
+
+</p>
+<ul>
+    <li><code>boodschappenlijst = [ "appels", "brood", "melk" , "kaas"]</code></li>
+    <li><code>schoenmaten = [ 36, 37, 38, 39, 40, 41 ]</code></li>
+    <li><code>cijferlijst = [8.0, 7.8, 6.5, 9.2]</code></li>
+    <li><code>leegLijst = []</code></li>
+</ul>
+<p></p>
+<p>Het laatste voorbeeld is een lege lijst: een nieuwe lijst waar nog niets in zit.</p>
+
+
+<p><b>Lijst afdrukken</b></p>
+<p>Met <code>print()</code> kun je een lijst afdrukken. Zoals je ziet als je op <i>Run</i> drukt, worden de vierkante haken [ ] ook afgedrukt.</p>
+
+<!--
+<pre class="python">
+boodschappenlijst = [ "appels", "brood", "melk" , "kaas"]	#maak een boodschappenlijst
+print(boodschappenlijst)
+</pre>
+-->
+<p><iframe height="400px" width="100%" src="https://repl.it/@smer/H92v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+<p class="opdracht" id="opgave911">Opdracht 9.1 Lijst maken en afdrukken</p>
+<p>Een meetstation heeft voor een paar dagen de temperatuur bijgehouden: 22.3, 23.0, 25.1, 23.2, 21.9.</p>
+<p>Zet de metingen in een lijst en druk de lijst daarna af.</p>
+
+<!--ANTWOORD:
+
+temperatuurlijst = [22.3, 23.0, 25.1, 23.2, 21.9]
+print( temperatuurlijst )
+
+-->
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/911-Lijst-maken-en-afdrukken"></iframe></p>
+
+<p><a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H9_oplossingen.html#opgave911">Klik hier</a> voor een voorbeelduitwerking.</p>
