@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+  <meta charset="utf-8">
+  <title>Actuele weersinformatie</title>
+  <script src="script.js"></script>
+  </head>
+
+    <body>
+
+
+        <h2>Weer</h2>
+
+
+
+        <p>Regio is:</p>
+        <p id="locatie"></p>
+        
+        <p>De temperatuur is:</p>
+        <p id="temperatuur"></p>
+
+        
+        
+        <p>Widget Buienradar:</p>
+        <p><a href="https://www.buienradar.nl" target="_blank"><img border="0" src="https://api.buienradar.nl/image/1.0/RadarMapNL?w=120&h=120"></a></p>
+
+        <p>Widget Buienradar met actuele temperatuur en 5-daagse verwachting</p>
+        <p><IFRAME SRC="https://gadgets.buienradar.nl/gadget/radarfivedays" NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=256 HEIGHT=406></IFRAME></p>
+
+  <p>Widget Buienradar Arnhem:</p>
+  <p><iframe src="//gadgets.buienradar.nl/gadget/forecastandstation/6275/" noresize scrolling=no hspace=0 vspace=0 frameborder=0 marginheight=0 marginwidth=0 width=300 height=190></iframe></p>
+
+  <p>Weer symbolen</p>
+  <p><IFRAME SRC="https://gadgets.buienradar.nl/gadget/weathersymbol" NORESIZE SCROLLING=NO HSPACE=0 VSPACE=0 FRAMEBORDER=0 MARGINHEIGHT=0 MARGINWIDTH=0 WIDTH=50 HEIGHT=40></IFRAME></p>
+
+
+  <p> Widget Europa op STAD niveau bij postcode WEER:</p>
+  <p><iframe src="https://gadgets.buienradar.nl/gadget/zoommap/?lat=51.81155&lng=5.83839&overname=2&zoom=13&naam=6533DM&size=2&voor=1" scrolling=no width=256 height=256 frameborder=no></iframe></p>
+
+    <p> Widget Europa op LAND niveau bij postcode WEER:</p>
+  <p><iframe src="https://gadgets.buienradar.nl/gadget/zoommap/?lat=51.81155&lng=5.83839&overname=2&zoom=6&naam=6533DM&size=2&voor=1" scrolling=no width=256 height=256 frameborder=no></iframe></p>
+    </body>
+</html>

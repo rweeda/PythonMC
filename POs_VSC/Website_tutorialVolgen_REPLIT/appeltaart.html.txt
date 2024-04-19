@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Appeltaart</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+ 
+<body>
+
+		<h1>Appeltaart</h1>
+
+			<h2 class="gerecht_foto">Foto</h2>
+				<a href="https://www.bakkenderwijs.nl/"> <img src="foto_appeltaart.jpg" width="200" height="100" alt="plaatje van een appeltaart"> </a>
+
+			<h2 class="gerecht_info">Ingredienten</h2>
+				<ul>
+					<li>500 gram bloem</li>
+					<li>250 gram boter</li>
+					<li>220 gram basterdsuiker</li>
+					<li>2 eieren</li>
+					<li>2 kilo appels</li>
+				</ul>
+			<h2 class="gerecht_info">Bereidingswijze</h2>
+			<ol>
+				<li>Verwarm de oven voor op 170°C</li>
+				<li>Kneed de bloem, het bakpoeder, de boter, de basterdsuiker, 1 ei door elkaar en vorm een deegbal</li>
+				<li>...</li>
+			</ol>
+			
+</body>
+</html>

@@ -1,0 +1,49 @@
+
+import random
+from time import sleep
+
+
+NumList = []
+for i in range (1,255):
+	NumList.append(i)
+
+PickedList=[]
+print("Dit programma kiest een willekeurige getal tussen 1 en 15 (incl.)")
+print("Een gekozen getal komt maar een keer voor.")
+
+
+
+
+for x in range(15):
+		print ("")
+		select=random.choice(NumList)
+		print ("Het willekeurige getal is "+str(select))
+		print("")
+		print("")
+		NumList.remove(select)
+	#sleep(3.0)
+		PickedList.append(select)
+		print("Tot nu toe gekozen getallen:")
+		print(PickedList[:])
+		NewNum=input("Doorgaan (J/N)?   ")
+		if NewNum==("J"):
+				continue
+		elif NewNum==("j"):
+				continue
+		else:
+				break
+
+
+print ("Het spel is afgelopen.")
+
+
+print("Binair antwoorden zijn: ")
+for getal in PickedList:
+	print( int(bin(getal)[2:]), end=" ") 
+
+print()
+print("Hex antwoorden zijn: ")
+for getal in PickedList:
+	print( hex(getal)[2:], end=" ") 
+ 
+print()
