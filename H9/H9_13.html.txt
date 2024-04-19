@@ -14,7 +14,7 @@
 <p><iframe height="400px" width="100%" src="https://repl.it/@smer/H1212v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
 
 
-<p class="opdracht" id="opgave961">Opdracht 9.13 Vorstwaarschuwing</p>
+<p class="opdracht" id="opgave961">Opdracht 9.14 Vorstwaarschuwing</p>
 <p>De weersvoorspelling voor de komende dagen staat in de lijst&nbsp;<code>temperatuurvoorspelling</code>. Doorloop één voor één de voorspellingen en print "<i>Let op: Strooien</i>" elke keer als de temperatuur onder nul komt.</p>
 
 <!-- GIVEN

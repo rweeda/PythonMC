@@ -19,7 +19,7 @@ print( "Gekozen kleur is:", willekeurig_kleur )
 <p><iframe height="400px" width="100%" src="https://repl.it/@smer/H97v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
 
 
-<p class="opdracht" id="opgave951">Opdracht 9.12 Kleurrijke spirograaf</p>
+<p class="opdracht" id="opgave951">Opdracht 9.13 Kleurrijke spirograaf</p>
 
 <p>Je gaat een spirograaf tekenen met voor elke zijde een verschillende kleur. Je maakt hiervoor een lijst met kleuren en kiest er steeds een willekeurige uit.</p>
 
