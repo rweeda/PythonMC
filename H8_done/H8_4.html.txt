@@ -1,0 +1,122 @@
+<!-- HIER BEGINT PAGINA INHOUD
+<p>4: Van startgetal tot eindgrens met stapgrootte (for met drie parameters)</p>
+	
+<h1 id="H83">H8.3 - Van startgetal tot eindgrens met stapgrootte (<code>for</code> met 3 parameters)</h1>
+-->
+
+<p><iframe width="640" height="360" src="https://www.youtube.com/embed/HyNZLCIeSxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></p>
+
+
+<p>Standaard telt de <code>for</code>-loop steeds 1 op. Je kunt zelf de stapgrootte aangeven door
+    <code>range()</code> met drie parameters aan te roepen: eerst het startgetal, dan de eindgrens en als derde een
+    stapgrootte.
+</p>
+
+<p><code>for getal in range (startgetal, eindgrens, stapgrootte):</code></p>
+
+<p>Je kunt bijvoorbeeld aangeven dat steeds stappen van 2 gemaakt moet worden:</p>
+<!--
+https://repl.it/@smer/H8813v1 was:Th7b5 -->
+
+<!--
+<pre class="python">
+for getal in range( 3, 13, 2 ):
+    print( getal )
+</pre>-->
+<p><iframe height="200px" width="100%" src="https://repl.it/@smer/H83v1?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<!-- NEW: <p><iframe height="350px" width="100%" src="https://repl.it/@smer/H8813v1?lite=true#main.py" scrolling="no"
+frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p> -->
+
+
+<!--
+<p>In de bovenstaande code is:</p>
+<ul>
+<li>het startgetal is 1</li>
+<li>het eindgetal is 11</li>
+<li>de stapgrootte is 2</li>
+</ul>
+<p>De code drukt dus een aantal getallen af. Het begint bij 1, telt er steeds 2 bij op, en stopt als het getal de waarde 11 bereikt.</p>
+-->
+
+<p>Als je wilt aftellen, gebruik dan een negatieve stapgrootte. Je moet dan wel ervoor zorgen dat het startgetal
+    groter is dan de eindgrens.</p>
+<!--H8/813v2, was Th7b.5c-->
+
+
+<!--
+for teller in range( 10, 6, -1 ):
+  print( teller )
+-->
+<p><iframe height="200px" width="100%" src="https://repl.it/@smer/H83v2?lite=true#main.py" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p>
+
+
+<!-- NEW: <p><iframe height="350px" width="100%" src="https://repl.it/@smer/H8813v2?lite=true#main.py" scrolling="no"
+frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock
+allow-popups allow-same-origin allow-scripts allow-modals"></iframe></p> -->
+
+
+<!--### Opgave**
+
+Wijzig in bovenstaande code de drie parameters een paar keer, om het effect van deze wijzigingen te bestuderen. Ga door totdat je de `range()` functie begrijpt.
+
+-->
+
+
+<p class="opdracht" id="opgave831">Opdracht 8.6 3...2...1...Af!</p>
+<p>De volgende code telt van 3 tot en met 1 en print dan <i>Af!</i>. Helaas staan de regels code in de verkeerde volgorde en staat er een regel te veel in. Kan jij de code fixen?</p>
+
+<!--
+<pre class="python">
+print("Af!")
+    print(teller)
+for teller in range (3, 0, -1):
+for teller in range (3, 1, -1):
+
+ </pre>
+ -->
+<!-- ANTWOORD
+<pre class="python">
+
+for teller in range (3, 0, -1):
+    print(teller)
+print("Af!")
+ </pre> -->
+
+
+<p><iframe width="100%" height="400px" src="https://repl.it/team/InformaticaActief/831-321Af"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H8_oplossingen.html#opgave831" target="_blank">hier</a> voor een voorbeelduitwerking.</p>
+
+
+
+<p class="opdracht" id="opgave832">Opdracht 8.7 Veelvouden afdrukken met drie parameters</p>
+<p>Druk alle veelvouden van 4 af, beginnend bij 21, aflopend tot 3. Dus: 21 17 13 9 5</p> Gebruik hiervoor maar twee regels code.<p></p>
+
+<p>Tips:
+</p>
+<ul>
+    <li>Gebruik een <code>for</code>-loop met drie parameters in de <code>range</code>.
+    </li>
+    <li>Voor het aftellen maak je gebruik van een negatieve stapgrootte.
+    </li>
+</ul>
+<p></p>
+
+
+<!--https://repl.it/@ProgrammereninP/H8813-Veelvouden-afdrukken-met-test#main.py-->
+
+<!-- NEW: <p><iframe width="100%" height="600px"
+src="https://repl.it/team/InformaticaActief/813-Veelvouden-afdrukken-met-test"></iframe></p>
+
+-->
+
+
+<!-- ANTWOORD
+<pre class="python">
+for getal in range(21, 3, -4):
+	print(getal) </pre> -->
+
+<p><iframe width="100%" height="600px" src="https://repl.it/team/InformaticaActief/832-Veelvouden-afdrukken-met-3-parameters"></iframe></p>
+<p>Klik <a href="https://course.cs.ru.nl/pythonVO/Teams/IA_uitwerkingen/IA_H8_oplossingen.html#opgave832" target="_blank">hier</a> voor een voorbeelduitwerking.</p>
