@@ -1,0 +1,39 @@
+
+
+<hr>
+
+# <span style="color:brown">Hoofdstuk 4. Van ontwerp naar website</span>
+
+<hr>
+
+
+# <span style="color:brown">4.1: Structuur aangeven met blokken<span>
+
+    <table><tr><td>
+
+    </td></tr></table>
+    
+    
+    ## <span style="color:brown">Blokken aangeven met ```div```</span>
+    
+
+
+<table><tr><td>
+
+        ### <span style="color:green">Opdracht 4.2. Menu balk</span>
+
+
+
+        <table>
+            <tr bgcolor="#F5CBA7"><th>HTML</th><th>CSS</th><th>Browser</th></tr>
+            <tr valign="top">
+                <td><img src="img/4_samenvatting2_HTML.png"></td>
+                <td><img src="img/4_samenvatting2_CSS.png"></td>
+                <td><img src="img/4_samenvatting2_browser.png"></td>
+            </tr>
+        </table>
+
+
+        <table bgcolor="#EAFAF1"><tr><td>
+
+            ### <span style="color:green">PO TAAK 5: WEBSITE BOUWEN (Deel 1)</span>

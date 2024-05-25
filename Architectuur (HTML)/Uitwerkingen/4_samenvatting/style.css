@@ -1,0 +1,18 @@
+p.rood { /* .rood: selecteer alle paragrafen met class="rood"*/
+  color: red;
+}
+
+.rood { /* .rood: selecteer alle elementen met class="rood"*/
+  color: red;
+  text-align: right;
+}
+
+p#uitleg { /* #uitleg: selecteer de paragraaf met id="uitleg"*/
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#uitleg { /* #uitleg: selecteer het element met id="uitleg"*/
+  font-weight: bold;
+}
+
