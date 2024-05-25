@@ -1,0 +1,20 @@
+#menu {
+    outline: 1px solid black;
+    background-color: lightblue;
+}
+#kop {
+  outline: 1px solid black;
+  background-color: red;
+}
+#inhoud {
+  outline: 1px solid black;
+  background-color: rgb(243, 243, 161);
+}
+#reclame {
+  outline: 1px solid black;
+  background-color: mediumaquamarine;
+}
+#voet {
+  outline: 1px solid black;
+  background-color: peru;
+}

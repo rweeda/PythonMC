@@ -1,0 +1,55 @@
+
+li.menukeuze { /* alleen voor de links in het menu: */
+    display: block; /* knopje van maken */
+    background-color: #dddddd; /* grijze achtergrond voor knop*/
+    border: 1px solid black; /* randje om knopje */
+}
+
+/* Nieuw in stap 4. Afwerken:  */
+ul.menulijst { /* alleen voor lijsten in het menu: */
+padding: 0px; /* menu helemaal naar linkerkant schuiven*/
+width: 200px; /* knopje net zo breed maken als menubalk*/
+position: fixed; /* bij scrollen mee laten lopen */
+list-style-type: none; /* bolletjes in menu weghalen */
+}
+
+#wrapper {
+    width: 1000px; /* max breedte website */
+    margin: auto; /* centreren op scherm */
+}
+
+#menu {
+width: 200px;
+height: 1000px;
+float: left; 
+outline: 1px solid black;
+background-color: lightblue;
+}
+#kop {
+width: 800px;
+height: 50px;
+float: left; 
+outline: 1px solid black;
+background-color: red;
+}
+#inhoud {
+width: 700px;
+height: 900px;
+float: left; 
+outline: 1px solid black;
+background-color: rgb(243, 243, 161);
+}
+#reclame {
+width: 100px;
+height: 900px;
+float: left; 
+outline: 1px solid black;
+background-color: mediumaquamarine;
+}
+#voet {
+width: 800px;
+height: 50px;
+float: left; 
+outline: 1px solid black;
+background-color: peru;
+}

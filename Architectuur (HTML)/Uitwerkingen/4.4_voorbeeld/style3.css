@@ -1,0 +1,30 @@
+#menu {
+    width: 200px; /* nieuw in stap 3 */
+    height: 1000px; /* nieuw in stap 3 */
+    outline: 1px solid black;
+    background-color: lightblue;
+}
+#kop {
+  width: 800px; /* nieuw in stap 3 */
+  height: 50px; /* nieuw in stap 3 */
+  outline: 1px solid black;
+  background-color: red;
+}
+#inhoud {
+  width: 700px; /* nieuw in stap 3 */
+  height: 900px; /* nieuw in stap 3 */
+  outline: 1px solid black;
+  background-color: rgb(243, 243, 161);
+}
+#reclame {
+  width: 100px; /* nieuw in stap 3 */
+  height: 900px; /* nieuw in stap 3 */
+  outline: 1px solid black;
+  background-color: mediumaquamarine;
+}
+#voet {
+  width: 800px; /* nieuw in stap 3 */
+  height: 50px; /* nieuw in stap 3 */
+  outline: 1px solid black;
+  background-color: peru;
+}

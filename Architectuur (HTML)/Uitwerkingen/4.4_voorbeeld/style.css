@@ -1,39 +1,40 @@
 #wrapper {
     width: 1000px; /* max breedte website */
     margin: auto; /* centreren op scherm */
-  }
+}
 
-  #menu {
+#menu{
     width: 200px;
     height: 1000px;
     float: left;
     outline: 1px solid black;
     background-color: lightblue;
-  }
-  #kop {
+}
+#kop{
     width: 800px;
     height: 50px;
     float: left;
     outline: 1px solid black;
     background-color: red;
-  }
-  #inhoud {
+}
+#inhoud{
     width: 700px;
     height: 900px;
     float: left;
     outline: 1px solid black;
     background-color: rgb(243, 243, 161);
-  }
-  #reclame {
+}
+#reclame{
     width: 100px;
     height: 900px;
     float: left;
     outline: 1px solid black;
     background-color: mediumaquamarine;
-  }
-  #voet {
+}
+#voet{
     width: 800px;
     height: 50px;
     float: left;
     outline: 1px solid black;
     background-color: peru;
+}
