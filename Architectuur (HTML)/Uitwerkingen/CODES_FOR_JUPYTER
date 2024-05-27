@@ -26,7 +26,9 @@
 
         <table>
             <tr bgcolor="#F5CBA7"><th>HTML</th><th>CSS</th><th>Browser</th></tr>
-            <tr valign="top">
+
+            <table><tr bgcolor="#F5CBA7" align="left"><th>HTML-code:</th><th>In de browser:</th></tr>
+                <tr bgcolor="#FFF4CC"> <!-- yellow -->
                 <td><img src="img/4_samenvatting2_HTML.png"></td>
                 <td><img src="img/4_samenvatting2_CSS.png"></td>
                 <td><img src="img/4_samenvatting2_browser.png"></td>
@@ -37,3 +39,46 @@
         <table bgcolor="#EAFAF1"><tr><td>
 
             ### <span style="color:green">PO TAAK 5: WEBSITE BOUWEN (Deel 1)</span>
+
+CODE:
+<div class="alert" markdown="1">
+
+```
+<html>
+```
+
+</div>
+
+**Note**
+
+<div class="alert alert-info">
+  <strong>Let's start with THIS blue box:</strong>
+</div>
+
+<div class="alert alert-warning">
+  <strong>Let's start with YELLOW blue box:</strong>
+</div>
+
+<tr bgcolor="#FEF9E7"><td>
+
+<div class="alert alert-success">
+  <strong>Let's start with GREEN blue box:</strong>
+</div>
+
+> This is a blockquote
+
+<div class="alert alert-success" markdown="1">
+
+> This is a blockquote
+> - And a list
+>     - And a nested element with a **bold**
+
+</div>
+
+<table bgcolor="#EAFAF1"><tr><td>
+
+### <span id="PO1" style="color:green"> PO TAAK 1: USABILITY</h1>
+
+<b>LET OP: BELANGRIJKE OPDRACHT, DIT IS ONDERDEEL VAN JE PO EN TELT DUS MEE VOOR JE PTA-CIJFER.</b>
+
+Deze opdracht maak je <b>individueel</b>.
