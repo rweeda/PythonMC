@@ -85,3 +85,15 @@ Deze opdracht maak je <b>individueel</b>.
 
 
 [![Watch the video](https://img.youtube.com/vi/kBXQZMmiA4s/hqdefault.jpg)](https://www.youtube.com/embed/kBXQZMmiA4s)
+
+
+ONLY CODE:
+
+<table><tr bgcolor="#FFF4CC"> <!-- yellow --><td>
+
+```
+body {
+    background-color: lightblue;
+}
+```
+</td></td></table>
